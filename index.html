@@ -25,20 +25,17 @@
         <li class="headerItem_b"><a href="#" class="headerLink_b">お問い合わせする</a></li>
       </ul>
     </div>
-    <nav class="header__nav nav" id="js-nav">
-      <ul class="nav__items nav-items">
-        <li class="nav-items__item"><a href="">メニュー</a></li>
-        <li class="nav-items__item"><a href="">メニュー</a></li>
-        <li class="nav-items__item"><a href="">メニュー</a></li>
-        <li class="nav-items__item"><a href="">メニュー</a></li>
-      </ul>
+    <div class="openbtn1"><span></span><span></span><span></span></div>
+    <nav id="g-nav">
+      <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+        <ul>
+          <li><a href="#">Top</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-
-    <button class="header__hamburger hamburger" id="js-hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
   </header>
   <main>
     <!-- FVのコンテナ -->
@@ -49,7 +46,8 @@
             <h2 class="myFv_preTitle">マイナビメディアのマーケターが教える</h2>
             <h1 class="myFV_Title">マーケティング・広報ラボ</h1>
           </div>
-          <p class="myFv_text">マイナビメディアのマーケターがお届けするマーケティング・広報のお役立ちサイト。今すぐ使えるインサイトデータからセミナー情報までマーケター・広報のための最新情報をお知らせしています
+          <p class="myFv_text">
+            マイナビメディアのマーケターがお届けするマーケティング・広報のお役立ちサイト。今すぐ使えるインサイトデータからセミナー情報までマーケター・広報のための最新情報をお知らせしています。
           </p>
           <ul class="myFv_ImgUl">
             <li class="myFv_ImgItem"><img src="/IMG/Group (1).png" alt="ロゴ画像" class="myFv_Imgs"></li>
@@ -72,22 +70,28 @@
         </div>
       </div>
     </section>
+
+
     <!-- ----------------選ばれる理由----------------- -->
     <section class="myReason_Section">
       <div class="myReason_Container inner">
-        <h2 class="myReason_title">私たちのメディア掲載するメリット<br>マイナビが選ばれる理由</h2>
+        <h2 class="myReason_title">消費者の生活に寄り添い<br>情報を発信してきたマイナビだからこそ提供できる価値</h2>
         <div class="myPic_br"></div>
         <ul class="myReason_Ul">
           <li class="myReason_Item">
             <img src="/IMG/Frame 90.png" alt="イラスト画像" class="myReason_img">
-            <h3 class="myReason_Itemtitle">ユーザー満足度もUP</h3>
-            <p class="myReason_text">動画制作やSNS運用・オウンドメディア支援までPRに関わる全てを自社で対応してきた実績あり</p>
+            <h3 class="myReason_Itemtitle">各世代を網羅したメディア展開</h3>
+            <p class="myReason_text">
+              高校生～子育て世帯をカバーし
+              メディアを横断したマーケティング支援が可能</p>
 
           </li>
           <li class="myReason_Item">
             <img src="/IMG/Frame 90.png" alt="イラスト画像" class="myReason_img">
-            <h3 class="myReason_Itemtitle">ユーザー満足度もUP</h3>
-            <p class="myReason_text">動画制作やSNS運用・オウンドメディア支援までPRに関わる全てを自社で対応してきた実績あり</p>
+            <h3 class="myReason_Itemtitle">ユーザーとのリアルな繋がり</h3>
+            <p class="myReason_text">
+              独自の会員組織で高校生・大学生など
+              若年層の“リアルな声”を収集し発信</p>
           </li>
           <li class="myReason_Item">
             <img src="/IMG/Frame 90.png" alt="イラスト画像" class="myReason_img">
@@ -100,7 +104,7 @@
     <!-- --------------ピックアップセクション------------- -->
     <section class="myPic_Section">
       <div class="myPic_Container inner">
-        <h2 class="myPic_title">Feature</h2>
+        <h2 class="myPic_title">Picu up</h2>
         <div class="myPic_br"></div>
         <ul class="myPic_Ul">
           <li class="myPic_Item"><img src="/IMG/image 15.png" alt="ピックアップ画像" class="myPic_img"></li>
@@ -338,7 +342,7 @@
       <div class="myMedia_Container inner">
         <div class="myMedia_titleBox_h2">
           <p>Media</p>
-          <h2>メディア紹介</h2> <a href="#">他の動画も見る</a>
+          <h2>マイナビメディアのご紹介</h2> <a href="#">各メディアについて詳しく見る</a>
         </div>
 
         <div class="myMedia_ContentBox">
@@ -428,7 +432,7 @@
         <div class="myHelpful_mov">
           <div class="myMedia_titleBox_h2">
             <p>Feature</p>
-            <h2>特集企画</h2> <a href="#">他の動画も見る</a>
+            <h2>特集・プロジェクト資料</h2> <a href="#">他の資料も見る</a>
           </div>
           <div class="helpMov_ContentBox">
             <div class="helpMov_Content_a"> <img src="/IMG/image 24.png" alt="動画画像">
@@ -493,7 +497,7 @@
         <div class="myCase_Container">
           <div class="myMedia_titleBox_h2">
             <p>Case</p>
-            <h2>事例</h2> <a href="#">他の事例も見る</a>
+            <h2>広告事例</h2> <a href="#">他の広告事例も見る</a>
           </div>
           <div class="myCase_Content">
             <ul>
@@ -540,7 +544,9 @@
               <div>
                 <h3>メルマガ登録はこちら</h3>
                 <div class="myDow_br"></div>
-                <p>マイナビメディアの営業・制作チームが監修した、マーケティング・広報のお役立ち情報を定期的に配信しています</p>
+                <p>マイナビメディアのマーケティングチームが監修した
+                  お役立ち情報やセールス・広告手法に関する情報を
+                  定期的に発信しています</p>
               </div>
             </a>
           </li>
@@ -549,7 +555,8 @@
               <div>
                 <h3>サービス紹介資料ダウンロード</h3>
                 <div class="myDow_br"></div>
-                <p>詳しいサービス・事例についてはサービス紹介資料でご確認ください</p>
+                <p>メディア・企画の詳細については
+                  媒体資料をご確認ください</p>
               </div>
             </a>
           </li>
@@ -560,10 +567,12 @@
     <!-- CTAフォームセクション -->
     <section class="myCta_Section">
       <div class="myCta_Container inner">
-        <h2>メディア、広告に関すること、その他のお問合せはこちらから</h2>
-        <form action="" type="submit">フォームでお問合わせ</form>
-        <p class="call_img">050-000-000</p>
-        <p>（受付時間：平日8:00-17:00）</p>
+        <h2>広告掲載やメディアに関するお問い合わせはこちらから</h2>
+        <form action="" type="submit">お問い合わせ</form>
+        <div class="menu-item">
+          <a href="" class="button-01 fav">03-6267-4335</a>
+        </div>
+        <p>受付時間：平日10:00〜18:00（弊社所定の休業日を除く）</p>
       </div>
     </section>
 
@@ -635,7 +644,7 @@
           <li class="footer_br"></li>
         </ul>
         <div class="footer_a_button">
-          <form action="" type="submit">フォームでお問い合わせ</form>
+          <form action="" type="submit">フォームでのお問い合わせ</form>
           <form action="" type="submit">サービス資料ダウンロード</form>
           <form action="" type="submit">お電話でのお問い合わせ</form>
           <p>050-000-000（平日8:00-17:00）</p>
