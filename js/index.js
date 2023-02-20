@@ -12,4 +12,5 @@ $("#g-nav a").click(function () {//ナビゲーションのリンクがクリッ
 $(function () {
   $("#header").load("/components/header.html");
   $("#footer").load("/components/footer.html");
+  $("#cta-section").load("/components/cta.html");
 });
