@@ -107,14 +107,13 @@
 
           <ul class="helpBlog_Ul">
             <!-- コンポーネント（helpBlog_item） -->
-            <div class="comp_blog_item"></div>
-            <div class="comp_blog_item"></div>
-            <div class="comp_blog_item"></div>
-            <div class="comp_blog_item"></div>
-            <div class="comp_blog_item"></div>
-            <div class="comp_blog_item"></div>
-            <div class="comp_blog_item"></div>
-            <div class="comp_blog_item"></div>
+            <li class="helpBlog_item"></li>
+            <li class="helpBlog_item"></li>
+            <li class="helpBlog_item"></li>
+            <li class="helpBlog_item"></li>
+            <li class="helpBlog_item"></li>
+            <li class="helpBlog_item"></li>
+            <li class="helpBlog_item"></li>
             <!-- /コンポーネント（helpBlog_item） -->
           </ul>
 
@@ -471,7 +470,7 @@
       $(".comp_title3").load("./components/myMedia_titleBox_h3.html .myMedia_titleBox_h3.article");
     });
     $(window).on('load', function() {
-      $(".comp_blog_item").load("./components/helpBlog_item.html");
+      $(".helpBlog_item").load("./components/helpBlog_item.html");
     });
   </script>
   <!-- /コンポーネント読み込み用の一時的なjs -->
