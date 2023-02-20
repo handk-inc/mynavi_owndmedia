@@ -95,91 +95,29 @@
     <!-- ----------------お役立ち情報セクション------------------- -->
     <section class="myHelpful_Section">
       <div class="myHelpful_Container inner">
-        <div class="myMedia_titleBox_h2">
-          <p>Information</p>
-          <h2>お役立ち情報</h2>
-        </div>
+
+        <!-- コンポーネント（myMedia_titleBox_h2） -->
+        <div class="comp_title2"></div>
 
         <!-- 記事 -->
         <div class="myHelpful_blog_comtainer">
-          <div class="myMedia_titleBox_h3">
-            <h3>お役立ち記事</h3> <a href="#">他の記事も見る</a>
-          </div>
+
+          <!-- コンポーネント（myMedia_titleBox_h3） -->
+          <div class="comp_title3"></div>
+
           <ul class="helpBlog_Ul">
-            <li class="helpBlog_item"> <img src="/IMG/image 21.png" alt="記事の画像" class="helpBlog_img">
-              <div>
-                <p class="helpBlog_date">2022.12.12</p>
-                <p>オフィスで感じるストレスの要因や業務に及ぼす影響、改善方法を紹介</p>
-                <div class="helpBlog_linkBox">
-                  <a class="tag" href="#">共働き夫婦</a>
-                  <a class="tag" href="#">ユーザーインタビュー</a>
-                </div>
-              </div>
-            </li>
-            <li class="helpBlog_item"> <img src="/IMG/image 21.png" alt="記事の画像" class="helpBlog_img">
-              <div>
-                <p class="helpBlog_date">2022.12.12</p>
-                <p>オフィスで感じるストレスの要因や業務に及ぼす影響、改善方法を紹介</p>
-                <div class="helpBlog_linkBox">
-                  <a class="tag" href="#">共働き夫婦</a>
-                  <a class="tag" href="#">ユーザーインタビュー</a>
-                </div>
-            </li>
-            <li class="helpBlog_item"> <img src="/IMG/image 21.png" alt="記事の画像" class="helpBlog_img">
-              <div>
-                <p class="helpBlog_date">2022.12.12</p>
-                <p>オフィスで感じるストレスの要因や業務に及ぼす影響、改善方法を紹介</p>
-                <div class="helpBlog_linkBox">
-                  <a class="tag" href="#">共働き夫婦</a>
-                  <a class="tag" href="#">ユーザーインタビュー</a>
-                </div>
-            </li>
-            <li class="helpBlog_item"> <img src="/IMG/image 21.png" alt="記事の画像" class="helpBlog_img">
-              <div>
-                <p class="helpBlog_date">2022.12.12</p>
-                <p>オフ、改善方法を紹介</p>
-                <div class="helpBlog_linkBox">
-                  <a class="tag" href="#">共働き夫婦</a>
-                  <a class="tag" href="#">ユーザーインタビュー</a>
-                </div>
-            </li>
-            <li class="helpBlog_item"> <img src="/IMG/image 21.png" alt="記事の画像" class="helpBlog_img">
-              <div>
-                <p class="helpBlog_date">2022.12.12</p>
-                <p>オフィスで感じるストレスの要因や業務に及ぼす影響、改善方法を紹介</p>
-                <div class="helpBlog_linkBox">
-                  <a class="tag" href="#">共働き夫婦</a>
-                  <a class="tag" href="#">ユーザーインタビュー</a>
-                </div>
-            </li>
-            <li class="helpBlog_item"> <img src="/IMG/image 21.png" alt="記事の画像" class="helpBlog_img">
-              <div>
-                <p class="helpBlog_date">2022.12.12</p>
-                <p>オフィスで感じるストレスの要因や業務に及ぼす影響、改善方法を紹介</p>
-                <div class="helpBlog_linkBox">
-                  <a class="tag" href="#">共働き夫婦</a>
-                  <a class="tag" href="#">ユーザーインタビュー</a>
-                </div>
-            </li>
-            <li class="helpBlog_item"> <img src="/IMG/image 21.png" alt="記事の画像" class="helpBlog_img">
-              <div>
-                <p class="helpBlog_date">2022.12.12</p>
-                <p>オフィスで感じるストレスの要因や業務に及ぼす影響、改善方法を紹介</p>
-                <div class="helpBlog_linkBox">
-                  <a class="tag" href="#">共働き夫婦</a>
-                  <a class="tag" href="#">ユーザーインタビュー</a>
-                </div>
-            </li>
-            <li class="helpBlog_item"> <img src="/IMG/image 21.png" alt="記事の画像" class="helpBlog_img">
-              <div>
-                <p class="helpBlog_date">2022.12.12</p>
-                <p>、改善方法を紹介</p>
-                <div class="helpBlog_linkBox">
-                  <a class="tag" href="#">共働き夫婦</a>
-                  <a class="tag" href="#">ユーザーインタビュー</a>
-                </div>
-            </li>
+            <!-- コンポーネント（helpBlog_item） -->
+            <div class="comp_blog_item"></div>
+            <div class="comp_blog_item"></div>
+            <div class="comp_blog_item"></div>
+            <div class="comp_blog_item"></div>
+            <div class="comp_blog_item"></div>
+            <div class="comp_blog_item"></div>
+            <div class="comp_blog_item"></div>
+            <div class="comp_blog_item"></div>
+            <!-- /コンポーネント（helpBlog_item） -->
           </ul>
+
         </div>
         <!-- 資料 -->
         <div class="myHelpful_doc_Container">
@@ -524,5 +462,18 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="/js/index.js"></script>
 
+  <!-- コンポーネント読み込み用の一時的なjs -->
+  <script>
+    $(window).on('load', function() {
+      $(".comp_title2").load("./components/myMedia_titleBox_h2.html .myMedia_titleBox_h2.help");
+    });
+    $(window).on('load', function() {
+      $(".comp_title3").load("./components/myMedia_titleBox_h3.html .myMedia_titleBox_h3.article");
+    });
+    $(window).on('load', function() {
+      $(".comp_blog_item").load("./components/helpBlog_item.html");
+    });
+  </script>
+  <!-- /コンポーネント読み込み用の一時的なjs -->
 </body>
 </html>
