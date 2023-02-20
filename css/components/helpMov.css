@@ -1,0 +1,104 @@
+/* ----------動画----------- */
+
+.helpMov_titleBox {
+  line-height: 3rem;
+  margin-bottom: 3rem;
+}
+.helpMov_title {
+  display: inline-block;
+  font-size: 2.4rem;
+}
+.helpMov_ContentBox {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.helpMov_Content_a {
+  width: 48%;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+}
+.helpMov_Content_a img {
+  height: auto;
+  width: 100%;
+}
+.helpMov_Content_a_linkBox {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+.helpMov_Content_a > div {
+  margin: 1.5rem 2rem;
+  max-width: 50rem;
+}
+.helpMov_Content_a h4 {
+  font-size: 1.6rem;
+  line-height: 3.5rem;
+}
+.helpMov_Content_a p {
+  line-height: 2.5rem;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  color: #757575;
+  margin-top: 1rem;
+}
+
+.helpMov_Ul {
+  display: grid;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 48%;
+  flex-grow: 1;
+  justify-content: space-around;
+  grid-template-columns: 49% 49%;
+  grid-template-rows: 49% 49%;
+}
+.helpMov_item {
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+}
+.helpMov_item article > div {
+  margin: 1rem 1.5rem;
+}
+.helpMov_item article img {
+  width: 100%;
+}
+.helpMov_linkBox {
+  display: flex;
+}
+
+.helpMov_item article h4 {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .helpMov_item {
+    min-width: 40%;
+  }
+  .helpMov_item article img {
+    width: 100%;
+    height: auto;
+  }
+  .helpMov_Content_a {
+    display: none;
+  }
+  .helpMov_Ul {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .helpMov_item {
+    min-width: 85%;
+  }
+  .helpMov_Ul {
+    display: flex;
+  }
+}

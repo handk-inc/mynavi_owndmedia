@@ -1,0 +1,78 @@
+/* 事例 */
+.myCase_Container {
+  margin-top: 8rem;
+}
+.myCase_Content ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.myCase_Content li {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.myCase_Content div {
+  margin: 2rem;
+}
+.myCase_Content img {
+  width: 100%;
+}
+.myCase_Content h3 {
+  font-size: 2.4rem;
+  color: #00374d;
+  line-height: 3.2rem;
+  font-weight: 500;
+  padding: 2rem 0 1rem 0;
+}
+.myCase_h4Box {
+  margin: 0 !important;
+}
+.myCase_Content h4 {
+  font-size: 1.6rem;
+  color: #00374d;
+  position: relative;
+  display: flex;
+}
+.myCase_Content h4::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  border-left: 4px solid #00374d;
+  height: 100%;
+}
+.myCase_Content h4 {
+  display: flex;
+  margin-bottom: -2px;
+}
+.myCase_title {
+  width: 6rem;
+  white-space: nowrap;
+  font-size: 1.6rem;
+  color: #757575;
+  line-height: 2.2rem;
+  margin: 0 2rem;
+  padding: 1rem 0;
+}
+.myCase_text {
+  font-size: 1.6rem;
+  color: #00374d;
+  line-height: 2.2rem;
+  padding: 1rem 0;
+}
+
+.myCase_Content p {
+  font-size: 1.6rem;
+  color: #333333;
+  line-height: 3rem;
+  margin: 1rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .myCase_Content ul {
+    flex-direction: column;
+  }
+  .myDow_Container ul {
+    flex-direction: column;
+    width: 100%;
+  }
+}

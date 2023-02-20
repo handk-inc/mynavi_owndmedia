@@ -1,0 +1,47 @@
+/* ----H2のタイトル---- */
+.myMedia_titleBox_h2 {
+  margin-bottom: 5rem;
+}
+.myMedia_titleBox_h2 p {
+  font-size: 2.4rem;
+  color: #757575;
+  margin-bottom: 2rem;
+  letter-spacing: 0.3rem;
+  font-family: Montserrat;
+}
+.myMedia_titleBox_h2 h2 {
+  font-size: 3.2rem;
+  color: #00374d;
+  font-weight: 500;
+  display: inline-block;
+}
+.myMedia_titleBox_h2 a {
+  font-size: 1.6rem;
+  color: #333333;
+  margin-left: 3rem;
+  position: relative;
+  vertical-align: top;
+  margin-top: 4px;
+  margin-left: 40px;
+  display: inline-block;
+}
+.myMedia_titleBox_h2 a::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #333333;
+  height: 1rem;
+  width: 32rem;
+  bottom: -1rem;
+  left: -12px;
+}
+.myMedia_titleBox_h2 a::after {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  border-right: 1px solid #333333;
+  height: 2rem;
+  bottom: -12px;
+  transform: rotate(-40deg);
+  left: 297px;
+}

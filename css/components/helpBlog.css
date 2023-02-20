@@ -1,0 +1,80 @@
+/* -----記事----- */
+.helpBlog_date {
+  font-size: 0.75rem;
+  color: gray;
+}
+.myHelpful_blog_comtainer {
+  margin-bottom: 5rem;
+}
+.helpBlog_titleBox {
+  line-height: 3rem;
+  margin-bottom: 3rem;
+}
+.helpBlog_titleBox h3 {
+  display: inline-block;
+  font-size: 2.4rem;
+}
+.helpBlog_titleBox a {
+  font-size: 1.4rem;
+}
+.helpBlog_Ul {
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  grid-template-columns: auto auto auto auto;
+  gap: 2rem;
+}
+.helpBlog_item {
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+}
+.helpBlog_linkBox {
+  display: flex;
+}
+.helpBlog_img {
+  width: 100%;
+  text-align: center;
+  background-color: beige;
+}
+.helpBlog_item > div {
+  margin: 10px;
+}
+.helpBlog_item time {
+  display: inline-block;
+  height: 3rem;
+}
+.helpBlog_item p {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1320px) {
+  .helpBlog_item {
+  }
+  .helpBlog_Ul {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .helpBlog_Ul {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    gap: 2rem;
+  }
+  .helpBlog_item {
+    min-width: 40%;
+  }
+  .helpBlog_img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .helpBlog_item {
+    min-width: 85%;
+  }
+}

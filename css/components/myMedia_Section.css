@@ -1,0 +1,115 @@
+/* ------------メディア紹介のセクション------------ */
+.myMedia_Section {
+  background-color: #f1f7fb;
+}
+
+.myMedia_Ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.myMedia_Item {
+  background-color: #fff;
+  width: 33%;
+  border: 1px solid #757575;
+  display: flex;
+  justify-content: center;
+  margin-right: -1px;
+  margin-bottom: -1px;
+}
+.myMedia_Item article {
+  padding: 2rem 2rem;
+}
+.myMedia_Item img {
+  display: block;
+  width: 80%;
+  object-fit: cover;
+}
+.myMedia_Item article div {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+.myMedia_Item a {
+  color: #006dd4;
+  border: 1px solid #006dd4;
+  background-color: #f1f7fb;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  margin: 0.5rem;
+  margin-left: 0;
+  display: block;
+  line-height: 1.7;
+  text-align: center;
+  padding: 0.1rem 0.5rem;
+}
+.myMedia_Item p {
+  font-size: 1.4rem;
+  line-height: 2.7rem;
+}
+.myMedia_br {
+  width: 100%;
+  height: 0;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .myMedia_Item {
+    width: 49%;
+  }
+  .myMedia_Item p {
+    width: 100%;
+  }
+  .myMedia_br {
+    display: none;
+  }
+  .myMedia_titleBox_h3 a::before {
+    width: 24rem;
+  }
+  .myMedia_titleBox_h3 a::after {
+    top: 10px;
+    left: 217px;
+  }
+  .myMedia_titleBox_h2 a::before {
+    width: 24rem;
+  }
+  .myMedia_titleBox_h2 a::after {
+    left: 220px;
+    top: 9px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .myMedia_Ul {
+    flex-direction: column;
+  }
+  .myMedia_Item {
+    width: 100%;
+  }
+  .myMedia_titleBox_h2 {
+    margin-bottom: 2.4rem;
+  }
+  .myMedia_titleBox_h2 p {
+    font-size: 2rem;
+  }
+  .myMedia_titleBox_h2 h2 {
+    font-size: 2.4rem;
+  }
+  .myMedia_titleBox_h3 h3 {
+    font-size: 2rem;
+  }
+  .myMedia_titleBox_h3 a::before {
+    width: 21rem;
+  }
+  .myMedia_titleBox_h3 a::after {
+    top: 10px;
+    left: 189px;
+  }
+  .myMedia_titleBox_h2 a::before {
+    width: 21rem;
+  }
+  .myMedia_titleBox_h2 a::after {
+    left: 192px;
+    top: 10px;
+  }
+}

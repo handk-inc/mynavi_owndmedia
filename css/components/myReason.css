@@ -1,0 +1,68 @@
+/* -------------「選ばれる理由」コンテンツ--------------- */
+.myReason_Section {
+  margin-bottom: 5rem;
+  width: 100%;
+}
+.myReason_title {
+  text-align: center;
+  font-size: 3.2rem;
+  line-height: 6rem;
+  margin-bottom: 3rem;
+}
+.myReason_Ul {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.myReason_Item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+  width: 32%;
+}
+.myReason_img {
+  width: 30%;
+}
+.myReason_Itemtitle {
+  font-size: 2rem;
+  padding: 2rem 0 1rem 0;
+  font-weight: 500;
+  line-height: 1.6;
+  text-align: center;
+  color: #00374d;
+}
+
+.myReason_text {
+  font-size: 1.6rem;
+  line-height: 3rem;
+  display: block;
+  width: 100%;
+  padding: 0px 20px 0px 48px;
+  background-position: left 20px center;
+  background-repeat: no-repeat;
+  background-size: 2.5rem;
+  overflow-wrap: break-word;
+  background-image: url("/img/bi_check2-circle.svg");
+  background-position-y: 2px;
+}
+@media screen and (max-width: 768px) {
+  .myReason_Ul {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .myReason_Item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .myReason_title {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+
+}

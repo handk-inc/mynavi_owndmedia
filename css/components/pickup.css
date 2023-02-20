@@ -1,0 +1,59 @@
+/* -------------------ピックアップセクション------------------ */
+.myPic_Section {
+  background-color: #f8f8f8;
+}
+.myPic_title {
+  font-size: 3.2rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #333333;
+  letter-spacing: 0.2rem;
+}
+.myPic_br {
+  position: relative;
+  height: 0.4rem;
+  width: 20rem;
+  margin: 3rem auto;
+  border-radius: 100px;
+  background: linear-gradient(to right, #00374d 50%, #9e9e9e 50%);
+}
+.myPic_Ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+.myPic_Item {
+  width: 23%;
+}
+
+.myPic_img {
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+
+  .myPic_Ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2rem;
+  }
+  .myPic_Item {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .myPic_Ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .myPic_Item {
+    width: 100%;
+  }
+}

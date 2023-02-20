@@ -1,0 +1,101 @@
+/* -------------FVのCSS--------------- */
+.myFv_Section {
+  background-image: url(/IMG/アートボード\ 3@4x\ 1.png);
+  min-height: 100vh;
+  object-fit: cover;
+}
+.myFv_Wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding-top: 10.8rem;
+}
+.myFv_Container_a {
+  margin-right: 3rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.myFv_preTitle {
+  font-size: 2.4rem;
+  line-height: 4rem;
+  font-weight: 100;
+  color: #00374d;
+}
+.myFV_Title {
+  font-size: 4rem;
+  color: #00374d;
+  padding: 2rem 0;
+  line-height: 1.6;
+}
+.myFv_text {
+  font-size: 1.6rem;
+  line-height: 3rem;
+  color: #00374d;
+}
+.myFv_ImgUl {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding-top: 2rem;
+}
+.myFv_ImgItem {
+  width: 6rem;
+}
+.myFv_Imgs {
+  width: 100%;
+}
+.myFv_Img_b {
+  background-color: white;
+  height: 63rem;
+  width: 50rem;
+}
+.myFv_Container_b img {
+  width: 100%;
+  height: 600px;
+  object-fit: scale-down;
+}
+#hsForm_1e2d8052-99c4-4c6d-b88b-f8e0f1ee28e8 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 18rem;
+}
+#hsForm_1e2d8052-99c4-4c6d-b88b-f8e0f1ee28e8 {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+
+  .myFv_Wrapper {
+    flex-direction: column;
+    padding-top: 10.8rem;
+  }
+  .myFv_Container_a {
+    width: 100%;
+    margin: 8rem 0 3rem 0;
+  }
+  .myFv_Container_b img {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .myFv_preTitle {
+    font-size: 2rem;
+  }
+  .myFV_Title {
+    font-size: 3.2rem;
+    width: 28rem;
+  }
+  .myFv_Container_b {
+    width: 100%;
+  }
+  .myFv_Container_b img {
+    width: 100%;
+    object-fit: scale-down;
+  }
+
+}

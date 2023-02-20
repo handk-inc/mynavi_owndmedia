@@ -1,0 +1,91 @@
+/* ----資料---- */
+
+.helpDoc_titleBox {
+  line-height: 3rem;
+  margin-bottom: 3rem;
+}
+.helpDoc_title {
+  display: inline-block;
+  font-size: 2.4rem;
+}
+.myHelpful_doc_Container {
+  margin-bottom: 7rem;
+}
+.helpDoc_Ul {
+  display: grid;
+  align-items: stretch;
+  justify-content: space-between;
+  grid-template-columns: 49% 49%;
+  grid-template-rows: 49% 49%;
+  gap: 2rem;
+}
+.helpDoc_Item article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  height: 100%;
+}
+.helpDoc_Item article img {
+  width: 40%;
+}
+
+.helpDoc_linkBox {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.helpDoc_Item p:first-of-type {
+  line-height: 2.5rem;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  color: #333333;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.helpDoc_write {
+  line-height: 2rem;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: #757575;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.helpDoc_Item article > div {
+  padding: 1rem 1.5rem;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .helpDoc_Ul {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .helpDoc_Item {
+    min-width: 40%;
+  }
+  .helpDoc_Item article {
+    display: inline-block;
+  }
+  .helpDoc_Item article img {
+    width: 100%;
+  }
+  .helpDoc_Item article > div {
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .helpDoc_Item {
+    min-width: 85%;
+  }
+}
