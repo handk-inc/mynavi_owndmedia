@@ -11,13 +11,13 @@
 
 /* ----------------調査記事一覧セクション------------------- */
 .research_article_list_wrapper {
-  margin-top: 8.8rem;
   display: flex;
-  gap: 8rem;
+  gap: 4rem;
   width: fit-content;
 }
 .research_article_list_content {
   display: grid;
+  flex: 3;
   grid-template-columns: auto auto;
   gap: 3.2rem;
   height: fit-content;

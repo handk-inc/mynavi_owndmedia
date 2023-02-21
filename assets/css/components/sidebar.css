@@ -3,6 +3,7 @@
 /*========= サイドバー_共通のCSS ===============*/
 #sidebar {
   width: 40%;
+  flex: 1;
 }
 .sidebar {
   width: 100%;
