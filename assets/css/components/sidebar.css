@@ -1,8 +1,11 @@
 /*========= サイドバーのCSS ===============*/
 
 /*========= サイドバー_共通のCSS ===============*/
-.sidebar {
+#sidebar {
   width: 40%;
+}
+.sidebar {
+  width: 100%;
 }
 .sidebar_layout {
   margin-bottom: 4rem;
