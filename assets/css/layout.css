@@ -14,4 +14,20 @@
   margin-top: 8.8rem;
   display: flex;
   gap: 8rem;
+  width: fit-content;
+}
+.research_article_list_content {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3.2rem;
+  height: fit-content;
+}
+
+@media screen and (max-width: 768px) {
+  .research_article_list_wrapper {
+    flex-direction: column;
+  }
+  .research_article_list_content {
+    gap: 2.4rem;
+  }
 }
