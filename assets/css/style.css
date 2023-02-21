@@ -25,4 +25,7 @@
 
 @import url("./components/research_article_card_primary.css");
 
+@import url("./components/title_line.css");
+@import url("./components/btn.css");
+
 @import url("./components/cta.css");
