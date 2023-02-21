@@ -1,1 +1,45 @@
-コラム
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お役立ち資料一覧</title>
+    <link rel="stylesheet" href="../assets/css/destyle.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <main>
+        <section class="research_article_list_wrapper">
+            <div id="research_article_card_primary"></div>
+            <div id="sidebar"></div>
+        </section>
+
+
+
+        <div id="cta-section"></div>
+    </main>
+
+    <!-- フッターのセクション -->
+    <div id="footer"></div>
+
+    <!-- jQueryのCDNをmain.jsの直前の記述 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../assets/js/index.js"></script>
+
+    <!-- コンポーネント読み込み用の一時的なjs -->
+    <script>
+        $(window).on('load', function () {
+
+            $("#sidebar").load("../assets/components/sidebar.html");
+        });
+    </script>
+
+    <!-- /コンポーネント読み込み用の一時的なjs -->
+</body>
+
+</html>
