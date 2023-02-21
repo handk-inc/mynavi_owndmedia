@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="../assets/css/destyle.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosansjapanese.css">
 </head>
 
 <body>
     <div id="header"></div>
     <main>
         <section class="research_article_list_wrapper">
-            <div id="research_article_card_primary"></div>
+            <div id="research_article_card_primary">ああ</div>
             <div id="sidebar"></div>
         </section>
 
@@ -36,6 +37,7 @@
         $(window).on('load', function () {
 
             $("#sidebar").load("../assets/components/sidebar.html");
+            $("#research_article_card_primary").load("../assets/components/research_article_card_primary.html");
         });
     </script>
 

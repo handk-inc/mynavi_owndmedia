@@ -5,5 +5,4 @@ $(window).on('load', function() {
 
   $("#footer").load("/components/footer.html");
   $("#cta-section").load("/components/cta.html");
-  $("#sidebar").load("/components/sidebar.html");
 });

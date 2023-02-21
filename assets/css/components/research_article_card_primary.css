@@ -1,0 +1,13 @@
+/* ----------------調査記事一覧セクション------------------- */
+.research_article_card_primary {
+  width: 100%;
+}
+.research_article_card_primary_title {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.research_article_card_primary_text {
+  font-size: 1.6rem;
+  color: #757575;
+}
