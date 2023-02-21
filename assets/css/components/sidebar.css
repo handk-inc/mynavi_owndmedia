@@ -88,7 +88,7 @@
   border-radius: 4px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1120px) {
   #sidebar {
     width: 100%;
   }
@@ -97,13 +97,15 @@
     margin: 0 auto;
   }
 
-  .sidebar_recommend_article_img {
-    width: 20%;
-  }
-
   .sidebar_banner_wrapper {
     display: flex;
     gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar_recommend_article_img {
+    width: 20%;
   }
 }
 
