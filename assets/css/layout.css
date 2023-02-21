@@ -28,6 +28,7 @@
     flex-direction: column;
   }
   .research_article_list_content {
+    grid-template-columns: auto;
     gap: 2.4rem;
   }
 }
