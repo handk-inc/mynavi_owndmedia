@@ -15,56 +15,28 @@
 <body>
     <div id="header"></div>
     <main>
-        <section class="research_article_list_wrapper">
-            <div class="research_article_list_content">
-                <div id="research_article_card_primary"></div>
-                <div class="research_article_card_primary">
-                    <img src="../img/image 21.png" class="research_article_card_primary_img">
-                    <div class="research_article_card_primary_detail">
-                        <p class="research_article_card_primary_date">2022.12.12</p>
-                        <h3 class="research_article_card_primary_title">オフィスで感じるストレスの要因や業務に及ぼす影響、改善方法を紹介</h3>
-                        <p class="research_article_card_primary_text">
-                            「推し消費」についてのインサイトをお届け！マイナビニュースでは、抜け出せないほど何かに夢中になっている状態＝「沼落ち」しているという意味でオタク女子のことを『沼女子』と呼んでいます。消費の起点が「推し」になっている彼女達にアンケート調査を実施し、その消費傾向を読み解きます。
-                        </p>
-                        <ul class="sidebar_tag_wrapper">
-                            <li><a class="sidebar_tag" href="#">共働き夫婦</a></li>
-                            <li><a class="sidebar_tag" href="#">共働き夫婦</a></li>
-                        </ul>
-                    </div>
+        <div class="inner">
+            <!-- コンポーネント -->
+            <div id="comp_title1"></div>
+            <section class="research_article_list_wrapper">
+                <div class="research_article_list_content">
+                    <!-- コンポーネント -->
+                    <div id="research_article_card_primary_1"></div>
+                    <div id="research_article_card_primary_2"></div>
+                    <div id="research_article_card_primary_3"></div>
+                    <div id="research_article_card_primary_4"></div>
+                    <div id="research_article_card_primary_5"></div>
+                    <div id="research_article_card_primary_6"></div>
+                    <div id="research_article_card_primary_7"></div>
+                    <div id="research_article_card_primary_8"></div>
+                    <div id="research_article_card_primary_9"></div>
+                    <div id="research_article_card_primary_10"></div>
+                    <div id="research_article_card_primary_11"></div>
+                    <div id="research_article_card_primary_12"></div>
                 </div>
-                <div class="research_article_card_primary">
-                    <img src="../img/image 21.png" class="research_article_card_primary_img">
-                    <div class="research_article_card_primary_detail">
-                        <p class="research_article_card_primary_date">2022.12.12</p>
-                        <h3 class="research_article_card_primary_title">オフィスで感じるストレスの要因や業務に及ぼす影響、改善方法を紹介</h3>
-                        <p class="research_article_card_primary_text">
-                            「推し消費」についてのインサイトをお届け！マイナビニュースでは、抜け出せないほど何かに夢中になっている状態＝「沼落ち」しているという意味でオタク女子のことを『沼女子』と呼んでいます。消費の起点が「推し」になっている彼女達にアンケート調査を実施し、その消費傾向を読み解きます。
-                        </p>
-                        <ul class="sidebar_tag_wrapper">
-                            <li><a class="sidebar_tag" href="#">共働き夫婦</a></li>
-                            <li><a class="sidebar_tag" href="#">共働き夫婦</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="research_article_card_primary">
-                    <img src="../img/image 21.png" class="research_article_card_primary_img">
-                    <div class="research_article_card_primary_detail">
-                        <p class="research_article_card_primary_date">2022.12.12</p>
-                        <h3 class="research_article_card_primary_title">オフィスで感じるストレスの要因や業務に及ぼす影響、改善方法を紹介</h3>
-                        <p class="research_article_card_primary_text">
-                            「推し消費」についてのインサイトをお届け！マイナビニュースでは、抜け出せないほど何かに夢中になっている状態＝「沼落ち」しているという意味でオタク女子のことを『沼女子』と呼んでいます。消費の起点が「推し」になっている彼女達にアンケート調査を実施し、その消費傾向を読み解きます。
-                        </p>
-                        <ul class="sidebar_tag_wrapper">
-                            <li><a class="sidebar_tag" href="#">共働き夫婦</a></li>
-                            <li><a class="sidebar_tag" href="#">共働き夫婦</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div id="sidebar"></div>
-        </section>
-
-
+                <div id="sidebar"></div>
+            </section>
+        </div>
 
         <div id="cta-section"></div>
     </main>
@@ -81,7 +53,32 @@
         $(window).on('load', function () {
 
             $("#sidebar").load("../assets/components/sidebar.html");
-            $("#research_article_card_primary").load("../assets/components/research_article_card_primary.html");
+            $("#research_article_card_primary_1").load("../assets/components/research_article_card_primary.html");
+
+            $("#research_article_card_primary_2").load("../assets/components/research_article_card_primary.html");
+
+            $("#research_article_card_primary_3").load("../assets/components/research_article_card_primary.html");
+
+            $("#research_article_card_primary_4").load("../assets/components/research_article_card_primary.html");
+
+            $("#research_article_card_primary_5").load("../assets/components/research_article_card_primary.html");
+
+            $("#research_article_card_primary_6").load("../assets/components/research_article_card_primary.html");
+
+            $("#research_article_card_primary_7").load("../assets/components/research_article_card_primary.html");
+
+            $("#research_article_card_primary_8").load("../assets/components/research_article_card_primary.html");
+
+            $("#research_article_card_primary_9").load("../assets/components/research_article_card_primary.html");
+
+            $("#research_article_card_primary_10").load("../assets/components/research_article_card_primary.html");
+
+            $("#research_article_card_primary_11").load("../assets/components/research_article_card_primary.html");
+
+            $("#research_article_card_primary_12").load("../assets/components/research_article_card_primary.html");
+
+
+            $("#comp_title1").load("../assets/components/myMedia_titleBox_h2.html .myMedia_titleBox_h2.h1.research_article");
         });
     </script>
 
