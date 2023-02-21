@@ -2,10 +2,19 @@
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  font-size: 1.2rem;
+  color: #9e9e9e;
+  margin: 3.2rem 0 8rem 0;
 }
 
 .breadcrumb li:not(:last-of-type)::after {
   content: "›";
   margin: 0 0.6em; /* 記号の左右の余白 */
   color: #9e9e9e; /* 記号の色 */
+}
+
+@media screen and (max-width: 768px) {
+  .breadcrumb {
+    margin: 3.2rem 0 4rem 0;
+  }
 }
