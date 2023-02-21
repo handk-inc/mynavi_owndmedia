@@ -18,4 +18,7 @@
 @import url('./components/myCase.css');
 @import url('./components/myMedia_Section.css');
 
+@import url('./components/media_anker.css');
+@import url('./components/media_card_primary.css');
+
 @import url('./components/cta.css');
