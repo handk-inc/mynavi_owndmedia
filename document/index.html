@@ -14,10 +14,32 @@
 <body>
   <div id="header"></div>
   <main>
-
-
-
-
+    <div class="inner">
+      <div id="breadcrumb" class=""></div>
+      <!-- コンポーネント -->
+      <div id="comp_title1"></div>
+      <!-- コンポーネント -->
+      <section class="research_article_list_wrapper">
+        <div class="research_article_list_left">
+          <div class="research_article_list_content">
+            <!-- コンポーネント -->
+            <div class="doc_card_primary"></div>
+            <div class="doc_card_primary"></div>
+            <div class="doc_card_primary"></div>
+            <div class="doc_card_primary"></div>
+            <div class="doc_card_primary"></div>
+            <div class="doc_card_primary"></div>
+            <div class="doc_card_primary"></div>
+            <div class="doc_card_primary"></div>
+            <div class="doc_card_primary"></div>
+            <div class="doc_card_primary"></div>
+          </div>
+          <div id="pagination"></div>
+        </div>
+        <div id="sidebar"></div>
+      </section>
+    </div>
+    <!-- コンポーネント -->
     <div id="cta-section"></div>
   </main>
 
@@ -30,6 +52,20 @@
 
   <!-- コンポーネント読み込み用の一時的なjs -->
   <script>
+
+    $(window).on('load', function () {
+      $("#sidebar").load("../assets/components/sidebar.html");
+
+      $(".doc_card_primary").load("../assets/components/doc_card_primary.html");
+
+      $("#comp_title1").load("../assets/components/myMedia_titleBox_h2.html .myMedia_titleBox_h2.h1.doc");
+
+      $("#comp_title_line").load("../assets/components/title_line.html .title_line.feature");
+
+      $("#breadcrumb").load("../assets/components/breadcrumb.html");
+
+      $("#pagination").load("../assets/components/pagination.html");
+    });
   </script>
   <!-- /コンポーネント読み込み用の一時的なjs -->
 </body>

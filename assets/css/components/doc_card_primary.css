@@ -1,0 +1,30 @@
+/* ----------------資料一覧セクション------------------- */
+.doc_card_primary {
+  width: 100%;
+  border: #d1d1d1 1px solid;
+  border-radius: 4px;
+}
+.doc_card_primary_img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+}
+.doc_card_primary_detail {
+  display: flex;
+  flex-direction: column;
+  padding: 1.6rem;
+  gap: 1.6rem;
+}
+.doc_card_primary_date {
+  font-size: 1.2rem;
+  color: #757575;
+}
+.doc_card_primary_title {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.doc_card_primary_text {
+  font-size: 1.6rem;
+  color: #757575;
+}
