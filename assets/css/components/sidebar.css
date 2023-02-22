@@ -1,0 +1,120 @@
+/*========= サイドバーのCSS ===============*/
+
+/*========= サイドバー_共通のCSS ===============*/
+#sidebar {
+  width: 40%;
+  flex: 1;
+}
+.sidebar {
+  width: 100%;
+}
+.sidebar_layout {
+  margin-bottom: 4rem;
+}
+.sidebar_title {
+  width: 100%;
+}
+.sidebar_title_h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+/*========= ヨック見られているタグのCSS ===============*/
+.sidebar_tag_wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.8rem;
+
+  gap: 1rem;
+}
+.sidebar_tag {
+  width: fit-content;
+  color: #00374d;
+  border: 1px solid #00374d;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  display: block;
+  line-height: 1.7;
+  text-align: center;
+  padding: 0.1rem 0.5rem;
+}
+
+.tag_more {
+  font-size: 1.4rem;
+  color: #757575;
+  margin-top: 1.6rem;
+}
+
+/*========= タグのCSS ===============*/
+.sidebar_tag_category {
+  font-size: 1.6rem;
+  margin: 1.6rem 0;
+}
+
+/*========= おすすめの記事のCSS ===============*/
+.sidebar_recommend_article_item {
+  display: flex;
+  margin-top: 1.6rem;
+}
+.sidebar_recommend_article_img {
+  width: 30%;
+  object-fit: contain;
+  object-position: top;
+  margin-right: 1rem;
+}
+.sidebar_recommend_article_text {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+/*========= お役立ち情報のCSS ===============*/
+.sidebar_useful_info_item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.6rem 0;
+}
+.sidebar_useful_info_item_text {
+  font-size: 1.4rem;
+}
+
+/*========= バナーのCSS ===============*/
+
+.sidebar_banner_item_img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 1120px) {
+  #sidebar {
+    width: 100%;
+  }
+  .sidebar {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .sidebar_banner_wrapper {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar_recommend_article_img {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sidebar_recommend_article_img {
+    width: 30%;
+  }
+  .sidebar_banner_wrapper {
+    flex-direction: column;
+  }
+}
