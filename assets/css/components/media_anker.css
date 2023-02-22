@@ -1,0 +1,55 @@
+.media_anker{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 2.4rem;
+}
+
+.media_anker li {
+  border: solid 1px #D1D1D1;
+  border-radius: 4px;
+  padding: 1.6rem 5rem 1.6rem 2.4rem;
+  position: relative;
+}
+
+.media_anker li a::after{
+  content: url('../../img/under_arrow.svg');
+  position: absolute;
+  color: #9E9E9E;
+  font-weight: bold;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  transition: all 0.3s;
+}
+
+.media_anker li:hover a::after{
+  transform: translateY(-40%);
+}
+
+.media_anker li a img{
+  width: 100%;
+} 
+
+@media(max-width: 1320px){
+  .media_anker{
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+  }
+}
+@media(max-width: 1024px){
+  .media_anker{ 
+    gap: 1.6rem;
+  }
+  .media_anker li {
+    padding: 1rem 3rem 1rem 1.6rem;
+  }
+}
+@media(max-width: 480px){
+  .media_anker{
+    grid-template-columns: auto auto;
+    gap: 1.6rem;
+  }
+  .media_anker li {
+    padding: 1rem 3rem 1rem 1.6rem;
+  }
+}

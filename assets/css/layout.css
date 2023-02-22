@@ -9,6 +9,45 @@
   margin-bottom: 4rem;
 }
 
+.p-base{
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0.05em;
+  color: #333333;
+}
+
+.mt-10{
+  margin-top: 1rem;
+}
+.mt-20{
+  margin-top: 2rem;
+}
+.mt-30{
+  margin-top: 3rem;
+}
+.mt-40{
+  margin-top: 4rem;
+}
+.mt-50{
+  margin-top: 5rem;
+}
+.mt-60{
+  margin-top: 6rem;
+}
+.mt-70{
+  margin-top: 7rem;
+}
+.mt-80{
+  margin-top: 8rem;
+}
+.mt-90{
+  margin-top: 9rem;
+}
+.mt-100{
+  margin-top: 10rem;
+}
+
 /* ----------------調査記事一覧セクション------------------- */
 .research_article_list_wrapper {
   display: flex;

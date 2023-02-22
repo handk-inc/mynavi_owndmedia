@@ -19,13 +19,12 @@
 @import url("./components/myCase.css");
 @import url("./components/myMedia_Section.css");
 
+@import url('./components/media_anker.css');
+@import url('./components/media_card_primary.css');
 @import url("./components/sidebar.css");
 @import url("./components/breadcrumb.css");
 @import url("./components/pagination.css");
-
 @import url("./components/research_article_card_primary.css");
-
 @import url("./components/title_line.css");
 @import url("./components/btn.css");
-
 @import url("./components/cta.css");
