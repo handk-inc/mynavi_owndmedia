@@ -1,6 +1,6 @@
 /* -------------FVのCSS--------------- */
 .myFv_Section {
-  background-image: url(/IMG/アートボード\ 3@4x\ 1.png);
+  background-image: url(/assets/img/アートボード\ 3@4x\ 1.png);
   min-height: 100vh;
   object-fit: cover;
 }
@@ -21,7 +21,7 @@
 .myFv_preTitle {
   font-size: 2.4rem;
   line-height: 4rem;
-  font-weight: 100;
+  font-weight: 500;
   color: #00374d;
 }
 .myFV_Title {
@@ -29,6 +29,7 @@
   color: #00374d;
   padding: 2rem 0;
   line-height: 1.6;
+  font-weight: 500;
 }
 .myFv_text {
   font-size: 1.6rem;
@@ -67,7 +68,6 @@
 }
 
 @media screen and (max-width: 768px) {
-
   .myFv_Wrapper {
     flex-direction: column;
     padding-top: 10.8rem;
@@ -82,7 +82,6 @@
 }
 
 @media screen and (max-width: 480px) {
-
   .myFv_preTitle {
     font-size: 2rem;
   }
@@ -97,5 +96,4 @@
     width: 100%;
     object-fit: scale-down;
   }
-
 }
