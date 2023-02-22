@@ -63,6 +63,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .myMedia_titleBox_h3 {
+    margin-bottom: 2rem;
+  }
   .myMedia_titleBox_h3_btn {
     width: 99%;
     display: flex;
