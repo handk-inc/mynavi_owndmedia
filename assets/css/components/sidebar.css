@@ -1,8 +1,12 @@
 /*========= サイドバーのCSS ===============*/
 
 /*========= サイドバー_共通のCSS ===============*/
-.sidebar {
+#sidebar {
   width: 40%;
+  flex: 1;
+}
+.sidebar {
+  width: 100%;
 }
 .sidebar_layout {
   margin-bottom: 4rem;
@@ -85,14 +89,13 @@
   border-radius: 4px;
 }
 
-@media screen and (max-width: 768px) {
-  .sidebar {
-    width: 80%;
-    margin: 0 auto;
+@media screen and (max-width: 1120px) {
+  #sidebar {
+    width: 100%;
   }
-
-  .sidebar_recommend_article_img {
-    width: 20%;
+  .sidebar {
+    width: 100%;
+    margin: 0 auto;
   }
 
   .sidebar_banner_wrapper {
@@ -101,10 +104,13 @@
   }
 }
 
-@media screen and (max-width: 480px) {
-  .sidebar {
-    width: 100%;
+@media screen and (max-width: 768px) {
+  .sidebar_recommend_article_img {
+    width: 20%;
   }
+}
+
+@media screen and (max-width: 480px) {
   .sidebar_recommend_article_img {
     width: 30%;
   }
