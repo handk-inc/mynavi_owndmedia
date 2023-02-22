@@ -49,8 +49,8 @@
   width: 48%;
   flex-grow: 1;
   justify-content: space-around;
-  grid-template-columns: 49% 49%;
-  grid-template-rows: 49% 49%;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
 }
 .helpMov_item {
   border: 1px solid #d1d1d1;
