@@ -20,22 +20,23 @@
 
             <!-- コンポーネント -->
             <div id="comp_title1"></div>
+            
             <section class="research_article_list_wrapper">
                 <div class="research_article_list_left">
                     <div class="research_article_list_content">
                         <!-- コンポーネント -->
-                        <div id="research_article_card_primary_1"></div>
-                        <div id="research_article_card_primary_2"></div>
-                        <div id="research_article_card_primary_3"></div>
-                        <div id="research_article_card_primary_4"></div>
-                        <div id="research_article_card_primary_5"></div>
-                        <div id="research_article_card_primary_6"></div>
-                        <div id="research_article_card_primary_7"></div>
-                        <div id="research_article_card_primary_8"></div>
-                        <div id="research_article_card_primary_9"></div>
-                        <div id="research_article_card_primary_10"></div>
-                        <div id="research_article_card_primary_11"></div>
-                        <div id="research_article_card_primary_12"></div>
+                        <div class="research_article_card_primary"></div>
+                        <div class="research_article_card_primary"></div>
+                        <div class="research_article_card_primary"></div>
+                        <div class="research_article_card_primary"></div>
+                        <div class="research_article_card_primary"></div>
+                        <div class="research_article_card_primary"></div>
+                        <div class="research_article_card_primary"></div>
+                        <div class="research_article_card_primary"></div>
+                        <div class="research_article_card_primary"></div>
+                        <div class="research_article_card_primary"></div>
+                        <div class="research_article_card_primary"></div>
+                        <div class="research_article_card_primary"></div>
                     </div>
                     <div id="pagination"></div>
                 </div>
@@ -58,31 +59,7 @@
         $(window).on('load', function () {
 
             $("#sidebar").load("../assets/components/sidebar.html");
-            $("#research_article_card_primary_1").load("../assets/components/research_article_card_primary.html");
-
-            $("#research_article_card_primary_2").load("../assets/components/research_article_card_primary.html");
-
-            $("#research_article_card_primary_3").load("../assets/components/research_article_card_primary.html");
-
-            $("#research_article_card_primary_4").load("../assets/components/research_article_card_primary.html");
-
-            $("#research_article_card_primary_5").load("../assets/components/research_article_card_primary.html");
-
-            $("#research_article_card_primary_6").load("../assets/components/research_article_card_primary.html");
-
-            $("#research_article_card_primary_7").load("../assets/components/research_article_card_primary.html");
-
-            $("#research_article_card_primary_8").load("../assets/components/research_article_card_primary.html");
-
-            $("#research_article_card_primary_9").load("../assets/components/research_article_card_primary.html");
-
-            $("#research_article_card_primary_10").load("../assets/components/research_article_card_primary.html");
-
-            $("#research_article_card_primary_11").load("../assets/components/research_article_card_primary.html");
-
-            $("#research_article_card_primary_12").load("../assets/components/research_article_card_primary.html");
-
-
+            $(".research_article_card_primary").load("../assets/components/research_article_card_primary.html");
             $("#comp_title1").load("../assets/components/myMedia_titleBox_h2.html .myMedia_titleBox_h2.h1.research_article");
 
             $("#breadcrumb").load("../assets/components/breadcrumb.html");
