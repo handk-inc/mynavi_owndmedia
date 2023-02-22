@@ -81,31 +81,20 @@
   position: relative;
   color: #00374d;
 }
-.call_img::before {
-  display: inline-block;
-  content: "";
-  background-image: url(/img/Vector.png);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  left: -4.4rem;
-  top: 7px;
+.myCta_phone {
+  display: flex;
+
+  align-items: center;
 }
-.button-01 {
-  display: block;
-  width: 100%;
-  padding: 0rem 4rem 0rem 8rem;
-  background-position: left 16px center;
-  background-repeat: no-repeat;
-  background-size: 4rem;
-  overflow-wrap: break-word;
+
+.myCta_phone_number {
   font-size: 3rem;
   font-weight: 500;
   line-height: 1.8;
   margin: 0;
   color: #00374d;
   letter-spacing: 6px;
+  padding-left: 2rem;
 }
 .fav {
   background-image: url("/img/ic_round-phone.svg");

@@ -23,7 +23,9 @@
             <h1 class="myFV_Title">マーケティング・広報ラボ</h1>
           </div>
           <p class="myFv_text">
-            マイナビメディアのマーケターがお届けするマーケティング・広報のお役立ちサイト。今すぐ使えるインサイトデータからセミナー情報までマーケター・広報のための最新情報をお知らせしています。
+            マイナビメディアのマーケターがお届けするマーケティング・広報のお役立ちサイト。
+            今すぐ使えるインサイトデータからお得なセールス情報まで
+            マーケター・広報のための最新情報をお知らせしています。
           </p>
           <ul class="myFv_ImgUl">
             <li class="myFv_ImgItem"><img src="./assets/IMG/Group (1).png" alt="ロゴ画像" class="myFv_Imgs"></li>
@@ -42,7 +44,7 @@
               formId: "1e2d8052-99c4-4c6d-b88b-f8e0f1ee28e8"
             });
           </script> -->
-          <img src="./assets/IMG/フォーム.png">
+          <img src="./assets/img/フォーム.png">
         </div>
       </div>
     </section>
@@ -81,7 +83,7 @@
     <!-- --------------ピックアップセクション------------- -->
     <section class="myPic_Section">
       <div class="myPic_Container inner">
-        <h2 class="myPic_title">Picu up</h2>
+        <h2 class="myPic_title">Pick up</h2>
         <div class="myPic_br"></div>
         <ul class="myPic_Ul">
           <li class="myPic_Item"><img src="./assets/IMG/image 15.png" alt="ピックアップ画像" class="myPic_img"></li>
@@ -256,7 +258,7 @@
       <div class="myMedia_Container inner">
         <div class="myMedia_titleBox_h2">
           <p>Media</p>
-          <h2>マイナビメディアのご紹介</h2> <a href="#">各メディアについて詳しく見る</a>
+          <h2 class="myMedia_titleBox_h2__title">マイナビメディアのご紹介</h2> <a href="#">各メディアについて詳しく見る</a>
         </div>
 
         <div class="myMedia_ContentBox">
@@ -346,7 +348,7 @@
         <div class="myHelpful_mov">
           <div class="myMedia_titleBox_h2">
             <p>Feature</p>
-            <h2>特集・プロジェクト資料</h2> <a href="#">他の資料も見る</a>
+            <h class="myMedia_titleBox_h2__title">特集・プロジェクト資料</h2> <a href="#">他の資料も見る</a>
           </div>
           <div class="helpMov_ContentBox">
             <div class="helpMov_Content_a"> <img src="./assets/IMG/image 24.png" alt="動画画像">
@@ -411,7 +413,7 @@
         <div class="myCase_Container">
           <div class="myMedia_titleBox_h2">
             <p>Case</p>
-            <h2>広告事例</h2> <a href="#">他の広告事例も見る</a>
+            <h2 class="myMedia_titleBox_h2__title">広告事例</h2> <a href="#">他の広告事例も見る</a>
           </div>
           <div class="myCase_Content">
             <ul>
@@ -463,13 +465,13 @@
 
   <!-- コンポーネント読み込み用の一時的なjs -->
   <script>
-    $(window).on('load', function() {
+    $(window).on('load', function () {
       $(".comp_title2").load("./assets/components/myMedia_titleBox_h2.html .myMedia_titleBox_h2.help");
     });
-    $(window).on('load', function() {
+    $(window).on('load', function () {
       $(".comp_title3").load("./assets/components/myMedia_titleBox_h3.html .myMedia_titleBox_h3.article");
     });
-    $(window).on('load', function() {
+    $(window).on('load', function () {
       $(".helpBlog_item").load("./assets/components/helpBlog_item.html");
     });
   </script>
