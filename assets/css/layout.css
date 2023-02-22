@@ -48,16 +48,16 @@
   margin-top: 10rem;
 }
 
-/* ----------------調査記事一覧セクション------------------- */
-.research_article_list_wrapper {
+/* ----------------お役立ち情報（記事,動画,資料）のレイアウト------------------- */
+.useful_list_wrapper {
   display: flex;
   gap: 6rem;
   width: fit-content;
 }
-.research_article_list_left {
+.useful_list_left {
   flex: 3;
 }
-.research_article_list_content {
+.useful_list_content {
   display: grid;
   grid-template-columns: auto auto;
   gap: 3.2rem;
@@ -65,16 +65,16 @@
 }
 
 @media screen and (max-width: 1120px) {
-  .research_article_list_wrapper {
+  .useful_list_wrapper {
     flex-direction: column;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .research_article_list_wrapper {
+  .useful_list_wrapper {
     flex-direction: column;
   }
-  .research_article_list_content {
+  .useful_list_content {
     grid-template-columns: auto;
     gap: 2.4rem;
   }
