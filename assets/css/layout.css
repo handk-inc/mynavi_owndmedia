@@ -47,3 +47,74 @@
 .mt-100{
   margin-top: 10rem;
 }
+
+/* ----------------調査記事一覧セクション------------------- */
+.research_article_list_wrapper {
+  display: flex;
+  gap: 4rem;
+  width: fit-content;
+}
+.research_article_list_left {
+  flex: 3;
+}
+.research_article_list_content {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3.2rem;
+  height: fit-content;
+}
+
+@media screen and (max-width: 1120px) {
+  .research_article_list_wrapper {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .research_article_list_wrapper {
+    flex-direction: column;
+  }
+  .research_article_list_content {
+    grid-template-columns: auto;
+    gap: 2.4rem;
+  }
+}
+
+/* ----------------メディア一覧------------------- */
+.bg-gray {
+  background-color: #fafafa;
+  padding: 4rem 0 6rem 0;
+}
+.media_feature_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.media_feature_text {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.media_feature_imgs {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 2.4rem;
+}
+
+.media_feature_img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+}
+
+@media screen and (max-width: 768px) {
+  .media_feature_imgs {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1.6rem;
+  }
+}

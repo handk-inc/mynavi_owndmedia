@@ -1,0 +1,30 @@
+/* ----------------調査記事一覧セクション------------------- */
+.research_article_card_primary {
+  width: 100%;
+  border: #d1d1d1 1px solid;
+  border-radius: 4px;
+}
+.research_article_card_primary_img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 35/16;
+}
+.research_article_card_primary_detail {
+  display: flex;
+  flex-direction: column;
+  padding: 1.6rem;
+  gap: 1.6rem;
+}
+.research_article_card_primary_date {
+  font-size: 1.2rem;
+  color: #757575;
+}
+.research_article_card_primary_title {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.research_article_card_primary_text {
+  font-size: 1.6rem;
+  color: #757575;
+}
