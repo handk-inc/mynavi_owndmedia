@@ -40,6 +40,7 @@
   line-height: 1.7;
   text-align: center;
   padding: 0.1rem 0.5rem;
+  position: relative;
 }
 
 .tag_more {

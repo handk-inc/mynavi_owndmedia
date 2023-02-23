@@ -17,6 +17,7 @@
   width: 48%;
   border: 1px solid #d1d1d1;
   border-radius: 4px;
+  position: relative;
 }
 .helpMov_Content_a img {
   height: auto;
@@ -25,6 +26,7 @@
 .helpMov_Content_a_linkBox {
   display: flex;
   margin-bottom: 0.5rem;
+  position: relative;
 }
 .helpMov_Content_a > div {
   margin: 1.5rem 2rem;
@@ -52,6 +54,7 @@
   grid-template-rows: auto auto;
 }
 .helpMov_item {
+  position: relative;
   border: 1px solid #d1d1d1;
   border-radius: 4px;
 }
@@ -63,6 +66,7 @@
 }
 .helpMov_linkBox {
   display: flex;
+  position: relative;
 }
 
 .helpMov_item article h4 {
@@ -72,6 +76,14 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+}
+
+.card_link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 @media screen and (max-width: 768px) {
