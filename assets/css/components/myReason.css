@@ -46,7 +46,7 @@
   background-repeat: no-repeat;
   background-size: 2.5rem;
   overflow-wrap: break-word;
-  background-image: url("/img/bi_check2-circle.svg");
+  background-image: url("/assets/img/check-circle.svg");
   background-position-y: 2px;
 }
 @media screen and (max-width: 768px) {
