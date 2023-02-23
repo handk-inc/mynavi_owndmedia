@@ -1,0 +1,124 @@
+.form_summary__wrapper{
+  width: 100%;
+  padding-bottom: 4rem;
+} 
+.form_summary__wrapper > div{
+  display: flex;
+  gap: 7%;
+}
+
+.form_summary__wrapper #form{
+  width: 50%;
+}
+
+.form_summary__wrapper h2{
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 200%;
+  letter-spacing: 0.05em;
+  color: #333333;
+  margin-bottom: 4rem;
+} 
+
+.form_summary__wrapper.form_movie{
+  width: 100%;
+}
+
+.form_summary__box{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.form_summary__box--img{
+  margin-bottom: 4rem;
+}
+
+/*movie layout*/
+.form_summary__wrapper.form_movie .form_summary__box{
+  flex-direction: row;
+  gap: 7%;
+  width: 100%;
+}
+
+.form_summary__wrapper.form_movie  .form_summary__box--img{
+  width: 100%;
+}
+
+.form_summary__wrapper.form_movie  .form_summary__box--content{
+  width: 100%;
+}
+
+
+.form_summary__wrapper.form_movie .form_summary__box--img{
+  width: 50%;
+}
+
+.form_summary__box--img img{
+  width: 100%;
+}
+
+.form_summary__wrapper.form_movie  .form_summary__box--content{
+  width: 50%;
+}
+
+.form_summary__box--content p{
+  margin-bottom: 4rem;
+}
+
+
+.form_summary__box--content__borderContent{
+  padding: 3.2rem;
+  border: solid #B6B6B6 1px;
+}
+.form_summary__box--content__borderContent:not(:nth-child(1)){
+  margin-bottom: 3rem;
+}
+.form_summary__box--content__borderContent h3{
+  letter-spacing: 0.04em;
+  color: #00374D;
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.form_summary__box--content__borderContent ul{
+  margin-top: 1.6rem;
+}
+
+.form_summary__box--content__borderContent ul li{
+  margin-bottom: 0.8rem;
+}
+.form_summary__box--content__borderContent ul li::before{
+  content: "・";
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00374D;
+}
+
+@media(max-width: 1024px){
+  .form_summary__wrapper{
+    width: 100%;
+  } 
+  .form_summary__wrapper > div{
+    display: flex;
+    flex-direction: column;
+    gap: 7%;
+  }
+  .form_summary__box{
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .form_summary__wrapper #form{
+    width: 100%;
+  }
+  .form_summary__wrapper.form_movie .form_summary__box{
+    flex-direction: column;
+    gap: 7%;
+  }
+  .form_summary__box--img{
+    width: 100% !important;
+  }
+  .form_summary__box--content{
+    width: 100% !important;
+  }
+}

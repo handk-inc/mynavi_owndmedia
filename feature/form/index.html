@@ -1,1 +1,67 @@
-特集記事DLフォーム
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>特集企画フォーム</title>
+    <link rel="stylesheet" href="../../assets/css/destyle.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosansjapanese.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <main>
+        <div class="inner">
+            <div id="breadcrumb" class=""></div>
+
+            <!-- コンポーネント -->
+            <div id="comp_title1"></div>
+
+            <div id="form" style="padding-bottom: 4rem;">
+              <img src="../../assets/img/フォーム.png">
+            </div>
+
+
+
+            <div class="recommed_container">
+                <div class="recommend_wrapper">
+                    <div id="comp_title3"></div>
+                    <div class="recommend_items">
+                        <div class="doc_card_secondary"></div>
+                        <div class="doc_card_secondary"></div>
+                        <div class="doc_card_secondary"></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="cta-section"></div>
+    </main>
+
+    <!-- フッターのセクション -->
+    <div id="footer"></div>
+
+    <!-- jQueryのCDNをmain.jsの直前の記述 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../../assets/js/index.js"></script>
+
+    <!-- コンポーネント読み込み用の一時的なjs -->
+    <script>
+        $(window).on('load', function () {
+            $("#breadcrumb").load("../../assets/components/breadcrumb.html");
+            $("#comp_title1").load("../../assets/components/myMedia_titleBox_h2.html .myMedia_titleBox_h2.h1.feature_form");
+            $("#comp_title3").load("../../assets/components/myMedia_titleBox_h3.html .myMedia_titleBox_h3.recommend_doc");
+            $(".doc_card_secondary").load("../../assets/components/doc_card_secondary.html");
+
+        });
+    </script>
+
+    <!-- /コンポーネント読み込み用の一時的なjs -->
+</body>
+
+</html>
