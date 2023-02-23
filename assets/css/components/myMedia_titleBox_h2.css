@@ -78,6 +78,9 @@
   }
 }
 @media screen and (max-width: 480px) {
+  .myMedia_titleBox_h2__title {
+    font-size: 2.4rem;
+  }
   .myMedia_titleBox_h2_btn {
     margin: 1.6rem 0 0 0;
   }

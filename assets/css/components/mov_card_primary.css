@@ -1,7 +1,7 @@
 /* ----------------動画カード------------------- */
 .mov_card_primary {
   width: 100%;
-  border: #d1d1d1 1px solid;
+  border: #d1d1d1 0.08rem solid;
   border-radius: 4px;
 }
 .mov_card_primary_img {
@@ -27,4 +27,8 @@
 .mov_card_primary_text {
   font-size: 1.6rem;
   color: #757575;
+}
+
+.mov_card_primary_detail > .sidebar_tag_wrapper {
+  margin-top: 0;
 }
