@@ -32,11 +32,10 @@
 }
 .helpMov_Content_a h4 {
   font-size: 1.6rem;
-  line-height: 3.5rem;
+  font-weight: 500;
 }
 .helpMov_Content_a p {
-  line-height: 2.5rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   letter-spacing: 1px;
   color: #757575;
   margin-top: 1rem;
@@ -49,8 +48,8 @@
   width: 48%;
   flex-grow: 1;
   justify-content: space-around;
-  grid-template-columns: 49% 49%;
-  grid-template-rows: 49% 49%;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
 }
 .helpMov_item {
   border: 1px solid #d1d1d1;
@@ -68,7 +67,7 @@
 
 .helpMov_item article h4 {
   font-size: 1.4rem;
-  line-height: 2.5rem;
+  font-weight: 500;
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;

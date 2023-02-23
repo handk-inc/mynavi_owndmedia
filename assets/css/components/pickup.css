@@ -8,6 +8,7 @@
   margin-bottom: 4rem;
   color: #333333;
   letter-spacing: 0.2rem;
+  font-weight: 500;
 }
 .myPic_br {
   position: relative;
@@ -33,21 +34,17 @@
 }
 
 @media screen and (max-width: 768px) {
-
-
   .myPic_Ul {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: auto auto;
     gap: 2rem;
   }
   .myPic_Item {
     width: 100%;
   }
-
 }
 
 @media screen and (max-width: 480px) {
-
   .myPic_Ul {
     display: flex;
     flex-direction: column;
