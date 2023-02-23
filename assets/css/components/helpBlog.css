@@ -27,9 +27,11 @@
 .helpBlog_item {
   border: 1px solid #d1d1d1;
   border-radius: 4px;
+  position: relative;
 }
 .helpBlog_linkBox {
   display: flex;
+  position: relative;
 }
 .helpBlog_img {
   width: 100%;
@@ -46,6 +48,14 @@
 .helpBlog_item h3 {
   font-size: 1.4rem;
   font-weight: 500;
+}
+
+.card_link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 @media screen and (max-width: 1320px) {

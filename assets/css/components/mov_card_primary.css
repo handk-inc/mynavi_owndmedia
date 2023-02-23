@@ -3,6 +3,7 @@
   width: 100%;
   border: #d1d1d1 0.08rem solid;
   border-radius: 4px;
+  position: relative;
 }
 .mov_card_primary_img {
   width: 100%;
@@ -31,4 +32,12 @@
 
 .mov_card_primary_detail > .sidebar_tag_wrapper {
   margin-top: 0;
+}
+
+.card_link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
