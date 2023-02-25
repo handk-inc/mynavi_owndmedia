@@ -55,7 +55,6 @@
   width: fit-content;
 }
 
-
 .useful_list_left {
   flex: 3;
 }
@@ -161,5 +160,13 @@
 @media screen and (max-width: 768px) {
   .feature_pickup_items {
     flex-direction: column;
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .feature_pickup_items {
+    width: 100%;
+    padding: 0 16px;
   }
 }

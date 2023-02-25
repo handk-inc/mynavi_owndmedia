@@ -7,9 +7,6 @@
   margin: 0;
   display: none;
 }
-.more_feature {
-  margin-top: 20px;
-}
 .more_feature.is-btn-hidden {
   display: none;
 }
@@ -23,9 +20,10 @@
   margin: 0;
   display: none;
 }
-.more_project {
-  margin-top: 20px;
-}
 .more_project.is-btn-hidden {
   display: none;
+}
+.more_project,
+.more_feature {
+  margin: 4rem auto;
 }
