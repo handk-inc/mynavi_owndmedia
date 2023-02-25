@@ -4,6 +4,7 @@
   border: #d1d1d1 0.08px solid;
   border-radius: 4px;
   position: relative;
+  background-color: white;
 }
 .doc_card_primary_img {
   width: 100%;

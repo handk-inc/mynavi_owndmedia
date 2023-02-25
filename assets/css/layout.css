@@ -64,6 +64,14 @@
   height: fit-content;
 }
 
+.project_list_content {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3.2rem;
+  height: fit-content;
+  margin-top: 4rem;
+}
+
 @media screen and (max-width: 1120px) {
   .useful_list_wrapper {
     flex-direction: column;
@@ -75,6 +83,10 @@
     flex-direction: column;
   }
   .useful_list_content {
+    grid-template-columns: auto;
+    gap: 2.4rem;
+  }
+  .project_list_content {
     grid-template-columns: auto;
     gap: 2.4rem;
   }
@@ -132,6 +144,20 @@
 
 @media screen and (max-width: 768px) {
   .recommend_items {
+    flex-direction: column;
+  }
+}
+
+/* ----------------特集プロジェクト企画のレイアウト------------------- */
+.feature_pickup_items {
+  display: flex;
+  gap: 2.4rem;
+  padding: 0;
+  margin-top: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .feature_pickup_items {
     flex-direction: column;
   }
 }
