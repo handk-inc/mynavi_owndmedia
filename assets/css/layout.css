@@ -54,6 +54,8 @@
   gap: 6rem;
   width: fit-content;
 }
+
+
 .useful_list_left {
   flex: 3;
 }
