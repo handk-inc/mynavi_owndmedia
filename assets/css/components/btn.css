@@ -14,7 +14,7 @@
   border-radius: 4px;
 }
 
-.secondary_btn:hover {
+.secondary_btn_text:hover {
   background-color: #00374d;
   color: white;
   border: #00374d 1px solid;
@@ -23,8 +23,12 @@
 }
 
 @media screen and (max-width: 480px) {
+  .secondary_btn {
+    width: 100%;
+  }
   .secondary_btn_text {
     padding: 1rem 2rem;
     font-size: 1.8rem;
+    width: 100%;
   }
 }
