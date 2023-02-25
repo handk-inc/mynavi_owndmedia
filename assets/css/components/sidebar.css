@@ -83,6 +83,11 @@
 }
 
 /*========= バナーのCSS ===============*/
+.sidebar_banner_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 
 .sidebar_banner_item_img {
   width: 100%;
