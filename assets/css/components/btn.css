@@ -2,7 +2,7 @@
   width: fit-content;
   margin: 0 auto;
 }
-.btn_secondary {
+.secondary_btn_text {
   width: fit-content;
   padding: 1rem 8rem;
   font-size: 2rem;
@@ -14,14 +14,16 @@
   border-radius: 4px;
 }
 
-.secondary_btn :hover {
+.secondary_btn:hover {
   background-color: #00374d;
   color: white;
+  border: #00374d 1px solid;
+  border-radius: 4px;
   transition: all 0.15s linear;
 }
 
 @media screen and (max-width: 480px) {
-  .btn_secondary {
+  .secondary_btn_text {
     padding: 1rem 2rem;
     font-size: 1.8rem;
   }

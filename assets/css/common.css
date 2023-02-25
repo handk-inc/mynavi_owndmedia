@@ -36,3 +36,16 @@ main {
     width: 100%;
   }
 }
+
+#form{
+  display: flex;
+  justify-content: center;
+}
+/*仮*/
+#form img{
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  object-fit: contain;
+  object-position: top;
+}

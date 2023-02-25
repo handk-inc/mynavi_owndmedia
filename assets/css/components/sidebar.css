@@ -40,6 +40,7 @@
   line-height: 1.7;
   text-align: center;
   padding: 0.1rem 0.5rem;
+  position: relative;
 }
 
 .tag_more {
@@ -82,6 +83,11 @@
 }
 
 /*========= バナーのCSS ===============*/
+.sidebar_banner_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 
 .sidebar_banner_item_img {
   width: 100%;

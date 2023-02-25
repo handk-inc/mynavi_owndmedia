@@ -1,0 +1,44 @@
+/* ----------------資料一覧セクション------------------- */
+.doc_card_primary {
+  width: 100%;
+  border: #d1d1d1 0.08px solid;
+  border-radius: 4px;
+  position: relative;
+  background-color: white;
+}
+.doc_card_primary_img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+}
+.doc_card_primary_detail {
+  display: flex;
+  flex-direction: column;
+  padding: 1.6rem;
+  gap: 0.6em;
+}
+.doc_card_primary_date {
+  font-size: 1.2rem;
+  color: #757575;
+}
+.doc_card_primary_title {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.doc_card_primary_text {
+  font-size: 1.6rem;
+  color: #757575;
+}
+
+.doc_card_primary_detail > .sidebar_tag_wrapper {
+  margin-top: 0;
+}
+
+.card_link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

@@ -1,1 +1,71 @@
-お役立ち動画一覧
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お役立ち資料一覧</title>
+    <link rel="stylesheet" href="../assets/css/destyle.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosansjapanese.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <main>
+        <div class="inner">
+            <div id="breadcrumb" class=""></div>
+
+            <!-- コンポーネント -->
+            <div id="comp_title1"></div>
+
+            <section class="useful_list_wrapper">
+                <div class="useful_list_left">
+                    <div class="useful_list_content">
+                        <!-- コンポーネント -->
+                        <div class="mov_card_primary"></div>
+                        <div class="mov_card_primary"></div>
+                        <div class="mov_card_primary"></div>
+                        <div class="mov_card_primary"></div>
+                        <div class="mov_card_primary"></div>
+                        <div class="mov_card_primary"></div>
+                        <div class="mov_card_primary"></div>
+                        <div class="mov_card_primary"></div>
+                        <div class="mov_card_primary"></div>
+                        <div class="mov_card_primary"></div>
+                    </div>
+                    <div id="pagination"></div>
+                </div>
+                <div id="sidebar"></div>
+            </section>
+        </div>
+
+        <div id="cta-section"></div>
+    </main>
+
+    <!-- フッターのセクション -->
+    <div id="footer"></div>
+
+    <!-- jQueryのCDNをmain.jsの直前の記述 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../assets/js/index.js"></script>
+
+    <!-- コンポーネント読み込み用の一時的なjs -->
+    <script>
+        $(window).on('load', function () {
+
+            $("#sidebar").load("../assets/components/sidebar.html");
+            $(".mov_card_primary").load("../assets/components/mov_card_primary.html");
+            $("#comp_title1").load("../assets/components/myMedia_titleBox_h2.html .myMedia_titleBox_h2.h1.mov");
+
+            $("#breadcrumb").load("../assets/components/breadcrumb.html");
+
+            $("#pagination").load("../assets/components/pagination.html");
+        });
+    </script>
+
+    <!-- /コンポーネント読み込み用の一時的なjs -->
+</body>
+
+</html>

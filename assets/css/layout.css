@@ -9,7 +9,7 @@
   margin-bottom: 4rem;
 }
 
-.p-base{
+.p-base {
   font-style: normal;
   font-weight: 400;
   line-height: 180%;
@@ -17,64 +17,76 @@
   color: #333333;
 }
 
-.mt-10{
+.mt-10 {
   margin-top: 1rem;
 }
-.mt-20{
+.mt-20 {
   margin-top: 2rem;
 }
-.mt-30{
+.mt-30 {
   margin-top: 3rem;
 }
-.mt-40{
+.mt-40 {
   margin-top: 4rem;
 }
-.mt-50{
+.mt-50 {
   margin-top: 5rem;
 }
-.mt-60{
+.mt-60 {
   margin-top: 6rem;
 }
-.mt-70{
+.mt-70 {
   margin-top: 7rem;
 }
-.mt-80{
+.mt-80 {
   margin-top: 8rem;
 }
-.mt-90{
+.mt-90 {
   margin-top: 9rem;
 }
-.mt-100{
+.mt-100 {
   margin-top: 10rem;
 }
 
-/* ----------------調査記事一覧セクション------------------- */
-.research_article_list_wrapper {
+/* ----------------お役立ち情報（記事,動画,資料）のレイアウト------------------- */
+.useful_list_wrapper {
   display: flex;
-  gap: 4rem;
+  gap: 6rem;
   width: fit-content;
 }
-.research_article_list_left {
+.useful_list_left {
   flex: 3;
 }
-.research_article_list_content {
+.useful_list_content {
   display: grid;
   grid-template-columns: auto auto;
   gap: 3.2rem;
   height: fit-content;
 }
 
+.project_list_content {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3.2rem;
+  height: fit-content;
+  margin-top: 4rem;
+}
+
 @media screen and (max-width: 1120px) {
-  .research_article_list_wrapper {
+  .useful_list_wrapper {
     flex-direction: column;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .research_article_list_wrapper {
+  .useful_list_wrapper {
     flex-direction: column;
   }
-  .research_article_list_content {
+  .useful_list_content {
+    grid-template-columns: auto;
+    gap: 2.4rem;
+  }
+  .project_list_content {
     grid-template-columns: auto;
     gap: 2.4rem;
   }
@@ -116,5 +128,36 @@
     display: grid;
     grid-template-columns: auto auto;
     gap: 1.6rem;
+  }
+}
+
+/* ----------------レコメンドのレイアウト------------------- */
+.recommed_container {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+.recommend_items {
+  display: flex;
+  gap: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .recommend_items {
+    flex-direction: column;
+  }
+}
+
+/* ----------------特集プロジェクト企画のレイアウト------------------- */
+.feature_pickup_items {
+  display: flex;
+  gap: 2.4rem;
+  padding: 0;
+  margin-top: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .feature_pickup_items {
+    flex-direction: column;
   }
 }

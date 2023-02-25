@@ -8,6 +8,7 @@
   gap: 2rem;
 }
 .myCase_Content li {
+  position: relative;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
