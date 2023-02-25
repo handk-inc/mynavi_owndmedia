@@ -140,11 +140,23 @@
 }
 .recommend_items {
   display: flex;
-  gap: 3rem;
+  gap: 2.4rem;
+}
+.recommend_items > div {
+  width: 100%;
+}
+
+@media screen and (max-width: 1120px) {
+  .media_recommend {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .media_recommend,
   .recommend_items {
+    display: flex;
     flex-direction: column;
   }
 }
