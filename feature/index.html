@@ -1,1 +1,121 @@
-特集記事一覧
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お役立ち資料一覧</title>
+    <link rel="stylesheet" href="../assets/css/destyle.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosansjapanese.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <main>
+        <div class="inner">
+            <div id="breadcrumb" class=""></div>
+            <!-- コンポーネント -->
+            <div id="comp_title1"></div>
+        </div>
+        <div class="feature_pickup_warrper bg-gray">
+            <div id="title_line"></div>
+            <ul class="feature_pickup_items inner">
+                <div class="doc_card_secondary"></div>
+                <div class="doc_card_secondary"></div>
+                <div class="doc_card_secondary"></div>
+            </ul>
+        </div>
+        <div class="inner">
+            <!-- コンポーネント -->
+            <section class="useful_list_wrapper">
+                <div class="useful_list_left">
+                    <div class="useful_list_content">
+                        <!-- コンポーネント -->
+                        <div class="doc_card_primary"></div>
+                        <div class="doc_card_primary"></div>
+                        <div class="doc_card_primary"></div>
+                        <div class="doc_card_primary"></div>
+                        <div class="doc_card_primary"></div>
+                        <div class="doc_card_primary"></div>
+                        <div class="doc_card_primary"></div>
+                        <div class="doc_card_primary"></div>
+                        <div class="doc_card_primary"></div>
+                        <div class="doc_card_primary"></div>
+                        <div class="doc_card_primary"></div>
+                        <div class="doc_card_primary"></div>
+                        <div class="doc_card_primary"></div>
+                        <div class="doc_card_primary"></div>
+                        <div class="doc_card_primary"></div>
+                        <div class="doc_card_primary"></div>
+                        <div class="doc_card_primary"></div>
+                        <div class="doc_card_primary"></div>
+                    </div>
+                    <div class="more_feature"></div>
+                    <div class="project_list_content">
+                        <!-- コンポーネント -->
+                        <div class="project_card_primary"></div>
+                        <div class="project_card_primary"></div>
+                        <div class="project_card_primary"></div>
+                        <div class="project_card_primary"></div>
+                        <div class="project_card_primary"></div>
+                        <div class="project_card_primary"></div>
+                        <div class="project_card_primary"></div>
+                        <div class="project_card_primary"></div>
+                        <div class="project_card_primary"></div>
+                        <div class="project_card_primary"></div>
+                        <div class="project_card_primary"></div>
+                        <div class="project_card_primary"></div>
+                        <div class="project_card_primary"></div>
+                        <div class="project_card_primary"></div>
+                    </div>
+                    <div class="more_project"></div>
+                </div>
+                <div id="sidebar"></div>
+            </section>
+        </div>
+        <!-- コンポーネント -->
+        <div id="cta-section"></div>
+    </main>
+
+    <!-- フッターのセクション -->
+    <div id="footer"></div>
+
+    <!-- jQueryのCDNをmain.jsの直前の記述 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../assets/js/index.js"></script>
+    <script src="../assets/js/components/view_more_btn.js"></script>
+
+    <!-- コンポーネント読み込み用の一時的なjs -->
+    <script>
+
+        $(window).on('load', function () {
+            $("#sidebar").load("../assets/components/sidebar.html");
+
+            $(".doc_card_primary").load("../assets/components/doc_card_primary.html");
+
+            $(".project_card_primary").load("../assets/components/doc_card_primary.html");
+
+            $(".doc_card_secondary").load("../assets/components/doc_card_secondary.html");
+
+            $("#comp_title1").load("../assets/components/myMedia_titleBox_h2.html .myMedia_titleBox_h2.h1.feature");
+
+            $("#comp_title_line").load("../assets/components/title_line.html .title_line.feature");
+
+            $("#breadcrumb").load("../assets/components/breadcrumb.html");
+
+            $("#pagination").load("../assets/components/pagination.html");
+
+            $("#title_line").load("../assets/components/title_line.html .pickup");
+
+            $(".more_feature").load("../assets/components/btn.html .more_feature");
+
+
+            $(".more_project").load("../assets/components/btn.html .more_project");
+        });
+    </script>
+    <!-- /コンポーネント読み込み用の一時的なjs -->
+</body>
+
+</html>
