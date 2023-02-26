@@ -45,3 +45,77 @@ $(function() {
   }
 });
 });
+
+
+
+$(window).on('load', function() {
+  /* ここには、表示するリストの数を指定します。 */
+var moreNum = 3;
+
+/* 表示するリストの数以降のリストを隠しておきます。 */
+$('.research_article_card_secondary:nth-child(n + ' + (moreNum + 1) + ')').addClass('is-hidden');
+
+/* 全てのリストを表示したら「もっとみる」ボタンをフェードアウトします。 */
+$('.more_result').on('click', function() {
+  $('.research_article_card_secondary.is-hidden').slice(0, moreNum).removeClass('is-hidden');
+  if ($('.research_article_card_secondary.is-hidden').length == 0) {
+    $('.more_result').fadeOut();
+  }
+});
+
+/* リストの数が、表示するリストの数以下だった場合、「もっとみる」ボタンを非表示にします。 */
+$(function() {
+  var list = $(".search_result_items div").length;
+    if (list < moreNum) {
+      $('.more_result').addClass('is-btn-hidden');
+  }
+});
+});
+
+$(window).on('load', function() {
+  /* ここには、表示するリストの数を指定します。 */
+var moreNum = 3;
+
+/* 表示するリストの数以降のリストを隠しておきます。 */
+$('.doc_card_secondary:nth-child(n + ' + (moreNum + 1) + ')').addClass('is-hidden');
+
+/* 全てのリストを表示したら「もっとみる」ボタンをフェードアウトします。 */
+$('.more_result_doc').on('click', function() {
+  $('.doc_card_secondary.is-hidden').slice(0, moreNum).removeClass('is-hidden');
+  if ($('.doc_card_secondary.is-hidden').length == 0) {
+    $('.more_result_doc').fadeOut();
+  }
+});
+
+/* リストの数が、表示するリストの数以下だった場合、「もっとみる」ボタンを非表示にします。 */
+$(function() {
+  var list = $(".search_result_items div").length;
+    if (list < moreNum) {
+      $('.more_result_doc').addClass('is-btn-hidden');
+  }
+});
+});
+
+$(window).on('load', function() {
+  /* ここには、表示するリストの数を指定します。 */
+var moreNum = 3;
+
+/* 表示するリストの数以降のリストを隠しておきます。 */
+$('.mov_card_secondary:nth-child(n + ' + (moreNum + 1) + ')').addClass('is-hidden');
+
+/* 全てのリストを表示したら「もっとみる」ボタンをフェードアウトします。 */
+$('.more_result_mov').on('click', function() {
+  $('.mov_card_secondary.is-hidden').slice(0, moreNum).removeClass('is-hidden');
+  if ($('.mov_card_secondary.is-hidden').length == 0) {
+    $('.more_result_mov').fadeOut();
+  }
+});
+
+/* リストの数が、表示するリストの数以下だった場合、「もっとみる」ボタンを非表示にします。 */
+$(function() {
+  var list = $(".search_result_items div").length;
+    if (list < moreNum) {
+      $('.more_result_mov').addClass('is-btn-hidden');
+  }
+});
+});
