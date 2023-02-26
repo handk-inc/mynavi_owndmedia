@@ -128,6 +128,9 @@
     background-position: left 7px center;
     background-size: 3rem;
   }
+  .myCta_phone_number {
+    font-size: 2.4rem;
+  }
   .myCta_Container p {
     font-size: 1.2rem;
   }
