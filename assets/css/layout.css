@@ -61,8 +61,9 @@
 .useful_list_content {
   display: grid;
   grid-template-columns: auto auto;
-  gap: 3.2rem;
+  gap: 2.4rem;
   height: fit-content;
+  margin-bottom: 3.2rem;
 }
 
 .project_list_content {
@@ -93,6 +94,18 @@
   }
 }
 
+/* ----------------お役立ち情報（記事,動画,資料）の視聴、ダウンロードのレイアウト------------------- */
+.useful_watch_list_content {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 3.2rem;
+}
+.useful_watch_list_notes {
+  font-size: 1.2rem;
+  color: #eb5757;
+  text-align: center;
+  margin-top: 4rem;
+}
 /* ----------------メディア一覧------------------- */
 .bg-gray {
   background-color: #fafafa;
@@ -181,4 +194,19 @@
     width: 100%;
     padding: 0 16px;
   }
+}
+
+/* ----------------検索結果のレイアウト------------------- */
+.search_result_items,
+.search_doc_items,
+.search_mov_items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
+  margin-bottom: 4rem;
+}
+.search_result_title {
+  font-size: 2.4rem;
+  margin-bottom: 4rem;
+  font-weight: 500;
 }
