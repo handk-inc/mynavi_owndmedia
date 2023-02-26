@@ -65,6 +65,16 @@
                 </div>
                 <div class="more_result_mov"></div>
             </div>
+            <div class="recommed_container">
+                <div id="recommend_wrapper">
+                    <div id="comp_title2"></div>
+                    <div class="recommend_items">
+                        <div class="research_article_card_secondary"></div>
+                        <div class="research_article_card_secondary"></div>
+                        <div class="research_article_card_secondary"></div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         </div>
@@ -86,6 +96,8 @@
         $(window).on('load', function () {
             $("#comp_title1").load("/assets/components/myMedia_titleBox_h2.html .myMedia_titleBox_h2.h1.search");
 
+
+            $("#comp_title2").load("/assets/components/myMedia_titleBox_h3.html .myMedia_titleBox_h3.recommend_article");
 
             $(".doc_card_secondary").load("/assets/components/doc_card_secondary.html");
             $(".mov_card_secondary").load("/assets/components/mov_card_secondary.html");

@@ -3,6 +3,7 @@
   margin: 0 auto;
 }
 .primary_btn_text {
+  display: inline-block;
   width: fit-content;
   padding: 1rem 8rem;
   font-size: 2rem;
@@ -36,6 +37,7 @@
   margin: 4rem auto;
 }
 .secondary_btn_text {
+  display: inline-block;
   width: fit-content;
   padding: 1rem 8rem;
   font-size: 2rem;

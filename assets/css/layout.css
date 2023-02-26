@@ -197,16 +197,27 @@
 }
 
 /* ----------------検索結果のレイアウト------------------- */
+.search_result_wrapper {
+  margin-bottom: 8rem;
+}
 .search_result_items,
 .search_doc_items,
 .search_mov_items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.4rem;
-  margin-bottom: 4rem;
+  margin-bottom: rem;
 }
 .search_result_title {
   font-size: 2.4rem;
   margin-bottom: 4rem;
   font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .search_result_items,
+  .search_doc_items,
+  .search_mov_items {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
