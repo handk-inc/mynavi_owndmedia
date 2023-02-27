@@ -1,1 +1,60 @@
-マイナビウーマン
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>マイナビウーマン</title>
+  <link rel="stylesheet" href="/assets/css/destyle.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosansjapanese.css"> </head>
+<body>
+  <div id="header"></div>
+  <main>
+    <div class="inner">
+      <!-- コンポーネント -->
+      <div id="comp_title1"></div>
+      <div class="media_detail_head"></div>
+      <div class="media_detail_summary"></div>
+      <div class="article_text_img_content"></div>
+      <div class="media_detail_ad_menu"></div>
+      <div class="media_detail_cta"></div>
+      <div class="media_detail_accordion"></div>
+
+    <div class="media_feature bg-gray">
+      <div class="media_feature_wrapper">
+        <!-- コンポーネント -->
+        <div id="comp_title_line"></div>
+        <p class="media_feature_text"> マイナビメディアで展開している特集企画・プロジェクト資料等をご紹介。プロモーションに最適な時期を逃さない、シーズナル企画を随時更新しています。 </p>
+        <div class="media_feature_imgs"> <img class="media_feature_img" src="/assets/img/image 24.png"> <img class="media_feature_img" src="/assets/img/image 24.png"> <img class="media_feature_img" src="/assets/img/image 24.png"> <img class="media_feature_img" src="/assets/img/image 24.png"> </div>
+        <!-- コンポーネント -->
+        <div id="secondary_btn"></div>
+      </div>
+    </div>
+    <div id="cta-section"></div>
+  </main>
+  <!-- フッターのセクション -->
+  <div id="footer"></div>
+  <!-- jQueryのCDNをmain.jsの直前の記述 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="/assets/js/index.js"></script>
+  <!-- コンポーネント読み込み用の一時的なjs -->
+  <script>
+    $(window).on('load', function () {
+            $("#comp_title1").load("/assets/components/myMedia_titleBox_h2.html .myMedia_titleBox_h2.h1.media");
+
+            $("#comp_title_line").load("/assets/components/title_line.html .title_line.feature");
+
+            $("#secondary_btn").load("/assets/components/btn.html .secondary_btn.feature_list");
+            $(".media_detail_head").load("/assets/components/media_detail_head.html");
+            $(".media_detail_summary").load("/assets/components/media_detail_summary.html");
+            $(".article_text_img_content").load("/assets/components/article_text_img.html");
+            $(".media_detail_ad_menu").load("/assets/components/media_detail_ad_menu.html");
+            $(".media_detail_cta").load("/assets/components/media_detail_cta.html");
+            $(".media_detail_accordion").load("/assets/components/media_detail_accordion.html");
+        });
+        
+  </script>
+  <!-- /コンポーネント読み込み用の一時的なjs -->
+</body>
+</html>

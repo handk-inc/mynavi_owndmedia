@@ -1,0 +1,32 @@
+.media_detail_cta_wrapper {
+    width: 100%;
+    background-color: #F1F7FB;
+    display: flex;
+    flex-direction: column;
+    height: 23rem;
+    align-items: center;
+    justify-content: center;
+}
+.media_detail_cta_wrapper button {
+    width: 30%;
+    margin: 0 auto;
+    background-color: #00374D;
+    color: white;
+    text-align: center;
+    margin-bottom: 3rem;
+    border-radius: 3px;
+    padding: 1rem;
+}
+.media_detail_cta_wrapper a {
+    color: #006DD4;
+    padding: 2rem;
+}
+@media screen and (max-width: 768px){
+    .media_detail_cta_wrapper button {
+        font-size: 1.4rem;
+    }
+    .media_detail_cta_wrapper a {
+        font-size: 1.4rem;
+    }
+    
+}
