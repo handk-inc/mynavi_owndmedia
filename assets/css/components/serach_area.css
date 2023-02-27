@@ -87,7 +87,7 @@
   padding: 1rem;
   width: 100%;
   max-width: 288px;
-  height: 60px;
+  display: block;
   background: #00374D;
   border-radius: 5px;
   border: solid 1px #00374D;
