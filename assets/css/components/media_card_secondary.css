@@ -1,4 +1,4 @@
-.media_card_secondary {
+#media_card_secondary {
   display: flex;
   flex-direction: column;
   padding: 2.4rem 1.6rem;
@@ -8,6 +8,10 @@
   text-align: center;
   align-items: center;
   height: 100%;
+}
+
+#media_card_secondary:hover {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
 }
 
 .media_card_secondary_img {
@@ -36,12 +40,15 @@
   padding-bottom: 2.4rem;
   text-align: center;
 }
-
+#media_card_secondary:hover .media_card_secondary_btn {
+  transition: all 0.3s;
+  opacity: 0.6;
+}
 @media screen and (max-width: 1120px) {
 }
 
 @media screen and (max-width: 768px) {
-  .media_card_secondary {
+  #media_card_secondary {
     width: 100%;
   }
   .media_card_secondary_img {

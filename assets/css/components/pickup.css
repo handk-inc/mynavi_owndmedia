@@ -27,7 +27,10 @@
 .myPic_Item {
   width: 23%;
 }
-
+.myPic_Item :hover {
+  transition: all 0.3s;
+  opacity: 0.6;
+}
 .myPic_img {
   width: 100%;
   text-align: center;
