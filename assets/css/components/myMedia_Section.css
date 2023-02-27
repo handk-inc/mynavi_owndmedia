@@ -63,20 +63,6 @@
   .myMedia_br {
     display: none;
   }
-  .myMedia_titleBox_h3 a::before {
-    width: 24rem;
-  }
-  .myMedia_titleBox_h3 a::after {
-    top: 10px;
-    left: 217px;
-  }
-  .myMedia_titleBox_h2 a::before {
-    width: 24rem;
-  }
-  .myMedia_titleBox_h2 a::after {
-    left: 220px;
-    top: 9px;
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -97,19 +83,5 @@
   }
   .myMedia_titleBox_h3 h3 {
     font-size: 2rem;
-  }
-  .myMedia_titleBox_h3 a::before {
-    width: 21rem;
-  }
-  .myMedia_titleBox_h3 a::after {
-    top: 10px;
-    left: 189px;
-  }
-  .myMedia_titleBox_h2 a::before {
-    width: 21rem;
-  }
-  .myMedia_titleBox_h2 a::after {
-    left: 192px;
-    top: 10px;
   }
 }

@@ -1,1 +1,71 @@
-お役立ち資料一覧_DL用
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>メディア紹介|マイナビウーマン</title>
+    <link rel="stylesheet" href="/assets/css/destyle.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosansjapanese.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <main>
+        <div class="inner">
+            <div id="breadcrumb" class=""></div>
+            <!-- コンポーネント -->
+            <div id="comp_title1"></div>
+            <div class="useful_watch_list_warpper">
+                <div id="search_bar"></div>
+                <div class="useful_watch_list_content">
+                    <div class="doc_card"></div>
+                    <div class="doc_card"></div>
+                    <div class="doc_card"></div>
+                    <div class="doc_card"></div>
+                    <div class="doc_card"></div>
+                    <div class="doc_card"></div>
+                    <div class="doc_card"></div>
+                    <div class="doc_card"></div>
+                    <div class="doc_card"></div>
+                </div>
+                <p class="useful_watch_list_notes">※資料・動画の無断複写（転用・転載）はご遠慮ください。</p>
+                <div id="pagination"></div>
+            </div>
+        </div>
+        <div id="cta-section"></div>
+    </main>
+
+    <!-- フッターのセクション -->
+    <div id="footer"></div>
+
+    <!-- jQueryのCDNをmain.jsの直前の記述 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/assets/js/index.js"></script>
+
+    <!-- コンポーネント読み込み用の一時的なjs -->
+    <script>
+        $(window).on('load', function () {
+            $("#comp_title1").load("/assets/components/myMedia_titleBox_h2.html .myMedia_titleBox_h2.h1.doc_watch");
+
+            $("#comp_title2").load("/assets/components/myMedia_titleBox_h3.html .myMedia_titleBox_h3.recommend_media");
+
+            $("#breadcrumb").load("/assets/components/breadcrumb.html");
+
+            $("#search_bar").load("/assets/components/search_bar.html");
+
+            $("#pagination").load("/assets/components/pagination.html");
+
+            $(".doc_card").load("/assets/components/doc_card_primary_btn.html");
+
+            $(".primary_btn").load("/assets/components/btn.html .primary_btn");
+        });
+    </script>
+
+    <!-- /コンポーネント読み込み用の一時的なjs -->
+</body>
+
+</html>

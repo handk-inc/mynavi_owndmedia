@@ -31,6 +31,7 @@
             <!-- コンポーネント -->
             <section class="useful_list_wrapper">
                 <div class="useful_list_left">
+                    <div class="title_section_1"></div>
                     <div class="useful_list_content">
                         <!-- コンポーネント -->
                         <div class="doc_card_primary"></div>
@@ -44,15 +45,10 @@
                         <div class="doc_card_primary"></div>
                         <div class="doc_card_primary"></div>
                         <div class="doc_card_primary"></div>
-                        <div class="doc_card_primary"></div>
-                        <div class="doc_card_primary"></div>
-                        <div class="doc_card_primary"></div>
-                        <div class="doc_card_primary"></div>
-                        <div class="doc_card_primary"></div>
-                        <div class="doc_card_primary"></div>
-                        <div class="doc_card_primary"></div>
                     </div>
                     <div class="more_feature"></div>
+
+                    <div class="title_section_2"></div>
                     <div class="project_list_content">
                         <!-- コンポーネント -->
                         <div class="project_card_primary"></div>
@@ -113,6 +109,11 @@
 
 
             $(".more_project").load("../assets/components/btn.html .more_project");
+
+
+            $(".title_section_1").load("../assets/components/title_section.html .feature");
+
+            $(".title_section_2").load("../assets/components/title_section.html .project");
         });
     </script>
     <!-- /コンポーネント読み込み用の一時的なjs -->

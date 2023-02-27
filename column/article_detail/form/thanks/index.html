@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>お役立ち資料一覧</title>
-    <link rel="stylesheet" href="../assets/css/destyle.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>メルマガ登録ありがとうございます。</title>
+    <link rel="stylesheet" href="../../../../assets/css/destyle.css">
+    <link rel="stylesheet" href="../../../../assets/css/style.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosansjapanese.css">
 </head>
 
@@ -20,7 +20,8 @@
             <!-- コンポーネント -->
             <div id="comp_title1"></div>
 
-            <div id="serach_area"></div>
+            <p class="p-base" style="padding: 4rem 0 8rem 0;">ご入力いただいたメールアドレスへ、調査資料のダウンロードURLを送送信いたしました。
+            </p>
 
             <div class="recommed_container">
                 <div id="recommend_wrapper">
@@ -60,22 +61,25 @@
 
     <!-- jQueryのCDNをmain.jsの直前の記述 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="../assets/js/index.js"></script>
+    <script src="../../../../assets/js/index.js"></script>
+
     <!-- コンポーネント読み込み用の一時的なjs -->
     <script>
         $(window).on('load', function () {
-            $("#comp_title1").load("../assets/components/myMedia_titleBox_h2.html .myMedia_titleBox_h2.h1.search");
-            $("#comp_title2").load("../assets/components/myMedia_titleBox_h3.html .myMedia_titleBox_h3.recommend_article");
-            $("#comp_title3").load("../assets/components/myMedia_titleBox_h3.html .myMedia_titleBox_h3.recommend_doc");
-            $("#comp_title4").load("../assets/components/myMedia_titleBox_h3.html .myMedia_titleBox_h3.recommend_mov");
-            $(".research_article_card_secondary").load("../assets/components/research_article_card_secondary.html");
-            $(".doc_card_secondary").load("../assets/components/doc_card_secondary.html");
-            $(".mov_card_secondary").load("../assets/components/mov_card_secondary.html");
-            $("#breadcrumb").load("../assets/components/breadcrumb.html");
-            $("#serach_area").load("../assets/components/search_area.html");
-                $.getScript("../assets/js/components/serach_clear.js", function() {
+          $("#header").load("../../../../assets/components/header.html");
+              $.getScript("../../../../assets/js/components/menu.js", function() {
             });
-        })
+            $("#footer").load("../../../../assets/components/footer.html");
+            $("#cta-section").load("../../../../assets/components/cta.html");
+            $("#breadcrumb").load("../../../../assets/components/breadcrumb.html");
+            $("#comp_title1").load("../../../../assets/components/myMedia_titleBox_h2.html .myMedia_titleBox_h2.h1.article_dow_thanks");
+            $("#comp_title2").load("../../../../assets/components/myMedia_titleBox_h3.html .myMedia_titleBox_h3.recommend_article");
+            $("#comp_title3").load("../../../../assets/components/myMedia_titleBox_h3.html .myMedia_titleBox_h3.recommend_doc");
+            $("#comp_title4").load("../../../../assets/components/myMedia_titleBox_h3.html .myMedia_titleBox_h3.recommend_mov");
+            $(".research_article_card_secondary").load("../../../../assets/components/research_article_card_secondary.html");
+            $(".doc_card_secondary").load("../../../../assets/components/doc_card_secondary.html");
+            $(".mov_card_secondary").load("../../../../assets/components/mov_card_secondary.html");
+        });
     </script>
 
     <!-- /コンポーネント読み込み用の一時的なjs -->

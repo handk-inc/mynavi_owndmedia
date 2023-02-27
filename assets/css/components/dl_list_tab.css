@@ -1,0 +1,34 @@
+.dl_list_tab_wrapper {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 4rem;
+  border-radius: 4px 4px 0 0;
+  font-weight: 500;
+}
+
+.dl_list_tab_item {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  border: 1px #b6b6b6 solid;
+  padding: 1.6rem;
+}
+
+.dl_list_tab_item_enabled {
+  background-color: #f1f7fb;
+  border-bottom: 2px solid #00374d;
+}
+
+.dl_list_tab_item_disabled:hover {
+  background-color: #f1f7fb;
+  border-bottom: 2px solid #00374d;
+}
+
+@media screen and (max-width: 480px) {
+  .dl_list_tab_item {
+    display: block;
+    margin-bottom: -1px;
+  }
+}
