@@ -17,8 +17,33 @@
     <main>
         <div class="inner">
             <div id="breadcrumb" class=""></div>
+            <div class="media_detail_head"></div>
+            <div class="media_detail_summary"></div>
+            <div class="article_text_img_content"></div>
+            <div class="media_detail_ad_menu"></div>
+        </div>
+
+          <div class="media_detail_cta"></div>
+
+        <div class="inner">
+          <div class="media_detail_accordion"></div>
+        </div>
+
+        <div class="media_feature bg-gray">
+          <div class="inner">
+              <div class="media_feature_wrapper">
+                <!-- コンポーネント -->
+                <div id="comp_title_line"></div>
+                <p class="media_feature_text"> マイナビメディアで展開している特集企画・プロジェクト資料等をご紹介。プロモーションに最適な時期を逃さない、シーズナル企画を随時更新しています。 </p>
+                <div class="media_feature_imgs"> <img class="media_feature_img" src="/assets/img/image 24.png"> <img class="media_feature_img" src="/assets/img/image 24.png"> <img class="media_feature_img" src="/assets/img/image 24.png"> <img class="media_feature_img" src="/assets/img/image 24.png"> </div>
+                <!-- コンポーネント -->
+                <div id="secondary_btn"></div>
+              </div>
+          </div>
+        </div>
+
+          <div class="inner">
             <!-- コンポーネント -->
-            <div id="comp_title1"></div>
             <div id="recommend_wrapper">
                 <div id="comp_title2"></div>
                 <div class="recommend_items  media_recommend">
@@ -28,7 +53,9 @@
                     <div class="media_card_secondary_teens"></div>
                 </div>
             </div>
-        </div>
+          </div>
+
+
 
         <div id="cta-section"></div>
     </main>
@@ -43,22 +70,23 @@
     <!-- コンポーネント読み込み用の一時的なjs -->
     <script>
         $(window).on('load', function () {
-            $("#comp_title1").load("/assets/components/myMedia_titleBox_h2.html .myMedia_titleBox_h2.h1.research_article");
-
             $("#comp_title2").load("/assets/components/myMedia_titleBox_h3.html .myMedia_titleBox_h3.recommend_media");
-
             $("#breadcrumb").load("/assets/components/breadcrumb.html");
-
             $(".media_card_secondary_news").load("/assets/components/media_card_secondary.html .news");
-
             $(".media_card_secondary_woman").load("/assets/components/media_card_secondary.html .woman")
-
             $(".media_card_secondary_child").load("/assets/components/media_card_secondary.html .child");
-
             $(".media_card_secondary_student").load("/assets/components/media_card_secondary.html .student");
-
             $(".media_card_secondary_teens").load("/assets/components/media_card_secondary.html .teens");
+            $("#comp_title_line").load("/assets/components/title_line.html .title_line.feature");
+            $("#secondary_btn").load("/assets/components/btn.html .secondary_btn.feature_list");
+            $(".media_detail_head").load("/assets/components/media_detail_head.html");
+            $(".media_detail_summary").load("/assets/components/media_detail_summary.html");
+            $(".article_text_img_content").load("/assets/components/article_text_img.html");
+            $(".media_detail_ad_menu").load("/assets/components/media_detail_ad_menu.html");
+            $(".media_detail_cta").load("/assets/components/media_detail_cta.html");
+            $(".media_detail_accordion").load("/assets/components/media_detail_accordion.html");
         });
+
     </script>
 
     <!-- /コンポーネント読み込み用の一時的なjs -->
