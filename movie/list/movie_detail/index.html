@@ -1,1 +1,108 @@
-動画閲覧ページ
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お役立ち動画詳細</title>
+    <link rel="stylesheet" href="/assets/css/destyle.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosansjapanese.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <main>
+        <div class="inner">
+            <div id="breadcrumb" class=""></div>
+            <!-- コンポーネント -->
+            <div id="comp_title1"></div>
+            <!-- コンポーネント -->
+            <div id="mov_detail_head"></div>
+            <div class="movie_detail_content">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xxxxxxxx"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="mov_detail_program">
+                <div class="mov_detail_program_title">プログラム</div>
+                <p class="mov_detail_text">
+                    1.セミナーテーマ<br>
+                    2.30歳にまつわる女性のインサイト<br>
+                    3.スイッチ消費 美容・ファッション編<br>
+                    4.スイッチ消費 おでかけ編<br>
+                    5.言葉に対するイメージ<br>
+                    ※ご質問は別途お問い合わせください。
+                </p>
+
+                </ul>
+            </div>
+            <div class="recommed_container">
+                <div id="recommend_wrapper">
+                    <div id="comp_title2"></div>
+                    <div class="recommend_items">
+                        <div class="mov_card_secondary"></div>
+                        <div class="mov_card_secondary"></div>
+                        <div class="mov_card_secondary"></div>
+                    </div>
+                </div>
+                <div id="recommend_wrapper">
+                    <div id="comp_title3"></div>
+                    <div class="recommend_items  media_recommend">
+                        <div class="media_card_secondary_news"></div>
+                        <div class="media_card_secondary_child"></div>
+                        <div class="media_card_secondary_student"></div>
+                        <div class="media_card_secondary_teens"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+        <!-- コンポーネント -->
+        <div id="cta-section"></div>
+    </main>
+
+    <!-- フッターのセクション -->
+    <div id="footer"></div>
+
+    <!-- jQueryのCDNをmain.jsの直前の記述 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/assets/js/index.js"></script>
+    <script src="/assets/js/components/view_more_btn.js"></script>
+
+    <!-- コンポーネント読み込み用の一時的なjs -->
+    <script>
+
+        $(window).on('load', function () {
+
+            $("#comp_title2").load("/assets/components/myMedia_titleBox_h3.html .myMedia_titleBox_h3.recommend_mov");
+
+            $("#comp_title3").load("/assets/components/myMedia_titleBox_h3.html .myMedia_titleBox_h3.recommend_media");
+
+            $(".mov_card_secondary").load("/assets/components/mov_card_secondary.html");
+            $(".title_section_1").load("/assets/components/title_section.html .program");
+
+            $("#mov_detail_head").load("/assets/components/mov_detail_head.html");
+
+            $("#breadcrumb").load("/assets/components/breadcrumb.html");
+
+
+            $(".media_card_secondary_news").load("/assets/components/media_card_secondary.html .news");
+
+            $(".media_card_secondary_woman").load("/assets/components/media_card_secondary.html .woman")
+
+            $(".media_card_secondary_child").load("/assets/components/media_card_secondary.html .child");
+
+            $(".media_card_secondary_student").load("/assets/components/media_card_secondary.html .student");
+
+            $(".media_card_secondary_teens").load("/assets/components/media_card_secondary.html .teens");
+        });
+    </script>
+    <!-- /コンポーネント読み込み用の一時的なjs -->
+</body>
+
+</html>
