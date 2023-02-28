@@ -1,0 +1,52 @@
+.article_toc {
+    background-color: #FAFAFA;
+    border: 1px solid #D1D1D1;
+    height: 40rem;
+}
+.article_toc_inner {
+    padding: 2.4rem 3.2rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.article_toc_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+.article_toc_mokuji {
+    display: flex;
+    align-items: center;
+}
+.article_toc_mokuji svg {
+    padding-right: 1rem;
+    width: 4rem;
+}
+.article_toc_header h3 {
+    font-size: 1.8rem;
+    color: #00374D;
+    width: 100%;
+}
+.article_toc_header p {
+    font-size: 1.2rem;
+    border: 1px solid #00374D;
+    display: block;
+    width: 6rem;
+    text-align: center;
+    border-radius: 3px;
+    height: 2.5rem;
+    line-height: 2.3rem;
+}
+.article_toc_ul {
+    height: 32rem;
+    overflow: scroll;
+}
+.article_toc_ul div {
+    padding-left: 2rem;
+}
+.article_toc_ul h4 {
+    padding-top: 2rem;
+}
+.article_toc_ul p {
+    padding: 1rem 0;
+}

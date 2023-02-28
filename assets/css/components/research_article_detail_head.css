@@ -1,0 +1,40 @@
+.research_article_detail_head {
+    font-size: 4rem;
+    letter-spacing: 2px;
+
+    color: #00374D;
+}
+.research_article_detail_head_content {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.research_article_detail_head_sns_logos {
+    display: flex;
+}
+.research_article_detail_head_sns_logos li {
+    margin: 0 1rem;
+}
+.research_article_detail_head p {
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+.research_article_detail_head_sns_logos img {
+    display: block;
+}
+
+@media screen and (max-width:768px) {
+      .research_article_detail_head {
+        font-size: 3rem;
+      }
+}
+@media screen and (max-width:530px) {
+    .research_article_detail_head {
+      font-size: 2.5rem;
+      line-height: 5rem;
+    }
+    .research_article_detail_head_content {
+        display: block;
+    }
+}

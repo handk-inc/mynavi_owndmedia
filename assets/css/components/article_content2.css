@@ -1,0 +1,29 @@
+.article_content2  {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+.article_content2_left {
+    text-align: center;
+}
+.article_content2_left h3 {
+    padding-bottom: 1rem;
+}
+.article_content2_right_red {
+    color: #EB5757;
+    padding-bottom: .5rem;
+}
+.article_content2_right h4 {
+    padding-bottom: .5rem;
+    position: relative;
+    padding-left: 6rem;
+}
+.article_content2_right h4::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    border-bottom: 1px solid;
+    width: 4.5rem;
+    top: 13px;
+    left: 0px;
+}
