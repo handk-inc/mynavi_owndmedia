@@ -31,6 +31,10 @@
 .footer_a_link a {
   color: #757575;
 }
+.footer_a_link a:hover {
+  opacity: 0.6;
+}
+
 .footer_a_minlink li {
   min-width: 7rem;
   margin: 0 1.2rem;
@@ -47,17 +51,27 @@
   text-align: center;
   width: 30rem;
 }
-.footer_a_button form {
+.footer_a_button a {
+  display: inline-block;
+  width: 100%;
   background-color: #00374d;
+  border: 1px solid #00374d;
   color: white;
   border-radius: 3px;
   font-size: 1.6rem;
-  font-weight: ;
+  font-weight: 500;
   padding: 2.5rem 4rem;
   margin: 4rem 0;
   margin-top: 0;
 }
-.footer_a_button form:nth-child(3) {
+.footer_a_button a:hover {
+  background-color: white;
+  border: 1px solid #00374d;
+  color: #00374d;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+.footer_a_button a:nth-child(3) {
   margin-bottom: 0;
 }
 .footer_a_button p {
@@ -80,6 +94,10 @@
   margin: 1.5rem;
   margin-left: 0;
   color: #757575;
+}
+
+.footerContent_b a:hover {
+  opacity: 0.6;
 }
 
 @media screen and (max-width: 1020px) {

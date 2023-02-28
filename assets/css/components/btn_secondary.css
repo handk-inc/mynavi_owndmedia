@@ -21,7 +21,7 @@
   color: white;
   border: #00374d 1px solid;
   border-radius: 4px;
-  transition: all 0.15s linear;
+  transition: 0.6s;
 }
 
 @media screen and (max-width: 480px) {

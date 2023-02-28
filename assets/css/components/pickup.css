@@ -21,7 +21,7 @@
 .myPic_Ul {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 4rem;
   padding-top: 1rem;
 }
 .myPic_Item {
