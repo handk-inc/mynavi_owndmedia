@@ -1,0 +1,17 @@
+.article_summary {
+    background-color: #FAFAFA;
+    border: 1px solid #D1D1D1;
+}
+.article_summary ul {
+    padding: 2.4rem 3.2rem;
+    margin: 0 auto;
+
+}
+.article_summary_h3 {
+    font-size: 1.6rem;
+    color: #00374D;
+}
+.article_summary_p {
+    font-size: 1.6rem;
+    font-weight: 400;
+}

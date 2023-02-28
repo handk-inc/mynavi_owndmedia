@@ -1,0 +1,14 @@
+.article_table2_box {
+    width: 100%;
+}
+.article_table2_box th {
+    border: 1px solid #D1D1D1;
+    width: 26%;
+    padding: 1rem 0 1rem 2rem;
+    background-color: #FAFAFA;
+}
+.article_table2_box td {
+    border: 1px solid #D1D1D1;
+    width: 37%;
+    padding: 1rem 0 1rem 2rem;
+}

@@ -1,0 +1,26 @@
+.btn_tertiary_a {
+    display: block;
+    position: relative;
+    padding-left: 2rem;
+    margin: 0 auto;
+    width: 50%;
+}
+.btn_tertiary_a::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    border-bottom: 1px solid #333333;
+    width: 35rem;
+    top: 40px;
+    left: 0px;
+}
+.btn_tertiary_a::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    border-right: 1px solid #333333;
+    height: 1.5rem;
+    top: 28px;
+    left: 345px;
+    transform: rotate(-45deg);
+}

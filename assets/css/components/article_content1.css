@@ -1,0 +1,8 @@
+.article_content1 {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+.article_content1_img {
+    text-align: center;
+}

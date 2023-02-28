@@ -1,0 +1,12 @@
+.btn_icon_a {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 40%;
+}
+.btn_icon_a p {
+    margin: 0 auto;
+}
+.btn_icon_a svg {
+    width: 2rem;
+}

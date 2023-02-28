@@ -1,0 +1,13 @@
+.btn_secondary_a {
+    display: block;
+    background-color: white;
+    color: #00374D;
+    width: 28.8rem;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    border-radius: 5px;
+    margin: auto;
+    border: 1px solid #00374D;
+    font-weight: 500;
+}
