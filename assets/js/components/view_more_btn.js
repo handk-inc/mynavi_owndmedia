@@ -56,10 +56,10 @@ var moreNum = 3;
 $('.research_article_card_secondary:nth-child(n + ' + (moreNum + 1) + ')').addClass('is-hidden');
 
 /* 全てのリストを表示したら「もっとみる」ボタンをフェードアウトします。 */
-$('.more_result').on('click', function() {
+$('.more_result_article').on('click', function() {
   $('.research_article_card_secondary.is-hidden').slice(0, moreNum).removeClass('is-hidden');
   if ($('.research_article_card_secondary.is-hidden').length == 0) {
-    $('.more_result').fadeOut();
+    $('.more_result_article').fadeOut();
   }
 });
 
@@ -67,7 +67,7 @@ $('.more_result').on('click', function() {
 $(function() {
   var list = $(".search_result_items div").length;
     if (list < moreNum) {
-      $('.more_result').addClass('is-btn-hidden');
+      $('.more_result_article').addClass('is-btn-hidden');
   }
 });
 });
