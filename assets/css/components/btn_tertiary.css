@@ -1,8 +1,8 @@
-#btn_tertiary_wrapper {
+.btn_tertiary_wrapper {
   width: 100%;
   text-align: center;
 }
-#btn_tertiary::after {
+.btn_tertiary::after {
   position: absolute;
   bottom: 15px;
   content: "";
@@ -13,7 +13,7 @@
   transform: skew(35deg) translateX(-50%);
   left: 48%;
 }
-#btn_tertiary {
+.btn_tertiary {
   text-align: start;
   display: inline-block;
   position: relative;
@@ -24,15 +24,19 @@
   padding-bottom: 2.4rem;
 }
 
-#btn_tertiary:hover {
+.btn_tertiary:hover {
   opacity: 0.6;
 }
 
 @media screen and (max-width: 768px) {
-  #btn_tertiary {
-    width: 99%;
+  .btn_tertiary {
+    width: 50%;
+    min-width: 30rem;
     margin: 1.6rem 0 0 0;
   }
 }
 @media screen and (max-width: 480px) {
+  .btn_tertiary {
+    width: 99%;
+  }
 }

@@ -1,12 +1,18 @@
+.btn_icon {
+  width: 100%;
+}
 .btn_icon_a {
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    width: 40%;
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
 }
 .btn_icon_a p {
-    margin: 0 auto;
+  margin-right: 2rem;
 }
 .btn_icon_a svg {
-    width: 2rem;
+  width: 2rem;
+}
+
+.btn_icon:hover {
+  opacity: 0.6;
 }

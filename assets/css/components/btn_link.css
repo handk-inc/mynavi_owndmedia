@@ -1,5 +1,11 @@
+.btn_link {
+  width: 100%;
+  text-align: center;
+}
 .btn_link_a {
-    display: block;
-    text-align: center;
-    color: #006DD4;
+  text-align: center;
+  color: #006dd4;
+}
+.btn_link:hover {
+  opacity: 0.6;
 }
