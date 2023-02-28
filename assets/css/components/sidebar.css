@@ -26,7 +26,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 0.8rem;
+  margin-top: 1.6rem;
 
   gap: 1rem;
 }
@@ -48,6 +48,10 @@
   color: #757575;
   margin-top: 1.6rem;
 }
+.sidebar_tag:hover,
+.tag_more:hover {
+  opacity: 0.6;
+}
 
 /*========= タグのCSS ===============*/
 .sidebar_tag_category {
@@ -56,30 +60,38 @@
 }
 
 /*========= おすすめの記事のCSS ===============*/
-.sidebar_recommend_article_item {
+.sidebar_recommend_item {
   display: flex;
   margin-top: 1.6rem;
+  cursor: pointer;
 }
-.sidebar_recommend_article_img {
+.sidebar_recommend_item:hover {
+  opacity: 0.6;
+  transition: all 0.3s;
+}
+.sidebar_recommend_img {
   width: 30%;
   object-fit: contain;
   object-position: top;
   margin-right: 1rem;
 }
-.sidebar_recommend_article_text {
+.sidebar_recommend_text {
   font-size: 1.4rem;
   line-height: 1.6;
 }
 
 /*========= お役立ち情報のCSS ===============*/
 .sidebar_useful_info_item {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
   margin: 1.6rem 0;
 }
 .sidebar_useful_info_item_text {
   font-size: 1.4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.sidebar_useful_info_item:hover {
+  opacity: 0.6;
 }
 
 /*========= バナーのCSS ===============*/
@@ -94,7 +106,10 @@
   object-fit: cover;
   border-radius: 4px;
 }
-
+.sidebar_banner_item_img:hover {
+  transition: all 0.3s;
+  opacity: 0.6;
+}
 @media screen and (max-width: 1120px) {
   #sidebar {
     width: 100%;
@@ -111,13 +126,13 @@
 }
 
 @media screen and (max-width: 768px) {
-  .sidebar_recommend_article_img {
+  .sidebar_recommend_img {
     width: 20%;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .sidebar_recommend_article_img {
+  .sidebar_recommend_img {
     width: 30%;
   }
   .sidebar_banner_wrapper {

@@ -18,6 +18,11 @@
   margin-bottom: -1px;
   position: relative;
 }
+.myMedia_Item:hover {
+  background-color: #fafafa;
+  transition: all 0.3s;
+}
+
 .myMedia_Item article {
   padding: 2rem 2rem;
 }

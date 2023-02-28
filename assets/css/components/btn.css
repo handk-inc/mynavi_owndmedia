@@ -13,6 +13,7 @@
   background-color: #00374d;
   border-radius: 4px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .primary_btn_text:hover {
@@ -46,12 +47,13 @@
   color: #00374d;
   background-color: white;
   border: #00374d 1px solid;
+  cursor: pointer;
   border-radius: 4px;
 }
 
 .secondary_btn_text:hover {
-  background-color: #f1f7fb;
-  color: #00374d;
+  background-color: #00374d;
+  color: white;
   border: #00374d 1px solid;
   border-radius: 4px;
   transition: all 0.15s linear;

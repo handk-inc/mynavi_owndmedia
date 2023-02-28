@@ -140,10 +140,7 @@
 
         <div class="myHelpful_doc_Container">
 
-          <div class="myMedia_titleBox_h3">
-            <h3>お役立ち資料</h3>
-            <button class="myMedia_titleBox_h3_btn" href="#">他の資料も見る</button>
-          </div>
+          <div class="comp_title4"></div>
 
           <ul class="helpDoc_Ul">
             <li class="helpDoc_Item">
@@ -207,10 +204,7 @@
 
         <!-- 動画 -->
         <div class="myHelpful_mov">
-          <div class="myMedia_titleBox_h3">
-            <h3>お役立ち動画</h3>
-            <button class="myMedia_titleBox_h3_btn" href="#">他の動画も見る</button>
-          </div>
+          <div class="comp_title5"></div>
           <div class="helpMov_ContentBox">
             <div class="helpMov_Content_a">
               <a class="card_link" href=""></a>
@@ -286,7 +280,7 @@
         <div class="myMedia_titleBox_h2">
           <p>Media</p>
           <h2 class="myMedia_titleBox_h2__title">マイナビメディアのご紹介</h2>
-          <button class="myMedia_titleBox_h2_btn" href="#">メディア一覧を見る</button>
+          <a class="myMedia_titleBox_h2_btn" href="#">メディア一覧を見る</a>
         </div>
 
         <div class="myMedia_ContentBox">
@@ -382,7 +376,7 @@
           <div class="myMedia_titleBox_h2">
             <p>Feature</p>
             <h2 class="myMedia_titleBox_h2__title">特集・プロジェクト資料</h2>
-            <button class="myMedia_titleBox_h2_btn" href="#">他の資料も見る</button>
+            <a class="myMedia_titleBox_h2_btn" href="#">他の資料も見る</a>
           </div>
           <div class="helpMov_ContentBox">
             <div class="helpMov_Content_a">
@@ -458,7 +452,7 @@
           <div class="myMedia_titleBox_h2">
             <p>Case</p>
             <h2 class="myMedia_titleBox_h2__title">広告事例</h2>
-            <button class="myMedia_titleBox_h2_btn" href="#">他の広告事例も見る</button>
+            <a class="myMedia_titleBox_h2_btn" href="#">他の広告事例も見る</a>
           </div>
           <div class="myCase_Content">
             <ul>
@@ -519,6 +513,10 @@
     });
     $(window).on('load', function () {
       $(".comp_title3").load("./assets/components/myMedia_titleBox_h3.html .myMedia_titleBox_h3.article");
+
+      $(".comp_title4").load("./assets/components/myMedia_titleBox_h3.html .myMedia_titleBox_h3.doc");
+
+      $(".comp_title5").load("./assets/components/myMedia_titleBox_h3.html .myMedia_titleBox_h3.mov");
     });
     $(window).on('load', function () {
       $(".helpBlog_item").load("./assets/components/helpBlog_item.html");
