@@ -1,9 +1,13 @@
 .article_text_img {
-    display: flex;
     width: 100%;
-    gap: 2rem;
-    border-bottom: 1px solid #D1D1D1;
     padding-bottom: 3.5rem
+}
+.article_text_img_box {
+    display: flex;
+    border-bottom: 1px solid #D1D1D1;
+    gap: 3rem;
+    padding: 3rem 0;
+
 }
 .article_text_img h4 {
     font-weight: 500;
@@ -11,9 +15,25 @@
 .article_text_img p {
     padding-top: 1rem;
 }
+.article_text_img_textbox {
+    width: 75%;
+}
+.article_text_img_box img {
+    width: 100%;
+}
+.article_text_img_box:nth-child(1) {
+    padding-top: 0;
+}
 
 @media screen and (max-width: 768px) {
-    .article_text_img {
+    .article_text_img_box {
         flex-direction: column-reverse;
+    }
+    .article_text_img_textbox {
+        width: 100%;
+    }
+    .article_text_img_box img {
+        width: 70%;
+        text-align: center;
     }
 }

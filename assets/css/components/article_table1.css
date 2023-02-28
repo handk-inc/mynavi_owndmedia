@@ -4,11 +4,27 @@
 .article_table1_box th {
     border: 1px solid #D1D1D1;
     width: 25%;
-    padding: 1rem 0 1rem 2rem;
+    padding: 1rem 1rem 1rem 2rem;
     background-color: #FAFAFA;
 }
 .article_table1_box td {
     border: 1px solid #D1D1D1;
     width: 75%;
-    padding: 1rem 0 1rem 2rem;
+    padding: 1rem 1rem 1rem 2rem;
 }
+@media screen and (max-width:768px) {
+    .article_table1_box th {
+        font-size: 1.4rem;
+    }
+    .article_table1_box td {
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .article_table1_box th {
+        font-size: 1.2rem;
+    }
+    .article_table1_box td {
+        font-size: 1.2rem;
+    }
+  }
