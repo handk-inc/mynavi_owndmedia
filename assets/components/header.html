@@ -1,8 +1,24 @@
 <header class="headerContainer">
   <div class="headerNav">
     <ul class="headerUl_a">
-      <li class="headerItem_a"><a href="#" class="headerLink_a">お役立ち情報</a></li>
-      <li class="headerItem_a"><a href="#" class="headerLink_a">メディア紹介</a></li>
+      <li class="headerItem_a">
+        <a href="#" class="headerLink_a useful_information">お役立ち情報</a>
+        <ul class="headerItem_a_sub_useful">
+          <li><a href="/column/">調査記事</a></li>
+          <li><a href="/document/">資料</a></li>
+          <li><a href="/movie/">動画</a></li>
+        </ul>
+      </li>
+      <li class="headerItem_a">
+        <a href="#" class="headerLink_a media_introduction">メディア紹介</a>
+        <ul class="headerItem_a_sub_media">
+          <li><a href="/media/mynavi_woman/">マイナビウーマン</a></li>
+          <li><a href="/media/mynavi_news/">マイナビニュース</a></li>
+          <li><a href="/media/mynavi_child/">マイナビ子育て</a></li>
+          <li><a href="/media/mynavi_student/">マイナビ学生の窓口</a></li>
+          <li><a href="/media/mynavi_teens/">マイナビティーンズ</a></li>
+        </ul>
+      </li>
       <li class="headerItem_a"><a href="#" class="headerLink_a">特集・プロジェクト資料</a></li>
       <li class="headerItem_a"><a href="#" class="headerLink_a">広告事例</a></li>
       <li class="headerItem_register"><a href="#" class="headerLink_register">メルマガ登録</a></li>
@@ -12,11 +28,27 @@
   <div class="openbtn1"><span></span><span></span><span></span></div>
   <nav id="g-nav">
     <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
-      <ul>
-        <li><a href="#">Top</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Service</a></li>
-        <li><a href="#">Contact</a></li>
+      <ul g-nav-ul>
+        <li>
+          <a href="#">お役立ち情報</a>
+          <ul class="g-nav-ul-sub-a">
+            <li><a href="">調査記事</a></li>
+            <li><a href="">資料</a></li>
+            <li><a href="">動画</a></li>
+          </ul>
+        </li>
+        <li class="g-nav-ul-sub-b">
+          <a href="#">メディア紹介</a>
+          <ul class="g-nav-ul-sub-b">
+            <li><a href="">マイナビウーマン</a></li>
+          <li><a href="">マイナビニュース</a></li>
+          <li><a href="">マイナビ子育て</a></li>
+          <li><a href="">マイナビ学生の窓口</a></li>
+          <li><a href="">マイナビティーンズ</a></li>
+          </ul>
+        </li>
+        <li><a href="#">特集企画</a></li>
+        <li><a href="#">広告事例</a></li>
       </ul>
     </div>
   </nav>
