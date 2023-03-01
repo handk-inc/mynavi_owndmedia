@@ -52,7 +52,6 @@
 .useful_list_wrapper {
   display: flex;
   gap: 6rem;
-  width: fit-content;
 }
 
 .useful_list_left {
