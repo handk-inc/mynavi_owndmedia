@@ -61,7 +61,14 @@
   border-radius: 4px;
   transition: 0.6s;
 }
-
+.secondary_btn_text span {
+  display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  .secondary_btn_text {
+    padding: 1rem 2.4rem;
+  }
+}
 @media screen and (max-width: 480px) {
   .secondary_btn {
     width: 100%;

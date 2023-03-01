@@ -137,10 +137,20 @@
 }
 
 @media screen and (max-width: 768px) {
+  .media_feature_wrapper {
+    width: 90%;
+  }
   .media_feature_imgs {
     display: grid;
     grid-template-columns: auto auto;
     gap: 1.6rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .media_feature_wrapper {
+    width: 100%;
   }
 }
 

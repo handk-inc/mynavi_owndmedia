@@ -102,6 +102,7 @@
   .headerContainer {
     display: flex;
     background-color: transparent;
+    box-shadow: none;
   }
   .headerNav {
     display: none;
