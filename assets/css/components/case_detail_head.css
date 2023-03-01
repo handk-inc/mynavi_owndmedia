@@ -1,81 +1,79 @@
 .case_detail_head {
-    font-size: 4rem;
-    letter-spacing: 2px;
-    line-height: 6rem;
-    color: #00374D;
-    margin-bottom: 7rem;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  line-height: 6rem;
+  color: #00374d;
+  margin-bottom: 7rem;
 }
 .case_detail_head_sns_logos {
-    display: flex;
-    margin: 1rem 1rem;
-    align-items: center;
-    justify-content: end;
-
+  display: flex;
+  margin: 1rem 1rem;
+  align-items: center;
+  justify-content: end;
 }
-.case_detail_head_sns_logos_tw a  {
-    position: relative;
+.case_detail_head_sns_logos_tw a {
+  position: relative;
 }
 .case_detail_head_sns_logos_fb a {
-    position: relative;
+  position: relative;
 }
 .case_detail_head_sns_logos_line a {
-    position: relative;
+  position: relative;
 }
 .case_detail_head_sns_logos_tw a::after {
-    position: absolute;
-    display: inline-block;
-    content: "";
-    background-image: url(/assets/img/Twitter\ social\ icons\ -\ circle\ -\ blue\ 1.png);
-    width: 4rem;
-    top: 2rem;
-    height: 4rem;
-    right: 9rem;
-    background-repeat: no-repeat;
+  position: absolute;
+  display: inline-block;
+  content: "";
+  background-image: url(/assets/img/logo_twitter.svg);
+  width: 4rem;
+  top: 2rem;
+  height: 4rem;
+  right: 9rem;
+  background-repeat: no-repeat;
 }
 .case_detail_head_sns_logos_fb a::after {
-    position: absolute;
-    display: inline-block;
-    content: "";
-    background-image: url(/assets/img/f_logo_RGB-Blue_250\ 1.png);
-    width: 4rem;
-    top: 2rem;
-    height: 4rem;
-    right: 4rem;
-    background-repeat: no-repeat;
+  position: absolute;
+  display: inline-block;
+  content: "";
+  background-image: url(/assets/img/logo_facebook.svg);
+  width: 4rem;
+  top: 2rem;
+  height: 4rem;
+  right: 4rem;
+  background-repeat: no-repeat;
 }
 .case_detail_head_sns_logos_line a::after {
-    position: absolute;
-    display: inline-block;
-    content: "";
-    background-image: url(/assets/img/LINE_APP_Android\ 1.png);
-    width: 4rem;
-    top: 2rem;
-    height: 4rem;
-    right: -1rem;
-    background-repeat: no-repeat;
+  position: absolute;
+  display: inline-block;
+  content: "";
+  background-image: url(/assets/img/logo_LINE.svg);
+  width: 4rem;
+  top: 2rem;
+  height: 4rem;
+  right: -1rem;
+  background-repeat: no-repeat;
 }
 
-@media screen and (max-width:768px) {
-      .case_detail_head {
-        font-size: 3rem;
-      }
+@media screen and (max-width: 768px) {
+  .case_detail_head {
+    font-size: 3rem;
+  }
 }
-@media screen and (max-width:530px) {
-    .case_detail_head {
-      font-size: 2.5rem;
-      line-height: 5rem;
-    }
-    .case_detail_head_sns_logos {
-        justify-content: flex-start;
-    }
-    .case_detail_head_sns_logos_tw a::after {
-        right: -3rem;
-    }
-    .case_detail_head_sns_logos_fb a::after {
-        right: -8rem;
-    }
-    .case_detail_head_sns_logos_line a::after {
-        right: -13rem;
-    }
+@media screen and (max-width: 530px) {
+  .case_detail_head {
+    font-size: 2.5rem;
+    line-height: 5rem;
+  }
+  .case_detail_head_sns_logos {
+    justify-content: flex-start;
+  }
+  .case_detail_head_sns_logos_tw a::after {
+    right: -3rem;
+  }
+  .case_detail_head_sns_logos_fb a::after {
+    right: -8rem;
+  }
+  .case_detail_head_sns_logos_line a::after {
+    right: -13rem;
+  }
 }
-
