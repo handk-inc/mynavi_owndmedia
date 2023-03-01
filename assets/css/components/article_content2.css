@@ -27,3 +27,12 @@
     top: 13px;
     left: 0px;
 }
+
+@media screen and (max-width:650px) {
+    .article_content2 {
+        flex-direction: column;
+    }
+    .article_content2_right_red {
+        padding-top: 1rem;
+    }
+}

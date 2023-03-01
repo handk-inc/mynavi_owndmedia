@@ -1,5 +1,6 @@
 .article_table1_box {
     width: 100%;
+    overflow-x: scroll;
 }
 .article_table1_box th {
     border: 1px solid #D1D1D1;
