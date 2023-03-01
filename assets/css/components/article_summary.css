@@ -1,17 +1,22 @@
-.article_summary {
-    background-color: #FAFAFA;
-    border: 1px solid #D1D1D1;
+#article_summary {
+  background-color: #fafafa;
+  border: 1px solid #d1d1d1;
 }
 .article_summary ul {
-    padding: 2.4rem 3.2rem;
-    margin: 0 auto;
-
+  padding: 2.4rem 3.2rem;
+  margin: 0 auto;
 }
 .article_summary_h3 {
-    font-size: 1.6rem;
-    color: #00374D;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #00374d;
 }
 .article_summary_p {
-    font-size: 1.6rem;
-    font-weight: 400;
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 480px) {
+  .article_summary ul {
+    padding: 1.6rem 1.6rem;
+  }
 }

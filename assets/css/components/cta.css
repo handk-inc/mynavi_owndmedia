@@ -4,8 +4,9 @@
 }
 .myDow_Container ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 3rem;
+  margin: 0 0.5rem;
 }
 .myDow_Container li {
   width: 48%;
@@ -15,6 +16,11 @@
   display: flex;
   align-items: stretch;
   padding: 5rem 10rem;
+  transition-duration: 0.6s;
+}
+.myDow_Container li:hover {
+  transform: scale(1.03);
+  transition: all 0.6s;
 }
 .myDow_Container a {
   text-align: center;
@@ -55,20 +61,33 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 2.4rem;
 }
 .myCta_Container h2 {
   font-size: 2.4rem;
   line-height: 1.6;
 }
-.myCta_Container form {
-  background-color: #00374d;
-  color: white;
-  border-radius: 3px;
-  font-size: 2.4rem;
-  font-weight: ;
-  padding: 2rem 6rem;
+.myCta_contact_btn {
   display: inline-block;
-  margin: 4rem 0;
+  width: fit-content;
+  padding: 1rem 8rem;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 500;
+  color: white;
+  background-color: #00374d;
+  border-radius: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #00374d;
+}
+
+.myCta_contact_btn:hover {
+  background-color: white;
+  border: 1px solid #00374d;
+  color: #00374d;
+  border-radius: 4px;
+  transition: all 0.15s linear;
 }
 .myCta_Container img {
   display: block;
@@ -81,9 +100,10 @@
   position: relative;
   color: #00374d;
 }
-.myCta_phone {
+.myCta_phone_number_head {
+  width: fit-content;
+  margin: 0 auto;
   display: flex;
-
   align-items: center;
 }
 

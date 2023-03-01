@@ -257,3 +257,8 @@
   top: 0px;
   height: 100%;
 }
+
+#document {
+  overflow-y: visible;
+  height: fit-content;
+}

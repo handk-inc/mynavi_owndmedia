@@ -16,7 +16,7 @@
     <main>
 
         <div class="inner">
-
+            <div id="breadcrumb" class=""></div>
             <!-- コンポーネント -->
             <div id="comp_title1"></div>
 
@@ -161,7 +161,7 @@
             </ul>
         </div>
         <div class="media_feature bg-gray">
-            <div class="media_feature_wrapper">
+            <div class="media_feature_wrapper inner">
                 <!-- コンポーネント -->
                 <div id="comp_title_line"></div>
                 <p class="media_feature_text">
@@ -196,6 +196,9 @@
             $("#comp_title_line").load("../assets/components/title_line.html .title_line.feature");
 
             $("#secondary_btn").load("../assets/components/btn.html .secondary_btn.feature_list");
+
+            $("#breadcrumb").load("/assets/components/breadcrumb.html");
+
         });
     </script>
     <!-- /コンポーネント読み込み用の一時的なjs -->

@@ -1,4 +1,4 @@
-/* ----------動画----------- */
+/* ----------特集・プロジェクト企画----------- */
 
 .helpMov_titleBox {
   line-height: 3rem;
@@ -8,47 +8,46 @@
   display: inline-block;
   font-size: 2.4rem;
 }
-.helpMov_ContentBox {
+.featureProject_ContentBox {
   display: flex;
   justify-content: space-between;
   gap: 3rem;
 }
-.helpMov_Content_a {
+.featureProject_Content_a:hover {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+}
+.featureProject_item:hover {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+}
+.featureProject_Content_a {
   width: 48%;
   border: 1px solid #d1d1d1;
   border-radius: 4px;
   position: relative;
 }
-
-.helpMov_Content_a:hover {
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
-}
-.helpMov_item:hover {
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
-}
-.helpMov_Content_a img {
+.featureProject_Content_a img {
   width: 100%;
   object-fit: cover;
-  aspect-ratio: 21/11;
+  aspect-ratio: 4/3;
 }
-.helpMov_Content_a_linkBox {
+.featureProject_Content_a_linkBox {
   display: flex;
   margin-bottom: 0.5rem;
   position: relative;
 }
 
-.helpMov_Content_a h4 {
+.featureProject_Content_a h4 {
   font-size: 1.6rem;
   font-weight: 500;
 }
-.helpMov_Content_a p {
+.featureProject_Content_a p {
   font-size: 1.6rem;
   letter-spacing: 1px;
   color: #757575;
   margin-top: 1rem;
 }
 
-.helpMov_Ul {
+.featureProject_Ul {
   display: grid;
   gap: 2rem;
   flex-wrap: wrap;
@@ -58,25 +57,25 @@
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
 }
-.helpMov_item {
+.featureProject_item {
   position: relative;
   border: 1px solid #d1d1d1;
   border-radius: 4px;
 }
-.heloMov_article {
+.featureProject_article {
   margin: 1rem 1.5rem;
 }
-.helpMov_item article img {
+.featureProject_item article img {
   width: 100%;
   object-fit: cover;
-  aspect-ratio: 21/11;
+  aspect-ratio: 4/3;
 }
-.helpMov_linkBox {
+.featureProject_linkBox {
   display: flex;
   position: relative;
 }
 
-.helpMov_item article h4 {
+.featureProject_item article h4 {
   font-size: 1.4rem;
   font-weight: 500;
   overflow: hidden;
@@ -93,7 +92,7 @@
   left: 0;
 }
 
-.helpMov_image_wrapper::before {
+.featureProject_image_wrapper::before {
   content: "";
   position: absolute;
   top: 0;
@@ -104,29 +103,29 @@
   opacity: 0;
   transition: all 0.3s;
   width: 100%;
-  aspect-ratio: 21/11;
+  aspect-ratio: 4/3;
   border-radius: 4px;
 }
 
-.helpMov_Content_a:hover .helpMov_image_wrapper::before {
+.featureProject_Content_a:hover .featureProject_image_wrapper::before {
   opacity: 1;
 }
-.helpMov_item:hover .helpMov_image_wrapper::before {
+.featureProject_item:hover .featureProject_image_wrapper::before {
   opacity: 1;
 }
 
 @media screen and (max-width: 768px) {
-  .helpMov_item {
+  .featureProject_item {
     min-width: 80%;
   }
-  .helpMov_item article img {
+  .featureProject_item article img {
     width: 100%;
     height: auto;
   }
-  .helpMov_Content_a {
+  .featureProject_Content_a {
     display: none;
   }
-  .helpMov_Ul {
+  .featureProject_Ul {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
@@ -135,10 +134,10 @@
 }
 
 @media screen and (max-width: 480px) {
-  .helpMov_item {
+  .featureProject_item {
     min-width: 85%;
   }
-  .helpMov_Ul {
+  .featureProject_Ul {
     display: flex;
   }
 }

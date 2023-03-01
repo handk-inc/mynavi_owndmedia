@@ -29,6 +29,9 @@
   border-radius: 4px;
   position: relative;
 }
+.helpBlog_item:hover {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+}
 .helpBlog_linkBox {
   display: flex;
   position: relative;
@@ -37,8 +40,10 @@
   width: 100%;
   text-align: center;
   background-color: beige;
+  object-fit: cover;
+  aspect-ratio: 35/16;
 }
-.helpBlog_item > div {
+.helpBlog_article {
   margin: 10px;
 }
 .helpBlog_item time {
@@ -58,9 +63,26 @@
   left: 0;
 }
 
+.helpBlog_image_wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: all 0.3s;
+  width: 100%;
+  aspect-ratio: 35/16;
+  border-radius: 4px;
+}
+
+.helpBlog_item:hover .helpBlog_image_wrapper::before {
+  opacity: 1;
+}
+
 @media screen and (max-width: 1320px) {
-  .helpBlog_item {
-  }
   .helpBlog_Ul {
     grid-template-columns: auto auto auto;
   }
@@ -74,7 +96,7 @@
     gap: 2rem;
   }
   .helpBlog_item {
-    min-width: 40%;
+    min-width: 80%;
   }
   .helpBlog_img {
     width: 100%;

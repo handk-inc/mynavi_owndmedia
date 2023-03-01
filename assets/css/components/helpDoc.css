@@ -19,6 +19,9 @@
   grid-template-rows: auto auto;
   gap: 2rem;
 }
+.helpDoc_Item:hover {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+}
 .helpDoc_Item article {
   display: flex;
   align-items: center;
@@ -28,8 +31,16 @@
   height: 100%;
   position: relative;
 }
+.helpDoc_image_wrapper {
+  height: 100%;
+  width: 60%;
+  align-items: center;
+  display: flex;
+}
 .helpDoc_Item article img {
-  width: 40%;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 4/3;
 }
 
 .helpDoc_linkBox {
@@ -65,7 +76,7 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
 }
-.helpDoc_Item article > div {
+.heloDoc_article {
   padding: 1rem 1.5rem;
   height: 100%;
   width: 100%;
@@ -87,16 +98,38 @@
     overflow-y: hidden;
   }
   .helpDoc_Item {
-    min-width: 40%;
+    min-width: 80%;
   }
   .helpDoc_Item article {
     display: inline-block;
   }
+  .helpDoc_image_wrapper {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/3;
+  }
   .helpDoc_Item article img {
     width: 100%;
   }
-  .helpDoc_Item article > div {
+  .heloDoc_article {
     padding: 1rem 1.5rem;
+  }
+  .helpDoc_image_wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: all 0.3s;
+    aspect-ratio: 4/3;
+    border-radius: 4px;
+  }
+
+  .helpDoc_Item:hover .helpDoc_image_wrapper::before {
+    opacity: 1;
   }
 }
 
