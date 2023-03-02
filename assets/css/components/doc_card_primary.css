@@ -90,3 +90,7 @@
 #doc_card_primary:hover .doc_image_wrapper::before {
   opacity: 1;
 }
+.doc_card_primary_plan {
+  border: #d1d1d1 1px solid;
+
+}
