@@ -123,7 +123,7 @@
 .media_introduction:hover + .headerItem_a_sub_media {
   display: block;
   position: absolute;
-  transition: all .3s;
+  transition: all 0.3s;
   background-color: white;
   box-shadow: 2px 2px 8px #95949a;
 }
@@ -134,6 +134,8 @@
   }
   .headerContainer {
     display: flex;
+    background-color: transparent;
+    box-shadow: none;
   }
   .headerNav {
     display: none;

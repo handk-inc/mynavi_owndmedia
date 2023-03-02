@@ -1,6 +1,6 @@
 /* -------------FVのCSS--------------- */
 .myFv_Section {
-  background-image: url(/assets/img/アートボード\ 3@4x\ 1.png);
+  background-image: url(/assets/img/fv_background_image.png);
   min-height: 100vh;
   object-fit: cover;
 }
