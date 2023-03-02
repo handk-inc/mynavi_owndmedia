@@ -112,10 +112,8 @@
 .media_feature_wrapper {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
   width: 80%;
   margin: 0 auto;
-  align-items: center;
 }
 
 .media_feature_text {
