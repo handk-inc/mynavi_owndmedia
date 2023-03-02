@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>広告お問い合わせにおける個人情報の取り扱いについて</title>
+    <link rel="stylesheet" href="../assets/css/destyle.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosansjapanese.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <main>
+        <div class="inner">
+            <div id="breadcrumb" class=""></div>
+
+            <!-- コンポーネント -->
+            <div id="comp_title1"></div>
+            <div class="privacy_policy_wrapper">
+                <p class="privacy_policy_text">
+                    （マイナビニュース/マイナビウーマン/マイナビ子育て/マイナビ学生の窓口/TECH+）
+                    マイナビニュース/マイナビウーマン/マイナビ子育て/マイナビ学生の窓口/TECH+へのお問い合わせにおける個人情報の取り扱いについて株式会社マイナビ（以下「当社といいます）は、お問合せいただいた方（以下「お問い合わせ者」といいます）の個人情報の管理に細心の注意を払い、これを適正に取り扱います。
+                </p>
+                <div class="privacy_policy_block">
+                    <h3 class="privacy_policy_h3">
+                        ＜当社における個人情報の取り扱い＞
+                    </h3>
+                    <p class="privacy_policy_text">
+                        当社における個人情報の取り扱いは、<a href="" class="privacy_policy_link">個人情報保護方針</a>に基づいて行われます。
+                    </p>
+
+                </div>
+                <div class="privacy_policy_block">
+                    <h3 class="privacy_policy_h3">
+                        ＜個人情報の利用目的＞
+                    </h3>
+                    <p class="privacy_policy_text">
+                        お問い合わせ者のお名前、メールアドレスなどの個人情報（その他ご記入いただいた内容のうち個人情報に該当するものを含む）はご意見・ご要望・お問合せ等への対応、広告・コンテンツの配信という目的の範囲内にて利用いたします。
+                    </p>
+                </div>
+                <div class="privacy_policy_block">
+                    <h3 class="privacy_policy_h3">
+                        個人情報の第三者への開示
+                    </h3>
+                    <p class="privacy_policy_text">
+                        法令等に基づく正当な理由がある場合を除き、企業様の同意なく目的外での利用及び第三者への提供は行いません。
+                    </p>
+                </div>
+                <div class="privacy_policy_block">
+                    <h3 class="privacy_policy_h3">
+                        ＜お問い合わせ＞
+                    </h3>
+                    <p class="privacy_policy_text">
+                        個人情報についてのお問い合わせについては、次のメールアドレス宛にご連絡ください。<br>
+                        マイナビニュース/マイナビウーマン/マイナビ子育て/マイナビ学生の窓口/TECH+<br>
+                        <a href="mailto:news-personal_data@mynavi.jp"
+                            class="privacy_policy_link">news-personal_data@mynavi.jp</a>
+                    </p>
+                </div>
+                <div class="privacy_policy_block">
+                    <h3 class="privacy_policy_h3">
+                        ＜個人情報保護管理者（代理人）＞
+                    </h3>
+                    <p class="privacy_policy_text">
+                        株式会社マイナビ コンテンツメディア事業部 事業推進統括部長<br>
+                        <a href="mailto:news-personal_data@mynavi.jp"
+                            class="privacy_policy_link">news-personal_data@mynavi.jp</a><br>
+                        ※当社は、「プライバシーマーク」使用許諾事業者として認定されています。
+                    </p>
+                </div>
+                <p class="privacy_policy_text">付則<br>
+                    2021年2月16日 制定</p>
+            </div>
+
+        </div>
+
+        <div id="cta-section"></div>
+    </main>
+
+    <!-- フッターのセクション -->
+    <div id="footer"></div>
+
+    <!-- jQueryのCDNをmain.jsの直前の記述 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../assets/js/index.js"></script>
+    <!-- コンポーネント読み込み用の一時的なjs -->
+    <script>
+        $(window).on('load', function () {
+            $("#comp_title1").load("../assets/components/myMedia_titleBox_h2.html .myMedia_titleBox_h2.h1.privacy_policy");
+            $("#comp_title2").load("../assets/components/myMedia_titleBox_h3.html .myMedia_titleBox_h3.recommend_article");
+            $("#comp_title3").load("../assets/components/myMedia_titleBox_h3.html .myMedia_titleBox_h3.recommend_doc");
+            $("#comp_title4").load("../assets/components/myMedia_titleBox_h3.html .myMedia_titleBox_h3.recommend_mov");
+            $(".research_article_card_secondary").load("../assets/components/research_article_card_secondary.html");
+            $(".doc_card_secondary").load("../assets/components/doc_card_secondary.html");
+            $(".mov_card_secondary").load("../assets/components/mov_card_secondary.html");
+            $("#breadcrumb").load("../assets/components/breadcrumb.html");
+            $("#serach_area").load("../assets/components/search_area.html");
+            $.getScript("../assets/js/components/serach_clear.js", function () {
+            });
+        })
+    </script>
+
+    <!-- /コンポーネント読み込み用の一時的なjs -->
+</body>
+
+</html>

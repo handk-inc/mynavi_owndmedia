@@ -37,38 +37,28 @@
       <div class="media_detail_accordion"></div>
     </div>
 
-    <div class="media_feature bg-gray">
-      <div class="inner">
-        <div class="media_feature_wrapper">
-          <!-- コンポーネント -->
-          <div id="recommend_plan"></div>
-          <div class="recommed_container">
-            <div class="recommend_wrapper">
-                <div class="recommend_items">
-                    <div class="doc_card_secondary"></div>
-                    <div class="doc_card_secondary"></div>
-                    <div class="doc_card_secondary"></div>
-                </div>
-            </div>
-        </div>
-          <!-- コンポーネント -->
-        </div>
-      </div>
-    </div>
-
     <div class="inner">
       <!-- コンポーネント -->
-      <div id="recommend_wrapper">
-        <div id="comp_title2"></div>
-        <div class="recommend_items  media_recommend">
-          <div class="media_card_secondary_news"></div>
-          <div class="media_card_secondary_child"></div>
-          <div class="media_card_secondary_student"></div>
-          <div class="media_card_secondary_teens"></div>
+      <div class="recommed_container">
+        <div id="recommend_wrapper">
+          <div id="comp_title3"></div>
+          <div class="recommend_items  media_recommend">
+            <div class="doc_card_secondary"></div>
+            <div class="doc_card_secondary"></div>
+            <div class="doc_card_secondary"></div>
+          </div>
+        </div>
+        <div id="recommend_wrapper">
+          <div id="comp_title2"></div>
+          <div class="recommend_items  media_recommend">
+            <div class="media_card_secondary_news"></div>
+            <div class="media_card_secondary_child"></div>
+            <div class="media_card_secondary_student"></div>
+            <div class="media_card_secondary_teens"></div>
+          </div>
         </div>
       </div>
     </div>
-
 
 
     <div id="cta-section"></div>
@@ -84,8 +74,10 @@
   <!-- コンポーネント読み込み用の一時的なjs -->
   <script>
     $(window).on('load', function () {
+      $("#comp_title3").load("/assets/components/myMedia_titleBox_h3.html .myMedia_titleBox_h3.recommend_project");
       $("#comp_title2").load("/assets/components/myMedia_titleBox_h3.html .myMedia_titleBox_h3.recommend_media");
-      $("#breadcrumb").load("/assets/components/breadcrumb.html");
+      $("#breadcrumb").load("/assets/components/breadcrumb.html .doc_card_primary_plan");
+      $(".doc_card_secondary").load("/assets/components/doc_card_secondary.html");
       $(".media_card_secondary_news").load("/assets/components/media_card_secondary.html .news");
       $(".media_card_secondary_woman").load("/assets/components/media_card_secondary.html .woman")
       $(".media_card_secondary_child").load("/assets/components/media_card_secondary.html .child");
@@ -98,7 +90,7 @@
       $("#article_text_img_content").load("/assets/components/article_text_img.html .myMedia-woman");
       $(".media_detail_cta").load("/assets/components/media_detail_cta.html");
       $(".media_detail_accordion").load("/assets/components/media_detail_accordion.html");
-      
+
       $("#woman-advertisement").load("/assets/components/title_section.html .woman-advertisement");
       $("#woman-category").load("/assets/components/title_section.html .woman_category");
       $("#title_section_woman_client").load("/assets/components/title_section.html .woman-client");
