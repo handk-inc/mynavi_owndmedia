@@ -28,7 +28,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.footer_a_link a {
+.footer_a_minlink a {
   color: #757575;
 }
 .footer_a_link a:hover {
