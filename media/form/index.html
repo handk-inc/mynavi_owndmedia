@@ -25,13 +25,10 @@
       <!-- コンポーネント -->
       <div id="comp_title1"></div>
 
-      <div id="form" style="padding-bottom: 4rem;">
-        <iframe src="https://go.woman.mynavi.jp/l/826223/2023-03-08/95fyc" width="100%" height="500" type="text/html"
-          frameborder="0" allowTransparency="true" style="border: 0"></iframe>
-      </div>
+      <div id="form"></div>
 
 
-      <div id="recommend_wrapper">
+      <div id="recommend_wrapper" class="mt-80">
         <div id="comp_title2"></div>
         <div class="recommend_items  media_recommend">
           <div class="media_card_secondary_news"></div>
@@ -71,6 +68,7 @@
 
       $("#comp_title2").load("/assets/components/myMedia_titleBox_h3.html .myMedia_titleBox_h3.recommend_media");
 
+      $("#form").load("/assets/components/form_dl.html");
     });
   </script>
 
