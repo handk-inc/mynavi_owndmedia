@@ -36,15 +36,7 @@
           </ul>
         </div>
         <div class="myFv_Container_b">
-          <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-          <script>
-            hbspt.forms.create({
-              region: "na1",
-              portalId: "8556706",
-              formId: "1e2d8052-99c4-4c6d-b88b-f8e0f1ee28e8"
-            });
-          </script> -->
-          <img src="./assets/img/フォーム.png">
+          <div id="form"></div>
         </div>
       </div>
     </section>
@@ -550,13 +542,14 @@
 
       $(".comp_title5").load("./assets/components/myMedia_titleBox_h3.html .myMedia_titleBox_h3.mov");
     });
+    $("#form").load("./assets/components/form_fv.html");
     $(window).on('load', function () {
       $(".helpBlog_item").load("./assets/components/helpBlog_item.html");
     });
   </script>
   <!-- /コンポーネント読み込み用の一時的なjs -->
 
-  
+
 </body>
 
 </html>

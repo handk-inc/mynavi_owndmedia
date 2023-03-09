@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="">
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="%%description%%" />
+    <title>%%title%%</title>
+    <style>
+        /* ----------------------------------------------------
+変数を定義
+---------------------------------------------------- */
+        :root {
+            /* フォーム全体の幅（横いっぱいにする場合は100%） */
+            --form-width: 900px;
+
+            /* フォーム上の余白（不要の場合は0） */
+            --form-paddingTop: 46px;
+
+            /* フォーム下の余白（不要の場合は0） */
+            --form-paddingBottom: 60px;
+
+            /* 項目名の文字色 */
+            --form-title-color: #333;
+
+            /* 項目内容の文字色 */
+            --form-text-color: #333;
+
+            /* 必須の文字色 */
+            --form-required-textColor: #fff;
+
+            /* 必須の背景色 */
+            --form-required-bgColor: #EB5757;
+
+            /* 送信ボタンの文字色 */
+            --form-submit-textColor: #fff;
+
+            /* 送信ボタンの背景色 */
+            --form-submit-bgColor: #00374D;
+
+            /* 【スマホ時】上の余白（不要の場合は0） */
+            --form-sp-paddingTop: 30px;
+
+            /* 【スマホ時】下の余白（不要の場合は0） */
+            --form-sp-paddingBottom: 30px;
+
+            /* 【スマホ時】左右それぞれの余白（不要の場合は0） */
+            --form-sp-paddingLeftRight: 20px;
+        }
+
+        /* ----------------------------------------------------
+Reset
+---------------------------------------------------- */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        * {
+            min-height: 0;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        p,
+        table,
+        blockquote,
+        address,
+        pre,
+        iframe,
+        form,
+        figure,
+        dl {
+            margin: 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+            font-weight: inherit;
+            font-size: inherit;
+            line-height: inherit;
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            border-radius: 0;
+            outline: 0;
+            background: transparent;
+            color: inherit;
+            font: inherit;
+            text-align: inherit;
+            vertical-align: middle;
+        }
+
+        [type="checkbox"] {
+            -webkit-appearance: checkbox;
+            -moz-appearance: checkbox;
+            appearance: checkbox;
+        }
+
+        [type="radio"] {
+            -webkit-appearance: radio;
+            -moz-appearance: radio;
+            appearance: radio;
+        }
+
+        button,
+        input {
+            overflow: visible;
+        }
+
+        button,
+        select {
+            text-transform: none;
+        }
+
+        button,
+        [type="button"],
+        [type="reset"],
+        [type="submit"] {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            cursor: pointer;
+        }
+
+        button[disabled],
+        [type="button"][disabled],
+        [type="reset"][disabled],
+        [type="submit"][disabled] {
+            cursor: default;
+        }
+
+        button::-moz-focus-inner,
+        [type="button"]::-moz-focus-inner,
+        [type="reset"]::-moz-focus-inner,
+        [type="submit"]::-moz-focus-inner {
+            padding: 0;
+            border-style: none;
+        }
+
+        button:-moz-focusring,
+        [type="button"]:-moz-focusring,
+        [type="reset"]:-moz-focusring,
+        [type="submit"]:-moz-focusring {
+            outline: 1px dotted ButtonText;
+        }
+
+        select::-ms-expand {
+            display: none;
+        }
+
+        option {
+            padding: 0;
+        }
+
+        fieldset {
+            min-width: 0;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        legend {
+            display: table;
+            max-width: 100%;
+            padding: 0;
+            color: inherit;
+            white-space: normal;
+        }
+
+        progress {
+            vertical-align: baseline;
+        }
+
+        textarea {
+            overflow: auto;
+        }
+
+        [type="number"]::-webkit-inner-spin-button,
+        [type="number"]::-webkit-outer-spin-button {
+            height: auto;
+        }
+
+        [type="search"] {
+            outline-offset: -2px;
+        }
+
+        [type="search"]::-webkit-search-decoration {
+            -webkit-appearance: none;
+        }
+
+        ::-webkit-file-upload-button {
+            -webkit-appearance: button;
+            font: inherit;
+        }
+
+        label[for] {
+            cursor: pointer;
+        }
+
+        /* ----------------------------------------------------
+Date Picker
+---------------------------------------------------- */
+        .ui-widget-content {
+            border: 1px solid #ddd;
+            background: #fff;
+            color: #333;
+        }
+
+        .ui-widget-header {
+            border: 1px solid #ddd;
+            background: #e9e9e9;
+            color: #333;
+            font-weight: 700;
+        }
+
+        .ui-button,
+        .ui-state-default,
+        .ui-widget-content .ui-state-default,
+        .ui-widget-header .ui-state-default,
+        html .ui-button.ui-state-disabled:active,
+        html .ui-button.ui-state-disabled:hover {
+            border: 1px solid #c5c5c5;
+            background: #f6f6f6;
+            font-weight: 400;
+            color: #454545;
+        }
+
+        .ui-state-highlight,
+        .ui-widget-content .ui-state-highlight,
+        .ui-widget-header .ui-state-highlight {
+            border: 1px solid #dad55e;
+            background: #fffa90;
+            color: #777620;
+        }
+
+        .ui-button.ui-state-active:hover,
+        .ui-button:active,
+        .ui-state-active,
+        .ui-widget-content .ui-state-active,
+        .ui-widget-header .ui-state-active,
+        a.ui-button:active {
+            border: 1px solid #003eff;
+            background: #007fff;
+            font-weight: 400;
+            color: #fff;
+        }
+
+        .ui-datepicker {
+            width: 17em;
+            padding: 0.2em 0.2em 0;
+            display: none;
+        }
+
+        .ui-datepicker .ui-datepicker-header {
+            position: relative;
+            padding: 0.2em 0;
+        }
+
+        .ui-datepicker .ui-datepicker-next,
+        .ui-datepicker .ui-datepicker-prev {
+            position: absolute;
+            top: 2px;
+            width: 1.8em;
+            height: 1.8em;
+        }
+
+        .ui-datepicker .ui-datepicker-next-hover,
+        .ui-datepicker .ui-datepicker-prev-hover {
+            top: 1px;
+        }
+
+        .ui-datepicker .ui-datepicker-prev {
+            left: 2px;
+        }
+
+        .ui-datepicker .ui-datepicker-next {
+            right: 2px;
+        }
+
+        .ui-datepicker .ui-datepicker-prev-hover {
+            left: 1px;
+        }
+
+        .ui-datepicker .ui-datepicker-next-hover {
+            right: 1px;
+        }
+
+        .ui-datepicker .ui-datepicker-next span,
+        .ui-datepicker .ui-datepicker-prev span {
+            display: block;
+            position: absolute;
+            left: 50%;
+            margin-left: -8px;
+            top: 50%;
+            margin-top: -8px;
+        }
+
+        .ui-datepicker .ui-datepicker-title {
+            margin: 0 2.3em;
+            line-height: 1.8em;
+            text-align: center;
+        }
+
+        .ui-datepicker .ui-datepicker-title select {
+            font-size: 1em;
+            margin: 1px 0;
+        }
+
+        .ui-datepicker select.ui-datepicker-month,
+        .ui-datepicker select.ui-datepicker-year {
+            width: 45%;
+        }
+
+        .ui-datepicker table {
+            width: 100%;
+            font-size: 0.9em;
+            border-collapse: collapse;
+            margin: 0 0 0.4em;
+        }
+
+        .ui-datepicker th {
+            padding: 0.7em 0.3em;
+            text-align: center;
+            font-weight: 700;
+            border: 0;
+        }
+
+        .ui-datepicker td {
+            border: 0;
+            padding: 1px;
+        }
+
+        .ui-datepicker td a,
+        .ui-datepicker td span {
+            display: block;
+            padding: 0.2em;
+            text-align: right;
+            text-decoration: none;
+        }
+
+        .ui-datepicker .ui-datepicker-buttonpane {
+            background-image: none;
+            margin: 0.7em 0 0 0;
+            padding: 0 0.2em;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 0;
+        }
+
+        .ui-datepicker .ui-datepicker-buttonpane button {
+            float: right;
+            margin: 0.5em 0.2em 0.4em;
+            cursor: pointer;
+            padding: 0.2em 0.6em 0.3em 0.6em;
+            width: auto;
+            overflow: visible;
+        }
+
+        .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+            float: left;
+        }
+
+        .ui-datepicker.ui-datepicker-multi {
+            width: auto;
+        }
+
+        .ui-datepicker-multi .ui-datepicker-group {
+            float: left;
+        }
+
+        .ui-datepicker-multi .ui-datepicker-group table {
+            width: 95%;
+            margin: 0 auto 0.4em;
+        }
+
+        .ui-datepicker-multi-2 .ui-datepicker-group {
+            width: 50%;
+        }
+
+        .ui-datepicker-multi-3 .ui-datepicker-group {
+            width: 33.3%;
+        }
+
+        .ui-datepicker-multi-4 .ui-datepicker-group {
+            width: 25%;
+        }
+
+        .ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header,
+        .ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+            border-left-width: 0;
+        }
+
+        .ui-datepicker-multi .ui-datepicker-buttonpane {
+            clear: left;
+        }
+
+        .ui-datepicker-row-break {
+            clear: both;
+            width: 100%;
+            font-size: 0;
+        }
+
+        .ui-datepicker-rtl {
+            direction: rtl;
+        }
+
+        .ui-datepicker-rtl .ui-datepicker-prev {
+            right: 2px;
+            left: auto;
+        }
+
+        .ui-datepicker-rtl .ui-datepicker-next {
+            left: 2px;
+            right: auto;
+        }
+
+        .ui-datepicker-rtl .ui-datepicker-prev:hover {
+            right: 1px;
+            left: auto;
+        }
+
+        .ui-datepicker-rtl .ui-datepicker-next:hover {
+            left: 1px;
+            right: auto;
+        }
+
+        .ui-datepicker-rtl .ui-datepicker-buttonpane {
+            clear: right;
+        }
+
+        .ui-datepicker-rtl .ui-datepicker-buttonpane button {
+            float: left;
+        }
+
+        .ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current,
+        .ui-datepicker-rtl .ui-datepicker-group {
+            float: right;
+        }
+
+        .ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header,
+        .ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+            border-right-width: 0;
+            border-left-width: 1px;
+        }
+
+        .ui-datepicker .ui-icon {
+            display: block;
+            text-indent: -99999px;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            left: 0.5em;
+            top: 0.3em;
+        }
+
+        /* ----------------------------------------------------
+Form Style
+---------------------------------------------------- */
+        form.form {
+            font-size: 1.4rem;
+            background-color: white;
+            width: 99%;
+            margin: 0;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: var(--form-paddingTop);
+            padding-bottom: var(--form-paddingBottom);
+            padding: 2.4rem 3.2rem;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
+        }
+
+        form.form .form-field,
+        form.form .form-field.email-pref,
+        form.form .form-field.no-label {
+            line-height: 1.4;
+            margin: 0;
+            margin-bottom: 0.8rem;
+            padding: 0;
+        }
+
+        /* inputのフォーカス時 */
+        input[type="text"] {
+            border: 1px solid #757575;
+        }
+
+        input[type="text"]:focus {
+            border: 1px solid #757575;
+            outline: 0;
+        }
+
+        form.form .form-field.no-label {
+            margin-top: 5px;
+        }
+
+        form.form .form-field label {
+            float: none;
+            display: block;
+            margin-bottom: 8px;
+            padding: 0 15px 0 0;
+            font-weight: 500;
+            text-align: left;
+            width: max-content;
+        }
+
+        form.form .form-field.required label,
+        form.form span.required label {
+            background-image: none;
+        }
+
+        .required .field-label::after {
+            color: var(--form-required-textColor);
+            background-color: #EB5757;
+            content: "必須";
+            font-size: 10px;
+            font-weight: normal;
+            border-radius: 3px;
+            margin-left: 10px;
+            padding: 2px 8px;
+            vertical-align: 3px;
+        }
+
+        form.form input.text {
+            width: 100%;
+        }
+
+        form.form input,
+        form.form input.date,
+        form.form select,
+        form.form textarea,
+        form.form textarea.standard {
+            border: solid 1px #D1D1D1;
+            border-radius: 3px;
+            background-color: white;
+            background-image: none;
+            width: 100%;
+            height: 35px;
+            font-weight: normal;
+            color: var(--form-text-color);
+            padding: 8px 10px;
+        }
+
+        form.form input[type="checkbox"],
+        form.form input[type="radio"] {
+            width: auto;
+            display: none;
+        }
+
+        form.form .value span label.inline {
+            position: relative;
+            font-weight: normal;
+            padding-left: 28px;
+            width: fit-content;
+        }
+
+        form.form .pd-checkbox .value span label.inline::before,
+        form.form .pd-radio .value span label.inline::before {
+            content: "";
+            display: block;
+            background: #fff;
+            border: 1px solid #cbd6e2;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            margin-top: -11px;
+        }
+
+        form.form .pd-radio .value span label.inline::before {
+            border-radius: 100%;
+        }
+
+        form.form .pd-checkbox .value span label.inline::after {
+            border-right: 2px solid #666;
+            border-bottom: 2px solid #666;
+            content: "";
+            display: block;
+            width: 8px;
+            height: 12px;
+            position: absolute;
+            top: 50%;
+            left: 6px;
+            margin-top: -9px;
+            opacity: 0;
+            transform: rotate(45deg);
+        }
+
+        form.form .pd-radio .value span label.inline::after {
+            content: "";
+            display: block;
+            width: 8px;
+            height: 8px;
+            background-color: #666;
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translate(-50%, -50%);
+            margin-top: -1px;
+            border-radius: 100%;
+            opacity: 0;
+        }
+
+        form.form input[type="checkbox"]:checked+label.inline:after,
+        form.form input[type="radio"]:checked+label.inline:after {
+            opacity: 1;
+        }
+
+        form.form select {
+            -webkit-appearance: auto;
+            -moz-appearance: auto;
+            appearance: auto;
+        }
+
+        form.form span.value {
+            margin-left: 0;
+        }
+
+        form.form textarea.standard {
+            height: 68px;
+        }
+
+        ::placeholder {
+            color: #d9d9d9;
+        }
+
+        form.form p.submit {
+            margin: 0;
+            padding: 0;
+        }
+
+        form.form p.submit input {
+            display: block;
+            color: var(--form-submit-textColor);
+            background-color: #00374D;
+            border-radius: 4px;
+            border: 1px solid #00374D;
+            font-weight: 500;
+            text-align: center;
+            width: 28rem;
+            max-width: 80%;
+            height: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            position: relative;
+        }
+
+        .form.form p.submit input:hover {
+            background-color: white;
+            border: #00374D 1px solid;
+            color: #00374D;
+            transition: 0.3s;
+        }
+
+        form.form p.submit input::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: -20px;
+            left: 0;
+            width: 0px;
+            height: 0px;
+            margin: auto;
+            border-style: solid;
+            border-color: #fde7d1 transparent transparent transparent;
+            border-width: 20px 20px 0 20px;
+        }
+
+        .red-background,
+        form.form .errors {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            background-color: #de4b4c;
+            margin-bottom: 45px;
+            padding: 15px 10px;
+            color: white;
+            position: relative;
+        }
+
+        .red-color,
+        form.form div.error {
+            color: var(--form-title-color);
+        }
+
+        form.form .form-field.error label,
+        form.form span.error {
+            color: var(--form-text-color);
+        }
+
+        form.form .form-field.error {
+            color: #de4b4c;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        form.form .form-field.error:not(.form-field)::before {
+            content: "■";
+        }
+
+        form.form .form-row {
+            margin-top: 1.6rem;
+            margin-left: -10px;
+            margin-right: -10px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        form.form .form-field {
+            width: 100%;
+            padding: 0 10px;
+        }
+
+        form.form .form-field.multi-col {
+            width: 50%;
+        }
+
+        form a {
+            color: #006DD4;
+        }
+
+        form a:hover {
+            text-decoration: underline;
+        }
+
+        /* ----------------------------------------------------
+Responsive
+---------------------------------------------------- */
+        @media screen and (max-width: 767px) {
+            .form.form {
+                width: 99%;
+                padding-top: var(--form-sp-paddingTop);
+                padding-bottom: var(--form-sp-paddingBottom);
+                padding-left: var(--form-sp-paddingLeftRight);
+                padding-right: var(--form-sp-paddingLeftRight);
+            }
+
+            form.form .form-field,
+            form.form .form-field.email-pref,
+            form.form .form-field.no-label {
+                margin-bottom: 16px;
+            }
+
+            form.form .errors {
+                margin-bottom: 16px;
+            }
+
+            form.form .form-field label {
+                font-size: 16px;
+            }
+
+            form.form p.submit input {
+                font-size: 16px;
+            }
+
+            .form.form .form-field.multi-col {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <form accept-charset="UTF-8" method="post" action="https://go.woman.mynavi.jp/l/826223/2023-03-08/95fyc"
+        class="form" id="pardot-form">
+
+        <style type="text/css">
+            form.form p label {
+                color: #000000;
+            }
+        </style>
+
+
+
+
+
+        <p>貴社にベストなご提案をさせていただきます。<br>
+            こちらのフォームからお問い合わせください。<br>
+            （アフィリエイトのご相談は<a href="https://jp.research.net/r/LFHGNKG">こちら</a> ）</p>
+
+
+
+        <div class="form-row">
+
+            <div class="form-group form-field multi-col Inquirymedia pd-select required    ">
+
+                <label class="field-label" for="826223_143107pi_826223_143107">お問い合わせメディア</label>
+
+                <select name="826223_143107pi_826223_143107" id="826223_143107pi_826223_143107" class="select"
+                    onchange="">
+                    <option value="" selected="selected"></option>
+                    <option value="895840">マイナビニュース</option>
+                    <option value="895843">マイナビウーマン</option>
+                    <option value="895846">マイナビ子育て</option>
+                    <option value="895849">マイナビ学生の窓口</option>
+                    <option value="895852">その他</option>
+                </select>
+
+                <div id="error_for_826223_143107pi_826223_143107" style="display:none"></div>
+
+            </div>
+
+            <div class="form-group form-field multi-col Inquiryitem pd-select required    ">
+
+                <label class="field-label" for="826223_143110pi_826223_143110">お問い合わせ項目</label>
+
+                <select name="826223_143110pi_826223_143110" id="826223_143110pi_826223_143110" class="select"
+                    onchange="">
+                    <option value="" selected="selected"></option>
+                    <option value="895855">媒体資料請求</option>
+                    <option value="895858">広告掲載・プロモーションのご相談</option>
+                    <option value="895861">アフィリエイト掲載希望</option>
+                    <option value="895864">その他</option>
+                    <option value="895867">案件のご相談・ご依頼</option>
+                    <option value="895870">企画資料の請求</option>
+                    <option value="895873">企画詳細に関する質問</option>
+                </select>
+
+                <div id="error_for_826223_143110pi_826223_143110" style="display:none"></div>
+
+            </div>
+
+            <div class="form-group form-field  company pd-text required    ">
+
+                <label class="field-label" for="826223_143128pi_826223_143128">会社名</label>
+
+                <input type="text" name="826223_143128pi_826223_143128" id="826223_143128pi_826223_143128"
+                    value="株式会社マイナビ" class="text" size="30" maxlength="255" onchange="" onfocus="">
+
+                <div id="error_for_826223_143128pi_826223_143128" style="display:none"></div>
+
+            </div>
+
+            <div class="form-group form-field multi-col last_name pd-text required    ">
+
+                <label class="field-label" for="826223_143119pi_826223_143119">姓</label>
+
+                <input type="text" name="826223_143119pi_826223_143119" id="826223_143119pi_826223_143119" value="前田"
+                    class="text" size="30" maxlength="80" onchange="" onfocus="">
+
+                <div id="error_for_826223_143119pi_826223_143119" style="display:none"></div>
+
+            </div>
+
+            <div class="form-group form-field multi-col first_name pd-text required    ">
+
+                <label class="field-label" for="826223_143122pi_826223_143122">名</label>
+
+                <input type="text" name="826223_143122pi_826223_143122" id="826223_143122pi_826223_143122" value="あみ"
+                    class="text" size="30" maxlength="40" onchange="" onfocus="">
+
+                <div id="error_for_826223_143122pi_826223_143122" style="display:none"></div>
+
+            </div>
+
+            <div class="form-group form-field multi-col email pd-text required    ">
+
+                <label class="field-label" for="826223_143092pi_826223_143092">メールアドレス</label>
+
+                <input type="text" name="826223_143092pi_826223_143092" id="826223_143092pi_826223_143092"
+                    value="ami2012182092@gmail.com" class="text" size="30" maxlength="255" onchange="" onfocus="">
+
+                <div id="error_for_826223_143092pi_826223_143092" style="display:none"></div>
+
+            </div>
+
+            <div class="form-group form-field multi-col phone pd-text required    ">
+
+                <label class="field-label" for="826223_143125pi_826223_143125">電話番号(ハイフンなし)</label>
+
+                <input type="text" name="826223_143125pi_826223_143125" id="826223_143125pi_826223_143125"
+                    value="08089118952" class="text" size="30" maxlength="40" onchange="" onfocus="">
+
+                <div id="error_for_826223_143125pi_826223_143125" style="display:none"></div>
+
+            </div>
+
+            <div class="form-group form-field  Inquiryproduct pd-text required    ">
+
+                <label class="field-label" for="826223_143131pi_826223_143131">貴社商品名・商品URL等</label>
+
+                <input type="text" name="826223_143131pi_826223_143131" id="826223_143131pi_826223_143131" value=""
+                    class="text" size="30" maxlength="65535" onchange="" onfocus="">
+
+                <div id="error_for_826223_143131pi_826223_143131" style="display:none"></div>
+
+            </div>
+
+            <div class="form-group form-field  Inquiry pd-textarea required    ">
+
+                <label class="field-label" for="826223_143134pi_826223_143134">お問い合わせ内容</label>
+
+                <textarea name="826223_143134pi_826223_143134" id="826223_143134pi_826223_143134" onchange="" cols="40"
+                    rows="10" class="standard"></textarea>
+
+                <div id="error_for_826223_143134pi_826223_143134" style="display:none"></div>
+
+            </div>
+
+            <div class="form-group form-field  PrivacyConsent pd-checkbox required    ">
+
+                <label class="field-label" for="826223_143137pi_826223_143137">個人情報取り扱いの同意</label>
+
+                <span class="value"><span><input type="checkbox" name="826223_143137pi_826223_143137_895876"
+                            id="826223_143137pi_826223_143137_895876" value="895876" onchange=""
+                            checked="checked"><label class="inline" for="826223_143137pi_826223_143137_895876"><a
+                                href="">個人情報の取扱い</a>に同意する</label></span></span>
+
+                <div id="error_for_826223_143137pi_826223_143137" style="display:none"></div>
+
+            </div>
+
+        </div>
+
+        <p style="position:absolute; width:190px; left:-9999px; top: -9999px;visibility:hidden;">
+            <label for="pi_extra_field">Comments</label>
+            <input type="text" name="pi_extra_field" id="pi_extra_field">
+        </p>
+
+
+        <!-- forces IE5-8 to correctly submit UTF8 content  -->
+        <input name="_utf8" type="hidden" value="☃">
+
+        <p class="submit">
+            <input type="submit" accesskey="s" value="送信する">
+        </p>
+
+
+
+
+        <script type="text/javascript">
+            //<![CDATA[
+
+            var anchors = document.getElementsByTagName("a");
+            for (var i = 0; i < anchors.length; i++) {
+                var anchor = anchors[i];
+                if (anchor.getAttribute("href") && !anchor.getAttribute("target")) {
+                    anchor.target = "_top";
+                }
+            }
+
+//]]>
+        </script>
+        <input type="hidden" name="hiddenDependentFields" id="hiddenDependentFields" value="">
+    </form>
+</body>
+
+</html>
