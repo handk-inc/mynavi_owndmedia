@@ -82,5 +82,6 @@
   }
   .myFv_Container_b {
     width: 100%;
+    min-width: 100%;
   }
 }
