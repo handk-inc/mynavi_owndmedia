@@ -7,17 +7,17 @@
 }
 .myFv_Wrapper {
   display: flex;
-  gap: 6%;
+  gap: 3%;
   align-items: center;
   justify-content: space-between;
   height: 100%;
   padding-top: 10.8rem;
 }
 .myFv_Container_a {
-  width: 50%;
   display: flex;
+  flex: 1;
   flex-direction: column;
-  margin-bottom: 6.4rem;
+  margin-top: 6.4rem;
 }
 
 .myFv_preTitle {
@@ -53,8 +53,21 @@
 }
 
 .myFv_Container_b {
-  width: 45%;
-  min-width: 480px;
+  width: 480px;
+}
+
+.iframe_wrap {
+  position: relative;
+  width: 100%;
+  padding: calc(800 / 480 * 100%) 0 0;
+}
+
+.iframe_wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -69,6 +82,11 @@
   .myFv_Container_b {
     margin-top: 4rem;
     width: 100%;
+  }
+  .iframe_wrap {
+    position: relative;
+    width: 100%;
+    padding: calc(1300 / 480 * 100%) 0 0;
   }
 }
 
