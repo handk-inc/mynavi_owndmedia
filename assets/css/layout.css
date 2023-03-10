@@ -270,3 +270,97 @@
   overflow-y: visible;
   height: fit-content;
 }
+
+/* ----------------fvフォームのレイアウト------------------- */
+.iframe_fv_wrap {
+  margin: 0 auto;
+  width: 480px;
+  height: 800px;
+}
+
+.iframe_fv_wrap iframe {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .iframe_fv_wrap {
+    width: 600px;
+    height: 750px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .iframe_fv_wrap {
+    width: 420px;
+    height: 1000px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .iframe_fv_wrap {
+    width: 300px;
+    height: 1060px;
+  }
+}
+/* ----------------請求フォームのレイアウト------------------- */
+
+.iframe_dl_wrap {
+  width: 480px;
+  margin: 0 auto;
+  height: 860px;
+  margin-bottom: 6.4rem;
+}
+
+.iframe_dl_wrap iframe {
+  width: 100%;
+  height: 100%;
+}
+.iframe_mail_wrap {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 600px) {
+  .iframe_dl_wrap {
+    width: 99%;
+    height: 1010px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .iframe_dl_wrap {
+    height: 1070px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .iframe_dl_wrap {
+    height: 1110px;
+  }
+}
+/* ----------------問い合わせフォームのレイアウト------------------- */
+.iframe_contact_wrap {
+  width: 600px;
+  margin: 0 auto;
+  height: 1000px;
+}
+
+.iframe_contact_wrap iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .iframe_contact_wrap {
+    width: 400px;
+    height: 1540px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .iframe_contact_wrap {
+    width: 320px;
+    height: 1680px;
+  }
+}
