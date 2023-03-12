@@ -18,7 +18,10 @@
   width: 75%;
 }
 .article_text_img_box img {
-  width: 100%;
+  width: 320px;
+  height: 212px;
+  aspect-ratio: 80/53;
+  object-fit: cover;
 }
 .article_text_img_box:nth-child(1) {
   padding-top: 0;
@@ -33,5 +36,6 @@
   }
   .article_text_img_box img {
     width: 100%;
+    height: auto;
   }
 }

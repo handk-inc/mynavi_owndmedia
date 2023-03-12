@@ -109,6 +109,7 @@
 /* ----------------メディア一覧------------------- */
 .bg-gray {
   background-color: #fafafa;
+  padding: 4rem;
 }
 .media_feature_wrapper {
   display: flex;
@@ -230,20 +231,24 @@
 
 /* ----------------動画詳細のレイアウト------------------- */
 .movie_detail_content {
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 4em;
 }
 
 .movie_detail_content > iframe {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  aspect-ratio: 16/9;
+  width: 80%;
+  height: auto;
+  text-align: center;
   top: 0em;
   right: 0em;
 }
 
+.attention {
+  margin-top: 2.4rem;
+}
 .mov_detail_text {
   margin-bottom: 5rem;
 }
@@ -286,6 +291,9 @@
   .iframe_fv_wrap {
     width: 600px;
     height: 750px;
+  }
+  .movie_detail_content > iframe {
+    width: 100%;
   }
 }
 
