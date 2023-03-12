@@ -1,0 +1,35 @@
+.media_table {
+  margin-bottom: 4rem;
+}
+.media_table_box {
+  width: 100%;
+  margin-top: 1.6rem;
+}
+.media_table_box th {
+  border: 1px solid #d1d1d1;
+  width: 25%;
+  padding: 0.8rem 1.6rem;
+  background-color: #fafafa;
+}
+.media_table_box td {
+  border: 1px solid #d1d1d1;
+  width: 75%;
+  padding: 0.8rem 1.6rem;
+}
+@media screen and (max-width: 768px) {
+  .media_table {
+    overflow-x: scroll;
+  }
+  .media_table_box {
+    width: 100%;
+    border-collapse: collapse;
+    white-space: nowrap;
+  }
+
+  .media_table_box th {
+    font-size: 1.4rem;
+  }
+  .media_table_box td {
+    font-size: 1.4rem;
+  }
+}

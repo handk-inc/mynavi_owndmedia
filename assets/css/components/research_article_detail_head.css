@@ -2,8 +2,8 @@
   font-size: 4rem;
   letter-spacing: 2px;
   font-weight: 500;
-
   color: #00374d;
+  margin-bottom: 7.2rem;
 }
 .research_article_detail_head_content {
   padding-top: 1rem;
@@ -13,12 +13,12 @@
 }
 .research_article_detail_head_sns_logos {
   display: flex;
+  gap: 1.6rem;
 }
 .research_article_detail_head_sns_logos a:hover {
   opacity: 0.6;
 }
 .research_article_detail_head_sns_logos li {
-  margin: 0 1rem;
 }
 .research_article_detail_head p {
   font-weight: 400;
@@ -36,9 +36,12 @@
 @media screen and (max-width: 530px) {
   .research_article_detail_head {
     font-size: 2.5rem;
-    line-height: 5rem;
+    margin-bottom: 4rem;
   }
   .research_article_detail_head_content {
     display: block;
+  }
+  .research_article_detail_head_sns_logos {
+    margin-top: 1.6rem;
   }
 }
