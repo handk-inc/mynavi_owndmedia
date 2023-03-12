@@ -22,9 +22,9 @@
         <div class="feature_pickup_warrper bg-gray">
             <div id="title_line"></div>
             <ul class="feature_pickup_items inner">
-                <div class="doc_card_secondary"></div>
-                <div class="doc_card_secondary"></div>
-                <div class="doc_card_secondary"></div>
+                <div class="feature_card_secondary"></div>
+                <div class="feature_card_secondary"></div>
+                <div class="feature_card_secondary"></div>
             </ul>
         </div>
         <div class="inner">
@@ -89,11 +89,11 @@
         $(window).on('load', function () {
             $("#sidebar").load("../assets/components/sidebar.html");
 
-            $(".doc_card_primary").load("../assets/components/doc_card_primary.html");
+            $(".doc_card_primary").load("../assets/components/doc_card_primary.html .feature");
 
-            $(".project_card_primary").load("../assets/components/doc_card_primary.html");
+            $(".project_card_primary").load("../assets/components/doc_card_primary.html .feature");
 
-            $(".doc_card_secondary").load("../assets/components/doc_card_secondary.html");
+            $(".feature_card_secondary").load("../assets/components/feature_card_secondary.html");
 
             $("#comp_title1").load("../assets/components/myMedia_titleBox_h2.html .myMedia_titleBox_h2.h1.feature");
 

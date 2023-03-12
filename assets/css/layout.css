@@ -289,24 +289,24 @@
 }
 @media screen and (max-width: 1024px) {
   .iframe_fv_wrap {
-    width: 600px;
-    height: 750px;
+    width: 480px;
+    height: 800px;
   }
   .movie_detail_content > iframe {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .iframe_fv_wrap {
-    width: 420px;
+    width: 400px;
     height: 1000px;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 420px) {
   .iframe_fv_wrap {
-    width: 300px;
+    width: 100%;
     height: 1060px;
   }
 }
@@ -349,9 +349,10 @@
 }
 /* ----------------問い合わせフォームのレイアウト------------------- */
 .iframe_contact_wrap {
-  width: 600px;
+  width: 480px;
   margin: 0 auto;
-  height: 1000px;
+  height: 1120px;
+  margin-top: 4rem;
 }
 
 .iframe_contact_wrap iframe {
@@ -359,16 +360,21 @@
   height: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .iframe_contact_wrap {
-    width: 400px;
-    height: 1540px;
+    width: 99%;
+    height: 1400px;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 380px) {
   .iframe_contact_wrap {
-    width: 320px;
-    height: 1680px;
+    height: 1500px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .iframe_contact_wrap {
+    height: 1520px;
   }
 }

@@ -47,6 +47,10 @@
   display: flex;
   margin-bottom: 0.5rem;
   position: relative;
+  z-index: 100;
+}
+.helpDoc_linkBox a:hover {
+  opacity: 0.6;
 }
 .helpDoc_Item h3 {
   font-weight: 500;

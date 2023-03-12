@@ -34,6 +34,10 @@
   display: flex;
   margin-bottom: 0.5rem;
   position: relative;
+  z-index: 100;
+}
+.featureProject_Content_a_linkBox a:hover {
+  opacity: 0.6;
 }
 
 .featureProject_Content_a h4 {
@@ -73,8 +77,11 @@
 .featureProject_linkBox {
   display: flex;
   position: relative;
+  z-index: 100;
 }
-
+.featureProject_linkBox a:hover {
+  opacity: 0.6;
+}
 .featureProject_item article h4 {
   font-size: 1.4rem;
   font-weight: 500;
