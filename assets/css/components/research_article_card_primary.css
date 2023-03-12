@@ -36,9 +36,11 @@
 
 .research_article_card_primary_detail > .sidebar_tag_wrapper {
   margin-top: 0;
+  z-index: 100;
 }
 
 .card_link {
+  z-index: 99;
   position: absolute;
   top: 0;
   right: 0;

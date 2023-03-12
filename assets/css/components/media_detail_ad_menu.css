@@ -1,3 +1,6 @@
+.media_detail_ad_menu_text {
+  margin-top: 1.6rem;
+}
 .media_detail_ad_menu_box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
