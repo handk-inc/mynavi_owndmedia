@@ -1,32 +1,18 @@
-.sns_lgs {
-  font-size: 4rem;
-  letter-spacing: 2px;
-
-  color: #00374d;
-}
-
-.sns_lgs ul {
+.sns_logos {
   display: flex;
-  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
 }
-.sns_lgs li {
+.sns_logos a:hover {
+  opacity: 0.6;
+}
+.sns_logos li {
   margin: 0 1rem;
 }
-.sns_lgs img {
+.research_article_detail_head p {
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+.sns_logos img {
   display: block;
-}
-
-@media screen and (max-width: 768px) {
-  .sns_lgs {
-    font-size: 3rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .sns_lgs {
-    font-size: 2.5rem;
-    line-height: 5rem;
-  }
-  .sns_lgs_content {
-    display: block;
-  }
 }

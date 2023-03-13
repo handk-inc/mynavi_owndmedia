@@ -52,7 +52,7 @@
   border: 1px solid #006dd4;
   border-radius: 5px;
   color: #006dd4;
-  padding: 0.5rem;
+  padding: 0.2rem 0.8rem;
 }
 
 .media_card_summary__item--content__button {
@@ -71,6 +71,7 @@
 .media_card_summary_explanation {
   background-color: #fafafa;
   border: 1px solid #d1d1d1;
+  border-radius: 4px;
 }
 .media_card_summary_explanation ul {
   padding: 2.4rem 3.2rem;

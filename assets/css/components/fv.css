@@ -17,7 +17,7 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  margin-top: 6.4rem;
+  margin-top: -10%;
 }
 
 .myFv_preTitle {
@@ -63,7 +63,7 @@
   }
   .myFv_Container_a {
     width: 100%;
-    margin: 8rem 0 3rem 0;
+    margin: 0rem 0 3rem 0;
   }
   .myFv_Container_b {
     margin-top: 4rem;

@@ -24,13 +24,13 @@
 .headerUl_a {
   display: flex;
   align-items: center;
-  width: 85%;
+  gap: 3rem;
   justify-content: space-between;
   position: relative;
 }
 .headerItem_a > a:hover {
   color: #ccc;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 .headerItem_a {
   display: flex;
@@ -61,7 +61,7 @@
 }
 .headerLink_contact {
   width: fit-content;
-  padding: 0.8rem 1.6rem;
+  padding: 0.8rem 2.4rem;
   font-size: 1.6rem;
   text-align: center;
   font-weight: 500;
@@ -123,8 +123,8 @@
   transform: rotate(45deg);
   border-bottom: 2px solid;
   border-right: 2px solid;
-  width: .8rem;
-  height: .8rem;
+  width: 0.8rem;
+  height: 0.8rem;
   top: 3.8rem;
   right: 0rem;
 }
@@ -135,8 +135,8 @@
   transform: rotate(45deg);
   border-bottom: 2px solid;
   border-right: 2px solid;
-  width: .8rem;
-  height: .8rem;
+  width: 0.8rem;
+  height: 0.8rem;
   top: 3.8rem;
   right: 0rem;
 }
@@ -163,9 +163,8 @@
 }
 .headerItem_a_sub_useful li:hover {
   background-color: #ccc;
-  transition: all .4s;
+  transition: all 0.4s;
 }
-
 
 .media_introduction_li:hover .headerItem_a_sub_media {
   display: flex;
@@ -188,7 +187,7 @@
 }
 .headerItem_a_sub_media li:hover {
   background-color: #ccc;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 .media_introduction {
   padding-right: 2rem;
@@ -242,7 +241,7 @@
     /*ナビゲーション天地中央揃え*/
     position: absolute;
     z-index: 999;
-    top: 15%;
+    top: 25%;
     width: 100%;
   }
 
@@ -258,7 +257,7 @@
   }
 
   #g-nav li a {
-    color: #333;
+    color: #00374d
     text-decoration: none;
     padding: 10px;
     display: block;
@@ -302,7 +301,7 @@
   }
   .open {
     display: block;
-    transition: all .5s;
+    transition: all 0.5s;
   }
 
   /*========= ボタンのためのCSS ===============*/
@@ -374,20 +373,20 @@
   }
   .headerLink_contact_g {
     width: fit-content;
-  padding: 0.8rem 1.6rem;
-  font-size: 1.6rem;
-  text-align: center !important;
-  font-weight: 500;
-  color: white;
-  border: 1px solid #00374d;
-  background-color: #00374d;
-  border-radius: 4px;
-  border-radius: 4px;
-  cursor: pointer;
-  margin: 0 auto;
-  position: absolute;
-  color: white !important;
-  width: 100%;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.6rem;
+    text-align: center !important;
+    font-weight: 500;
+    color: white;
+    border: 1px solid #00374d;
+    background-color: #00374d;
+    border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto;
+    position: absolute;
+    color: white !important;
+    width: 100%;
   }
   .headerItem_register_g {
     border-bottom: 0 !important;
@@ -410,15 +409,14 @@
     color: #00374d !important;
     border-radius: 4px;
     transition: 0.6s;
-
   }
   .g-nav-main-li:hover {
-    opacity: .6;
+    opacity: 0.6;
   }
   .g-nav-ul-sub-b:hover {
-    opacity: .6;
+    opacity: 0.6;
   }
   .g-nav-ul-sub-a:hover {
-    opacity: .6;
+    opacity: 0.6;
   }
 }

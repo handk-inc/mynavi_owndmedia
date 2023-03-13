@@ -35,8 +35,12 @@
   display: flex;
   margin-bottom: 0.5rem;
   position: relative;
+  z-index: 100;
 }
 
+.helpMov_Content_a_linkBox a:hover {
+  opacity: 0.6;
+}
 .helpMov_Content_a h4 {
   font-size: 1.6rem;
   font-weight: 500;
@@ -74,6 +78,10 @@
 .helpMov_linkBox {
   display: flex;
   position: relative;
+  z-index: 100;
+}
+.helpMov_linkBox a:hover {
+  opacity: 0.6;
 }
 
 .helpMov_item article h4 {

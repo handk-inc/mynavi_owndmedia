@@ -14,7 +14,6 @@
   font-weight: 400;
   line-height: 180%;
   letter-spacing: 0.05em;
-  margin-bottom: 4rem;
   color: #333333;
 }
 
@@ -109,12 +108,14 @@
 /* ----------------メディア一覧------------------- */
 .bg-gray {
   background-color: #fafafa;
+  padding: 4rem;
 }
 .media_feature_wrapper {
   display: flex;
   flex-direction: column;
   width: 80%;
   margin: 0 auto;
+  gap: 2.4rem;
 }
 
 .media_feature_text {
@@ -230,20 +231,30 @@
 
 /* ----------------動画詳細のレイアウト------------------- */
 .movie_detail_content {
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 4em;
 }
 
 .movie_detail_content > iframe {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  aspect-ratio: 16/9;
+  width: 80%;
+  height: auto;
+  text-align: center;
   top: 0em;
   right: 0em;
 }
 
+.attention {
+  margin-top: 2.4rem;
+}
+.attention a {
+  color: #006dd4;
+}
+.attention a:hover {
+  text-decoration: underline;
+}
 .mov_detail_text {
   margin-bottom: 5rem;
 }
@@ -284,21 +295,24 @@
 }
 @media screen and (max-width: 1024px) {
   .iframe_fv_wrap {
-    width: 600px;
-    height: 750px;
+    width: 480px;
+    height: 800px;
+  }
+  .movie_detail_content > iframe {
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .iframe_fv_wrap {
-    width: 420px;
+    width: 400px;
     height: 1000px;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 420px) {
   .iframe_fv_wrap {
-    width: 300px;
+    width: 100%;
     height: 1060px;
   }
 }
@@ -341,9 +355,10 @@
 }
 /* ----------------問い合わせフォームのレイアウト------------------- */
 .iframe_contact_wrap {
-  width: 600px;
+  width: 480px;
   margin: 0 auto;
-  height: 1000px;
+  height: 1120px;
+  margin-top: 4rem;
 }
 
 .iframe_contact_wrap iframe {
@@ -351,16 +366,21 @@
   height: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .iframe_contact_wrap {
-    width: 400px;
-    height: 1540px;
+    width: 99%;
+    height: 1400px;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 380px) {
   .iframe_contact_wrap {
-    width: 320px;
-    height: 1680px;
+    height: 1500px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .iframe_contact_wrap {
+    height: 1520px;
   }
 }

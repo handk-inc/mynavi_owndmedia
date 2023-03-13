@@ -35,6 +35,10 @@
 .helpBlog_linkBox {
   display: flex;
   position: relative;
+  z-index: 100;
+}
+.helpBlog_linkBox a:hover {
+  opacity: 0.6;
 }
 .helpBlog_img {
   width: 100%;

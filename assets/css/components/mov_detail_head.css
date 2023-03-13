@@ -1,34 +1,15 @@
+.mov_detail_head {
+  margin-bottom: 4rem;
+}
 .mov_detail_head_title {
   font-size: 4rem;
   color: #00374d;
   margin-bottom: 1.6rem;
-}
-
-.mov_detail_head_tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.6rem;
-  margin-bottom: 7.2rem;
-}
-
-.mov_detail_head_tag {
-  width: fit-content;
-  color: #00374d;
-  border: 1px solid #00374d;
-  border-radius: 5px;
-  font-size: 1.4rem;
-  display: block;
-  line-height: 1.7;
-  text-align: center;
-  padding: 0.1rem 0.5rem;
-  position: relative;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 768px) {
   .mov_detail_head_title {
     font-size: 2.4rem;
-  }
-  .mov_detail_head_tags {
-    margin-bottom: 4rem;
   }
 }
