@@ -249,6 +249,12 @@
 .attention {
   margin-top: 2.4rem;
 }
+.attention a {
+  color: #006dd4;
+}
+.attention a:hover {
+  text-decoration: underline;
+}
 .mov_detail_text {
   margin-bottom: 5rem;
 }
