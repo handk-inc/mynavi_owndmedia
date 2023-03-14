@@ -16,3 +16,7 @@
 .sns_logos img {
   display: block;
 }
+
+.sns_logos li {
+  list-style: none !important;
+}
