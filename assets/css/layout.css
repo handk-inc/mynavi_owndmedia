@@ -17,6 +17,13 @@
   color: #333333;
 }
 
+.p-base a {
+  color: #006dd4;
+}
+.p-base a:hover {
+  text-decoration: underline;
+}
+
 .mt-10 {
   margin-top: 1rem;
 }

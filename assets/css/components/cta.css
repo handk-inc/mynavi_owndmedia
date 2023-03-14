@@ -66,6 +66,7 @@
 .myCta_Container h2 {
   font-size: 2.4rem;
   line-height: 1.6;
+  font-weight: 500;
 }
 .myCta_contact_btn {
   display: inline-block;
